@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.cropform{
+  margin-top: 50px;
+  padding: 30px;
+}
+.cropBtn{
+  padding: 4px;
+  border: green;
+  color: aliceblue;
+}
+.cropform select{
+  border-radius: 10px;
+  margin: 5px;
+  
+}
