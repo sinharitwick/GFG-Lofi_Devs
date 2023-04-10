@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: unset !important;
 }
 
 code {
@@ -25,4 +26,12 @@ code {
   border-radius: 10px;
   margin: 5px;
   
+}
+.LoginPage{
+   background-image: url("./LoginPage.jpeg");
+   background-position: center;
+   background-size: cover;
+   height: 100vh;
+   margin: unset !important;
+   padding: unset !important;
 }

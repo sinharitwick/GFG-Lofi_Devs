@@ -1,20 +1,30 @@
 import React, { useState } from "react";
 import "./Share.css";
 import { PermMedia, Label, Room, EmojiEmotions } from "@mui/icons-material";
-export default function Share(props) {
-
+export default function Share() {
   const feedsInitial = [];
   const [feeds, setFeeds] = useState(feedsInitial);
   const addFeed = async (description) => {
     //todo api call
+    // console.log(localStorage.getItem("userInfo"));
+    const data = JSON.parse(localStorage.getItem("userInfo"));
+    const token = data.token;
+    console.log(token);
+    const headers = {
+      "Content-Type": "application/json",
+    };
+
+    if (token) {
+      headers.Authorization = `Bearer ${token}`;
+    }
     const response = await fetch("/api/feed/addfeed", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-        Authorization: `Bearer ${localStorage.getItem("token")}`,
-        // "auth-token": localStorage.getItem("token"),
-      },
+      headers,
+      // headers: {
+      //   "Content-Type": "application/json",
+      //   Authorization: `Bearer ${localStorage.getItem("token")}`,
+      //   // "auth-token": localStorage.getItem("token"),
+      // },
       body: JSON.stringify({ description }),
     });
 
@@ -30,7 +40,11 @@ export default function Share(props) {
   const [feed, setFeed] = useState({ description: "" });
   const handleClick = (e) => {
     console.log("click");
+    const data1 = JSON.parse(localStorage.getItem("userInfo"));
+    const token1 = data1.token;
+    console.log(token1);
     e.preventDefault();
+    // console.log(localStorage.getItem("userInfo"));
     addFeed(feed.description);
     setFeed({ description: "" });
     // props.showAlert("Added successfully", "success");
