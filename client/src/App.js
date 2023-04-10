@@ -1,6 +1,6 @@
 // import "./App.css";
-import Homepage from "./Pages/Homepage";
-import { Routes, Route } from "react-router-dom";
+import Loginpage from "./Pages/Loginpage";
+import { Route } from "react-router-dom";
 import Chatpage from "./Pages/Chatpage";
 import Landing from "./components/UI/Landing";
 import CropInputForm from "./Pages/cropAdvisor";
@@ -12,16 +12,15 @@ import Feed from "./Pages/Feed";
 function App() {
   return (
     <div className="App">
-      {/* <Router> */}
-      <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route path="/cropadvisor" element={<CropInputForm />} />
-        <Route path="/login" element={<Homepage />} />
-        <Route path="/chats" element={<Chatpage />} />
-        <Route path="/user" element={<UserProfile />} />
-        <Route path="/feed" element={<Feed />} />
-      </Routes>
-      {/* </Router> */}
+      <Route path="/" component={Landing} exact />
+      <Route path="/cropadvisor" component={CropInputForm} exact />
+      {/* <Route path="/register" element={<Signup/>}/>
+      <Route path="/login" element={<Login/>}/> */}
+      <Route path="/login" component={Loginpage} exact />
+      <Route path="/chats" component={Chatpage} exact />
+      <Route path="/user" component={UserProfile} exact />
+      <Route path="/feed" component={Feed} exact />
+      {/* <Route path="*" component={Error404} exact/> */}
     </div>
   );
 }

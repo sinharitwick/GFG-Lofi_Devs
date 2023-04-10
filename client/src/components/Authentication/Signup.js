@@ -5,13 +5,13 @@ import { VStack } from "@chakra-ui/layout";
 import { useToast } from "@chakra-ui/toast";
 import axios from "axios";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const Signup = () => {
   const [show, setShow] = useState(false);
   const handleClick = () => setShow(!show);
   const toast = useToast();
-  const history = useNavigate();
+  const history = useHistory();
 
   const [name, setName] = useState();
   const [email, setEmail] = useState();
@@ -70,7 +70,7 @@ const Signup = () => {
       });
       localStorage.setItem("userInfo", JSON.stringify(data));
       setPicLoading(false);
-      history("/chats");
+      history.push("/chats");
     } catch (error) {
       toast({
         title: "Error Occured!",
@@ -155,7 +155,12 @@ const Signup = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
           <InputRightElement width="4.5rem">
-            <Button h="1.75rem" size="sm" onClick={handleClick}>
+            <Button
+              h="1.75rem"
+              size="sm"
+              bg="transparent"
+              onClick={handleClick}
+            >
               {show ? "Hide" : "Show"}
             </Button>
           </InputRightElement>
@@ -170,7 +175,12 @@ const Signup = () => {
             onChange={(e) => setConfirmpassword(e.target.value)}
           />
           <InputRightElement width="4.5rem">
-            <Button h="1.75rem" size="sm" onClick={handleClick}>
+            <Button
+              h="1.75rem"
+              size="sm"
+              bg="transparent"
+              onClick={handleClick}
+            >
               {show ? "Hide" : "Show"}
             </Button>
           </InputRightElement>

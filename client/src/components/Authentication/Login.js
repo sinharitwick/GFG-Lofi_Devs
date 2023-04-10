@@ -5,7 +5,7 @@ import { VStack } from "@chakra-ui/layout";
 import { useState } from "react";
 import axios from "axios";
 import { useToast } from "@chakra-ui/react";
-import { useNavigate } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const Login = () => {
   const [show, setShow] = useState(false);
@@ -15,7 +15,7 @@ const Login = () => {
   const [password, setPassword] = useState();
   const [loading, setLoading] = useState(false);
 
-  const history = useNavigate();
+  const history = useHistory();
 
   const submitHandler = async () => {
     setLoading(true);
@@ -55,7 +55,7 @@ const Login = () => {
       });
       localStorage.setItem("userInfo", JSON.stringify(data));
       setLoading(false);
-      history("/chats");
+      history.push("/feed");
     } catch (error) {
       toast({
         title: "Error Occured!",
@@ -90,7 +90,7 @@ const Login = () => {
             placeholder="Enter password"
           />
           <InputRightElement width="4.5rem">
-            <Button h="1.75rem" size="sm" onClick={handleClick}>
+            <Button h="1.75rem" size="sm" bg='transparent' onClick={handleClick}>
               {show ? "Hide" : "Show"}
             </Button>
           </InputRightElement>
