@@ -1,28 +1,31 @@
 // import "./App.css";
+import { Routes, Route } from "react-router-dom";
 import Loginpage from "./Pages/Loginpage";
-import { Route } from "react-router-dom";
+// import { Route } from "react-router-dom";
 import Chatpage from "./Pages/Chatpage";
 import Landing from "./components/UI/Landing";
 import CropInputForm from "./Pages/cropAdvisor";
 // import Signup from "./components/Authentication/Signup";
 // import Login from "./components/Authentication/Login";
 import UserProfile from "./Pages/UserProfile";
-import Feed from "./Pages/Feed";
+import Feedpage from "./Pages/Feedpage";
 
 function App() {
   return (
     <div className="App">
-      <Route path="/" component={Landing} exact />
-      <Route path="/cropadvisor" component={CropInputForm} exact />
-      {/* <Route path="/register" element={<Signup/>}/>
-      <Route path="/login" element={<Login/>}/> */}
-      <Route path="/login" component={Loginpage} exact />
-      <Route path="/chats" component={Chatpage} exact />
-      <Route path="/user" component={UserProfile} exact />
-      <Route path="/feed" component={Feed} exact />
-      {/* <Route path="*" component={Error404} exact/> */}
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/cropadvisor" element={<CropInputForm />} />
+          <Route path="/login" element={<Loginpage />} />
+          <Route path="/chats" element={<Chatpage />} />
+          <Route path="/user" element={<UserProfile />} />
+          <Route path="/feed" element={<Feedpage />} />
+        </Routes>
     </div>
   );
 }
 
+// {/* <Route path="/register" element={<Signup/>}/>
+// <Route path="/login" element={<Login/>}/> */}
+// {/* <Router path="*" element={<Error404 />}/> */}
 export default App;

@@ -25,7 +25,7 @@ app.use(function (req, res, next) {
 app.use("/api/user", cors(), userRoutes);
 app.use("/api/chat", chatRoutes);
 app.use("/api/message", messageRoutes);
-app.use("/api/feed", require("./routes/feeds"));
+app.use("/api/feed", require("./routes/feedRoutes"));
 
 // Error Handling middlewares
 app.use(notFound);

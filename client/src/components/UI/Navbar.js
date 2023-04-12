@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { ChatState } from "../../Context/ChatProvider";
 const Navbar = () => {
   // let location = useLocation();
-  let navigate = useHistory();
+  let navigate = useNavigate();
   const handleLogout = () => {
     // localStorage.removeItem("token");
     localStorage.removeItem("userInfo");
-    navigate.push("/login");
+    navigate("/login");
   };
 
   // const handleLogout = async () => {
@@ -39,7 +39,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-brand">
-          <Link to="/">F a r m S t a c k</Link>
+          <Link to="/">FarmStack</Link>
         </div>
         <div className={`navbar-menu ${isOpen ? "is-active" : ""}`}>
           <Link to="/feed">Post</Link>

@@ -3,9 +3,20 @@ const bcrypt = require("bcryptjs");
 
 const userSchema = mongoose.Schema(
   {
-    name: { type: "String", required: true },
-    email: { type: "String", unique: true, required: true },
-    password: { type: "String", required: true },
+    name: { 
+      type: "String",
+      required: true
+    },
+    email: { 
+      type: "String",
+      required: true,
+      unique: true
+    },
+    password: { 
+      type: "String",
+      required: true,
+      minLength: 5
+    },
     pic: {
       type: "String",
       required: true,
@@ -17,6 +28,7 @@ const userSchema = mongoose.Schema(
       required: true,
       default: false,
     },
+    feeds: [{type: mongoose.Types.ObjectId, ref:"feeds", required:true}]
   },
   { timestaps: true }
 );

@@ -1,26 +1,53 @@
 const mongoose = require("mongoose");
 
 const FeedSchema = new mongoose.Schema({
-  user: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "User",
+  title:{
+    type:String,
+    required:true
   },
-  // title:{
-  //     type:String,
-  //     required:true
-  // },
   description: {
     type: String,
     required: true,
   },
-  // tag:{
-  //     type:String,
-  //    default:"General"
-  // },
-  date: {
+  image: {
+    type: String,
+    required: true
+  },
+  user: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "User",
+    required: true
+  },
+  createdAt: {
     type: Date,
     default: Date.now,
   },
+  likes: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User"
+    }
+  ],
+  comments: [
+    {
+      user: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User"
+      },
+      comment: {
+        type: String,
+        required: true
+      },
+      created: {
+        type: Date,
+        default: Date.now
+      }
+    }
+  ],
+  // tag:{
+  //     type:String,
+  //    default:"General"
+  // }
 });
 
 module.exports = mongoose.model("feeds", FeedSchema);
