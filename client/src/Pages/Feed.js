@@ -9,16 +9,28 @@ function Feed() {
   const feedsInitial = [];
   const [feeds, setFeeds] = useState(feedsInitial);
   const getFeeds = async () => {
+    //fetching token
+    const data = JSON.parse(localStorage.getItem("userInfo"));
+    const token = data.token;
+    console.log(token);
+    const headers = {
+      "Content-Type": "application/json",
+    };
+
+    if (token) {
+      headers.Authorization = `Bearer ${token}`;
+    }
     //API call
     const response = await fetch("/api/feed/fetchallfeed", {
       method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-        //   "auth-token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJkNjZlZjA2NTYyN2Y2NmFlOTM3MGIzIn0sImlhdCI6MTY1ODIyMDM2OX0.fyV7JLu980KmYlYwQi3YiveaAif1zQxhRxH0DEwJDuA"
-        // "auth-token": localStorage.getItem("token"),
-        Authorization: `Bearer ${localStorage.getItem("token")}`,
-      },
+      headers,
+      // headers: {
+      //   "Content-Type": "application/json",
+      //   Accept: "application/json",
+      //   //   "auth-token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJkNjZlZjA2NTYyN2Y2NmFlOTM3MGIzIn0sImlhdCI6MTY1ODIyMDM2OX0.fyV7JLu980KmYlYwQi3YiveaAif1zQxhRxH0DEwJDuA"
+      //   // "auth-token": localStorage.getItem("token"),
+      //   Authorization: `Bearer ${localStorage.getItem("token")}`,
+      // },
     });
     const json = await response.json();
     console.log(json);

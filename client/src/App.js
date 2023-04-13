@@ -1,4 +1,4 @@
-// import "./App.css";
+import "./App.css";
 import Loginpage from "./Pages/Loginpage";
 import { Route } from "react-router-dom";
 import Chatpage from "./Pages/Chatpage";
@@ -8,7 +8,8 @@ import CropInputForm from "./Pages/cropAdvisor";
 // import Login from "./components/Authentication/Login";
 import UserProfile from "./Pages/UserProfile";
 import Feed from "./Pages/Feed";
-
+import WeatherPage from "./Pages/WeatherPage";
+import Profile from "./Pages/profilePage";
 function App() {
   return (
     <div className="App">
@@ -20,6 +21,8 @@ function App() {
       <Route path="/chats" component={Chatpage} exact />
       <Route path="/user" component={UserProfile} exact />
       <Route path="/feed" component={Feed} exact />
+      <Route path="/weather" component={WeatherPage} exact />
+      <Route path="/profile" component={Profile} exact/>
       {/* <Route path="*" component={Error404} exact/> */}
     </div>
   );
