@@ -1,0 +1,23 @@
+.profileCover{
+position: relative;
+width: 70vw;
+height: 341px;
+left:15vw;
+
+
+background: linear-gradient(90deg, rgba(153, 207, 64, 0.84) 0%, rgba(111, 181, 114, 0.73) 100%);
+}
+.profileImg{
+    position: relative;
+    top: 2rem;
+    border-radius: 50%;
+    background: url('../../public/user.png');
+}
+.profileDetails{
+    display: flex;
+    flex-direction: column;
+}
+profileMessage{
+    display: flex;
+    flex-direction: row;
+}

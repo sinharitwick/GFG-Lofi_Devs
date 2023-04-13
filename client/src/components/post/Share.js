@@ -80,7 +80,7 @@ export default function Share() {
           <div className="shareOptions">
             <div className="shareOption">
               <PermMedia htmlColor="tomato" className="shareIcon" />
-              <span className="shareOptionText">Photo or Video</span>
+              <span className="shareOptionText">Photo</span>
             </div>
             <div className="shareOption">
               <Label htmlColor="blue" className="shareIcon" />
@@ -90,10 +90,10 @@ export default function Share() {
               <Room htmlColor="green" className="shareIcon" />
               <span className="shareOptionText">Location</span>
             </div>
-            <div className="shareOption">
+            {/* <div className="shareOption">
               <EmojiEmotions htmlColor="goldenrod" className="shareIcon" />
               <span className="shareOptionText">Feelings</span>
-            </div>
+            </div> */}
           </div>
           <button className="shareButton" onClick={handleClick}>
             Share

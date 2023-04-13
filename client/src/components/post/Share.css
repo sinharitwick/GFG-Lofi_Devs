@@ -65,6 +65,10 @@
       font-weight: 500;
   }
   
+ .shareInput{
+    border-radius: 5px;
+    padding: 2px;
+  }
   /* .shareButton{
       border: none;
       padding: 7px;
@@ -75,3 +79,16 @@
       cursor: pointer;
       color: white;
   } */
+  .shareButton{
+    background-color: bisque;
+    box-shadow:5px rgb(59, 169, 39) ;
+    margin-right: 2rem;
+  }
+
+  @media screen and (max-width:500px) {
+    .share{
+      width: 100%;
+      margin: unset;
+    }
+    
+  }
