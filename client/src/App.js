@@ -10,6 +10,8 @@ import UserProfile from "./Pages/UserProfile";
 import Feed from "./Pages/Feed";
 import WeatherPage from "./Pages/WeatherPage";
 import Profile from "./Pages/profilePage";
+import Schemes from "./Pages/Schemes"
+
 function App() {
   return (
     <div className="App">
@@ -23,6 +25,8 @@ function App() {
       <Route path="/feed" component={Feed} exact />
       <Route path="/weather" component={WeatherPage} exact />
       <Route path="/profile" component={Profile} exact/>
+      <Route path="/schemes" component={Schemes} exact />
+
       {/* <Route path="*" component={Error404} exact/> */}
     </div>
   );

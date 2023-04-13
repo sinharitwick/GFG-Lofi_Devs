@@ -7,6 +7,8 @@ const messageRoutes = require("./routes/messageRoutes");
 const { notFound, errorHandler } = require("./middleware/errorMiddleware");
 const path = require("path");
 const cors = require("cors");
+const cropAdvisor = require("./api/cropAdvisor");
+const schemes = require("./api/schemes")
 
 dotenv.config();
 connectDB();
@@ -26,6 +28,8 @@ app.use("/api/user", cors(), userRoutes);
 app.use("/api/chat", chatRoutes);
 app.use("/api/message", messageRoutes);
 app.use("/api/feed", require("./routes/feeds"));
+app.use("/api/cropAdvisor", cropAdvisor);
+app.use("/api/schemes", schemes);
 
 // Error Handling middlewares
 app.use(notFound);
