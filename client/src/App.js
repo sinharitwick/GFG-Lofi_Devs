@@ -7,7 +7,7 @@ import CropInputForm from "./Pages/cropAdvisor";
 // import Signup from "./components/Authentication/Signup";
 // import Login from "./components/Authentication/Login";
 import UserProfile from "./Pages/UserProfile";
-import Feed from "./Pages/Feed";
+import Feedpg from "./Pages/Feedpg";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
       <Route path="/login" component={Loginpage} exact />
       <Route path="/chats" component={Chatpage} exact />
       <Route path="/user" component={UserProfile} exact />
-      <Route path="/feed" component={Feed} exact />
+      <Route path="/feed" component={Feedpg} exact />
       {/* <Route path="*" component={Error404} exact/> */}
     </div>
   );
