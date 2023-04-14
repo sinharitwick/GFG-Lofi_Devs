@@ -14,7 +14,7 @@
     `touch .env`
 4. Configure environment variables. To acquire your MONGO_URI, create a cluster for free over at https://www.mongodb.com/ \
     `MONGO_URI=<YOUR_MONGO_URI>`\
-    `PORT=3000`
+    `PORT=5000`
 5. Run the server\
     `cd server`\
     `npm start`
