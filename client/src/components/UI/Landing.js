@@ -9,7 +9,7 @@ import Fade from 'react-reveal/Fade';
 
 function Landing() {
   return (
-    <div>
+    <div className='landing'>
         <Navbar />
         <Fade bottom>
         <div className="container-landing">

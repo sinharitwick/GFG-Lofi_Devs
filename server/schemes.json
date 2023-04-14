@@ -1,0 +1,202 @@
+[
+    {
+        "id": 1,
+        "title": "Kisan Credit Card Scheme",
+        "category": "Bank Loan for Farmers",
+        "description": "A credit facility provided to farmers for cultivation and allied activities.",
+        "eligibility": "Farmers who own cultivable land.",
+        "benefit": "Collateral-free loan with a low interest rate.",
+        "link": "https://www.pnbkisancreditcard.com/",
+        "image": "https://example.com/image1.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Pradhan Mantri Fasal Bima Yojana",
+        "category": "Agriculture",
+        "description": "An insurance scheme for farmers to provide them with protection against crop loss due to natural calamities.",
+        "eligibility": "Farmers who have taken a loan for crop cultivation.",
+        "benefit": "Compensation in case of crop loss due to natural calamities.",
+        "link": "https://pmfby.gov.in/",
+        "image": "https://example.com/image2.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Kisan Samman Nidhi Yojana",
+        "category": "Agriculture",
+        "description": "A financial assistance scheme for farmers to provide them with income support.",
+        "eligibility": "Small and marginal farmers who own cultivable land.",
+        "benefit": "An income support of Rs. 6,000 per year.",
+        "link": "https://pmkisan.gov.in/",
+        "image": "https://example.com/image3.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Pradhan Mantri Krishi Sinchai Yojana",
+        "category": "Agriculture",
+        "description": "A scheme to provide water to every field for ensuring the efficiency of water use.",
+        "eligibility": "Farmers who own cultivable land.",
+        "benefit": "Increased productivity of crops due to proper irrigation.",
+        "link": "https://pmksy.gov.in/",
+        "image": "https://example.com/image4.jpg"
+    },
+    {
+        "id": 5,
+        "title": "National Agriculture Market",
+        "category": "Agriculture",
+        "description": "A pan-India electronic trading portal to connect farmers with traders.",
+        "eligibility": "Farmers who want to sell their produce.",
+        "benefit": "Increased competition and better prices for farmers.",
+        "link": "https://enam.gov.in/",
+        "image": "https://example.com/image5.jpg"
+    },
+    {
+        "id": 6,
+        "title": "National Crop Insurance Programme",
+        "category": "Agriculture",
+        "description": "A crop insurance scheme to protect farmers against yield losses due to natural calamities.",
+        "eligibility": "Farmers who have taken a loan for crop cultivation.",
+        "benefit": "Compensation in case of crop loss due to natural calamities.",
+        "link": "https://pmfby.gov.in/",
+        "image": "https://example.com/image6.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Farm Mechanization Programme",
+        "category": "Agriculture",
+        "description": "The Farm Mechanization Programme aims to assist farmers in the procurement of farm machinery and equipment to increase their farm productivity and income.",
+        "eligibility": "All farmers with a minimum of 2 hectares of cultivable land are eligible.",
+        "benefit": "Subsidy of up to 40% on the cost of farm machinery and equipment.",
+        "link": "https://agricoop.nic.in/sites/default/files/FMP.pdf",
+        "image": "https://images.pexels.com/photos/3758856/pexels-photo-3758856.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+        "id": 8,
+        "title": "Pradhan Mantri Fasal Bima Yojana",
+        "category": "Agriculture",
+        "description": "Pradhan Mantri Fasal Bima Yojana is a crop insurance scheme that provides financial assistance to farmers in case of crop failure due to natural calamities, pests and diseases.",
+        "eligibility": "All farmers are eligible.",
+        "benefit": "Premiums are subsidized by the government. In case of crop loss, farmers will receive compensation based on the value of the insured crop.",
+        "link": "https://pmfby.gov.in/",
+        "image": "https://images.pexels.com/photos/1547349/pexels-photo-1547349.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+        "id": 9,
+        "title": "National Agriculture Market",
+        "category": "Agriculture",
+        "description": "The National Agriculture Market is an online platform that aims to create a unified national market for agricultural commodities. It enables farmers to sell their produce to buyers from all over the country.",
+        "eligibility": "All farmers are eligible to sell their produce on the platform.",
+        "benefit": "Farmers can get better prices for their produce and access a wider market.",
+        "link": "https://enam.gov.in/",
+        "image": "https://images.pexels.com/photos/208968/pexels-photo-208968.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+        "id": 10,
+        "title": "Interest Subvention Scheme for MSMEs",
+        "category": "Bank Loans for Farmers",
+        "description": "The Interest Subvention Scheme for MSMEs provides an interest subsidy of 2% on loans taken by MSMEs for plant and machinery. This scheme aims to encourage MSMEs to upgrade their technology and become more competitive.",
+        "eligibility": "All MSMEs are eligible.",
+        "benefit": "2% interest subsidy on loans for plant and machinery.",
+        "link": "https://www.sidbi.in/en/interest-subvention-scheme-msmes",
+        "image": "https://images.pexels.com/photos/3184462/pexels-photo-3184462.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+        "id": 11,
+        "title": "National Agricultural Market Scheme",
+        "category": "Agriculture",
+        "description": "The National Agricultural Market Scheme is an online platform that seeks to connect farmers with markets by providing a unified national market for agricultural commodities. It aims to eliminate intermediaries and create transparency in pricing and the selling process.",
+        "eligibility": "Farmers, farmer producer organizations, traders, and buyers can register on the e-NAM platform to sell and buy agricultural commodities.",
+        "benefit": "Farmers can get access to a larger market for their produce and receive fair prices for their crops. The scheme also promotes competition among buyers and ensures that farmers receive timely payments for their sales.",
+        "link": "https://enam.gov.in/",
+        "image": "https://www.livemint.com/rf/Image-621x414/LiveMint/Period1/2016/04/29/Photos/Processed/Screenshot--621x414@LiveMint.jpg"
+    },
+    {
+        "id": 12,
+        "title": "Pradhan Mantri Fasal Bima Yojana",
+        "category": "Agriculture",
+        "description": "The Pradhan Mantri Fasal Bima Yojana is a crop insurance scheme for farmers. The scheme provides insurance coverage to farmers for crop loss due to natural calamities, pests, and diseases. The premium rates for the scheme are highly subsidized by the government.",
+        "eligibility": "All farmers who have taken a crop loan or those who own a cultivable land can enroll in the scheme.",
+        "benefit": "The scheme provides financial support to farmers in case of crop loss due to natural calamities, pests, and diseases. It also helps in stabilizing farmers' income and promotes agricultural production.",
+        "link": "https://pmfby.gov.in/",
+        "image": "https://www.bankbazaar.com/insurance/pradhan-mantri-fasal-bima-yojana/images/pm-fasal-bima-yojana.jpg"
+    },
+    {
+        "id": 13,
+        "title": "Interest Subvention Scheme for Crop Loans",
+        "category": "Agriculture",
+        "description": "The Interest Subvention Scheme for Crop Loans is a credit-linked subsidy scheme that aims to provide affordable credit to farmers for crop production. The scheme provides an interest subsidy of 2% to farmers for short-term crop loans up to Rs. 3 lakhs.",
+        "eligibility": "All farmers who have taken a crop loan for agricultural purposes are eligible for the scheme.",
+        "benefit": "The scheme provides an interest subsidy of 2% to farmers for short-term crop loans up to Rs. 3 lakhs. It reduces the burden of farmers in repaying loans and helps in promoting agricultural production.",
+        "link": "https://www.nabard.org/CreditExtension/Interest_Subsidy_Eng.aspx",
+        "image": "https://www.bajajfinserv.in/5-easiest-steps-to-get-a-crop-loan-for-your-farm-fuel/wp-content/uploads/2021/04/crop-insurance.png"
+    },
+    {
+        "id": 14,
+        "title": "Pradhan Mantri Krishi Sinchai Yojana",
+        "category": "Agriculture",
+        "description": "This scheme aims at providing irrigation facilities to every agricultural land in India to help farmers improve their crop productivity and ensure the efficient use of water resources.",
+        "eligibility": "Farmers, including tenant farmers and sharecroppers",
+        "benefit": "The scheme provides financial assistance for the creation of new water sources, enhancement of the existing sources, and efficient water use.",
+        "link": "https://pmksy.gov.in/",
+        "image": "https://www.pmindia.gov.in/wp-content/uploads/2020/08/pradhan_mantri_krishi_sinchai_yojana.png"
+    },
+    {
+        "id": 15,
+        "title": "Mukhyamantri Kisan Sahayata Yojana",
+        "category": "Farmers",
+        "description": "This scheme provides financial assistance to farmers who have lost their crops due to natural calamities like floods, droughts, and hailstorms. The scheme aims to help farmers to get back on their feet and continue their farming activities.",
+        "eligibility": "Farmers who have suffered crop losses due to natural calamities",
+        "benefit": "The scheme provides financial assistance of up to Rs. 20,000 per hectare for rain-fed areas and up to Rs. 50,000 per hectare for irrigated areas.",
+        "link": "https://agriportal.cg.nic.in/cgagriportal/MKSYPDF.aspx",
+        "image": "https://i.imgur.com/QK4A4lo.jpg"
+    },
+    {
+        "id": 16,
+        "title": "Kisan Credit Card Scheme",
+        "category": "Bank Loans for Farmers",
+        "description": "The Kisan Credit Card scheme aims at providing timely and adequate credit support to farmers for their cultivation needs. The scheme helps farmers in meeting their short-term credit requirements for agriculture and allied activities.",
+        "eligibility": "Farmers",
+        "benefit": "The scheme provides easy access to credit and reduces the dependency of farmers on informal credit sources. The card can be used to withdraw cash for crop cultivation and other agricultural activities.",
+        "link": "https://www.pnbagriline.in/KCC.aspx",
+        "image": "https://www.pnbagriline.in/assets/img/kcc-l.jpg"
+    },
+    {
+        "id": 17,
+        "title": "Pradhan Mantri Fasal Bima Yojana",
+        "category": "Farmers",
+        "description": "This scheme provides insurance coverage and financial support to farmers in case of crop loss due to natural calamities, pests, and diseases. The scheme aims to provide comprehensive crop insurance coverage to farmers and reduce their financial burden in case of crop loss.",
+        "eligibility": "Farmers",
+        "benefit": "The scheme provides financial assistance to farmers in case of crop loss due to natural calamities, pests, and diseases. The premium rates are very low, and the insurance coverage is comprehensive.",
+        "link": "https://pmfby.gov.in/",
+        "image": "https://pmfby.gov.in/assets/images/home/02.jpg"
+    },
+    {
+        "id": 18,
+        "title": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+        "category": "Agriculture",
+        "description": "The Pradhan Mantri Fasal Bima Yojana (PMFBY) is a crop insurance scheme launched by the Government of India in 2016. The scheme provides insurance coverage and financial assistance to farmers in case of crop damage due to natural calamities, pests, and diseases. PMFBY aims to provide affordable insurance coverage to farmers and encourage them to adopt modern agricultural practices.",
+        "eligibility": "All farmers who have taken a crop loan for any of the notified crops are eligible to avail of the benefits of the scheme.",
+        "benefit": "The scheme provides comprehensive coverage for all crops in the notified areas against natural calamities, pests, and diseases. Farmers have to pay a nominal premium, and in case of crop damage, they are compensated for the loss.",
+        "link": "https://pmfby.gov.in/",
+        "image": "https://images.pexels.com/photos/634054/pexels-photo-634054.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+        "id": 19,
+        "title": "Kisan Credit Card (KCC)",
+        "category": "Bank Loans for Farmers",
+        "description": "Kisan Credit Card (KCC) is a credit scheme launched by the Government of India to provide financial assistance to farmers. The scheme aims to provide timely and adequate credit to farmers for their cultivation needs, including the purchase of seeds, fertilizers, and other inputs. KCC provides farmers with a credit card that they can use to withdraw cash or buy inputs for their crops.",
+        "eligibility": "All farmers who own land and are engaged in agricultural activities are eligible to apply for KCC.",
+        "benefit": "KCC provides farmers with timely and adequate credit at low-interest rates. Farmers can withdraw cash or buy inputs for their crops using the credit card. The credit limit is based on the farmer's landholding and the crops grown.",
+        "link": "https://www.pnbkisaancreditcard.com/kisancreditcard/",
+        "image": "https://images.pexels.com/photos/1089430/pexels-photo-1089430.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+        "id": 20,
+        "title": "National Horticulture Mission (NHM)",
+        "category": "Nurseries",
+        "description": "National Horticulture Mission (NHM) is a centrally sponsored scheme launched by the Government of India to promote the growth of horticulture in the country. The scheme aims to increase the production of fruits, vegetables, and flowers and improve the quality of horticultural produce. NHM provides financial assistance to farmers, nurseries, and other stakeholders in the horticulture sector.",
+        "eligibility": "Farmers, self-help groups, women groups, NGOs, and other horticultural entrepreneurs are eligible to apply for NHM.",
+        "benefit": "NHM provides financial assistance for various horticultural activities such as establishing nurseries, creating water resources, adopting modern technologies, and promoting organic farming. The scheme aims to increase the income of farmers and promote sustainable agriculture practices.",
+        "link": "http://nhm.gov.in/",
+        "image": "https://images.pexels.com/photos/1640773/pexels-photo-164"
+    }
+]
