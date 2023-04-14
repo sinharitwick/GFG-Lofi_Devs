@@ -72,8 +72,8 @@ useEffect(() => {
         </IconButton>
        
       </CardActions>
-      {/* <AddComments/>
-      <Comment/> */}
+      <AddComments/>
+      <Comment/>
     </Card>
   );
 };

@@ -1,4 +1,5 @@
 import React from 'react'
+import Navbar from '../components/UI/Navbar';
 import "./profile.css";
 // import axios from "axios";
 function profilePage({data, user}) {
@@ -10,6 +11,7 @@ function profilePage({data, user}) {
   // }
   return (
     <div className='user-page'>
+      <Navbar />
       <div className="user-container">
         <div className="profile-card">
           <img src="https://images.unsplash.com/photo-1599009876320-01a3d33c197d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8OHx8fGVufDB8fHx8&w=1000&q=80" className='cover-pic' alt="" />
