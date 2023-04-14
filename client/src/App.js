@@ -10,6 +10,7 @@ import UserProfile from "./Pages/UserProfile";
 import Feedpg from "./Pages/Feedpg";
 import WeatherPage from "./Pages/WeatherPage";
 import Profile from "./Pages/profilePage";
+
 function App() {
   return (
     <div className="App">
