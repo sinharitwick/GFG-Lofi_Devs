@@ -1,5 +1,5 @@
-const Blog = require('../models/Blog')
-const User = require('../models/User')
+const Blog = require('../models/Feed')
+const User = require('../models/userModel')
 const mongoose = require('mongoose')
 
 const getAllBlogs = async (req, res, next) => {
@@ -258,7 +258,7 @@ const getPostByUser=async(req,res,next)=>{
         
     } catch (error) {
         console.log(error);
-        res.status(500).send("Internal sever Error")
+        res.status(500).send("Internal server Error")
     }
 }
 module.exports = {

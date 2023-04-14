@@ -82,6 +82,17 @@ const authUser = asyncHandler(async (req, res) => {
   }
 });
 
+const getUserById=async(req,res,next)=>{
+  const userId=req.params.id;
+ try {
+  const userdata=await User.findById(userId);
+  res.status(200).json({data:userdata});
+ } catch (error) {
+  console.log(error);
+  res.status(500).send("Internal Server Error");
+ }
+}
+
 //@description Logout the user
 //@route POST /api/users/logout
 //@access Private
@@ -98,4 +109,4 @@ const logoutUser = asyncHandler(async (req, res) => {
 
 // router.post("/logout", protect, logoutUser);
 
-module.exports = { allUsers, registerUser, authUser, logoutUser };
+module.exports = { allUsers, registerUser, authUser, getUserById, logoutUser };

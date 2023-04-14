@@ -14,8 +14,8 @@ dotenv.config();
 connectDB();
 const app = express();
 
-app.use(express.json()); // to accept json data
 app.use(cors());
+app.use(express.json()); // to accept json data
 // app.get("/", (req, res) => {
 //   res.send("API Running!");
 // });
@@ -24,12 +24,14 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.use("/api/user", cors(), userRoutes);
+// app.use("/api/user", cors(), userRoutes);
+app.use("/api/user", userRoutes);
 app.use("/api/chat", chatRoutes);
 app.use("/api/message", messageRoutes);
 app.use("/api/feed", require("./routes/feeds"));
 app.use("/api/cropAdvisor", cropAdvisor);
 app.use("/api/schemes", schemes);
+app.use("/api/blog", require("./routes/feedRoutes"));
 
 // Error Handling middlewares
 app.use(notFound);

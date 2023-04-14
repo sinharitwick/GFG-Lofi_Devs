@@ -1,8 +1,9 @@
 const express = require("express")
-var myFunctions = require('../controllers/blog-controller');
+var myFunctions = require('../controllers/feedControllers');
+// const { protect } = require("../middleware/authMiddleware");
 const blogRouter = express.Router();
 
-blogRouter.get('/post/:id',myFunctions.getPostByUser);
+blogRouter.get('/post/:id', myFunctions.getPostByUser);
 blogRouter.get('/', myFunctions.getAllBlogs);
 blogRouter.post('/add', myFunctions.addBlog);
 blogRouter.put('/update/:id', myFunctions.updateBlog);
