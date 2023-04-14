@@ -39,7 +39,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-brand">
-          <Link to="/">F a r m S t a c k</Link>
+          <Link to="/">FarmStack</Link>
         </div>
         <div className={`navbar-menu ${isOpen ? "is-active" : ""}`}>
           <Link to="/feed">Post</Link>
