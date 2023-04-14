@@ -1,64 +1,84 @@
-import {
-    Avatar,
-    Button,
-    Card,
-    Stack,
-    TextField,
-    ThemeProvider,
-  } from "@mui/material";
-  import { Box } from "@mui/system";
-  import React, {useState } from "react";
+// import {
+//     Avatar,
+//     Button,
+//     Card,
+//     Stack,
+//     TextField,
+//     ThemeProvider,
+//   } from "@mui/material";
+//   import { Box } from "@mui/system";
+//   import React, {useState } from "react";
 
 
   
-  const AddComments = () => {
+//   const AddComments = () => {
     
-    const [commentTxt, setCommentTxt] = useState("");
+//     const [commentTxt, setCommentTxt] = useState("");
     
   
-    return (
-      <ThemeProvider >
-        <Card>
-          <Box sx={{ p: "15px" }}>
-            <Stack direction="row" spacing={2} alignItems="flex-start">
-              <Avatar
-                src={"https://c.ndtvimg.com/2021-10/gjo8hnng_ms-dhoni-ipl_625x300_07_October_21.jpg"}
-                variant="rounded"
-                alt="user-avatar"
-              />
-              <TextField
-                multiline
-                fullWidth
-                minRows={4}
-                id="outlined-multilined"
-                placeholder="Add a comment"
-                value={commentTxt}
-                onChange={(e) => {
-                  setCommentTxt(e.target.value);
-                }}
-              />
-              <Button variant="contained"
-                size="large"
-                sx={{
-                  bgcolor: "custom.moderateBlue",
-                  color: "neutral.white",
-                  p: "8px 25px",
-                  "&:hover": {
-                    bgcolor: "custom.lightGrayishBlue",
-                  },
-                }}
-                onClick={(e) => {
+//     return (
+//       <ThemeProvider >
+//         <Card>
+//           <Box sx={{ p: "15px" }}>
+//             <Stack direction="row" spacing={2} alignItems="flex-start">
+//               <Avatar
+//                 src={"https://c.ndtvimg.com/2021-10/gjo8hnng_ms-dhoni-ipl_625x300_07_October_21.jpg"}
+//                 variant="rounded"
+//                 alt="user-avatar"
+//               />
+//               <TextField
+//                 multiline
+//                 fullWidth
+//                 minRows={4}
+//                 id="outlined-multilined"
+//                 placeholder="Add a comment"
+//                 value={commentTxt}
+//                 onChange={(e) => {
+//                   setCommentTxt(e.target.value);
+//                 }}
+//               />
+//               <Button variant="contained"
+//                 size="large"
+//                 sx={{
+//                   bgcolor: "custom.moderateBlue",
+//                   color: "neutral.white",
+//                   p: "8px 25px",
+//                   "&:hover": {
+//                     bgcolor: "custom.lightGrayishBlue",
+//                   },
+//                 }}
+//                 onClick={(e) => {
                  
-                  setCommentTxt("");
-                }}
-              >
-                Send
-              </Button>
-            </Stack>
-          </Box>
-        </Card>
-      </ThemeProvider>
-    );
-  };
+//                   setCommentTxt("");
+//                 }}
+//               >
+//                 Send
+//               </Button>
+//             </Stack>
+//           </Box>
+//         </Card>
+//       </ThemeProvider>
+//     );
+//   };
   
-  export default AddComments;
+//   export default AddComments;
+import React, { useState } from 'react'
+
+const AddComment = ({children, post}) => {
+  const [content, setContent] = useState('')
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    console.log(post)
+  }
+  return (
+    <form onSubmit={handleSubmit}>
+      {children}
+      <input type="text" placeholder='Add your comments...' value={content} onChange={e => setContent(e.target.value)} />
+      <button type='submit' className='postBtn'>
+        Post
+      </button>
+    </form>
+  )
+}
+
+export default AddComment

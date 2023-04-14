@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Navbar from '../components/UI/Navbar';
 const getLocation = require('./currentLoc');
 
 const CropInputForm = () => {
@@ -51,6 +52,7 @@ const handleLocationChange = (event) => {
 
 return (
 <div>
+  <Navbar />
 <form onSubmit={handleSubmit}>
 <label>
     Location:

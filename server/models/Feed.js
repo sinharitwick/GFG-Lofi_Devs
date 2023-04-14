@@ -30,18 +30,8 @@ const FeedSchema = new mongoose.Schema({
   ],
   comments: [
     {
-      user: {
         type: mongoose.Types.ObjectId,
         ref: "User"
-      },
-      comment: {
-        type: String,
-        required: true
-      },
-      created: {
-        type: Date,
-        default: Date.now
-      }
     }
   ],
   // tag:{
