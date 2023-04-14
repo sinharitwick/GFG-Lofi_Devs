@@ -45,7 +45,7 @@ const Navbar = () => {
           <Link to="/feed">Post</Link>
           <Link to="/about">About</Link>
           {user && <Link to="/cropadvisor">Predict crop</Link>}
-          {user && <Link to="/user">Profile</Link>}
+          {user && <Link to="/profile">Profile</Link>}
           {!user ? (
             <Link to="/login">Login</Link>
           ) : (

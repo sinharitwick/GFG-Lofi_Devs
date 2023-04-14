@@ -5,8 +5,9 @@
     /* background: linear-gradient(to right, #093637, #44A08D); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     /* new */
     background: rgb(54,207,115);
-background: linear-gradient(41deg, rgba(54,207,115,1) 24%, rgba(117,247,101,1) 61%, rgba(168,253,45,0.9697128851540616) 87%);
+    background: linear-gradient(41deg, rgba(54,207,115,1) 24%, rgba(117,247,101,1) 61%, rgba(168,253,45,0.9697128851540616) 87%);
     color: #fff;
+    width: 100%;
   }
   
   .navbar-container {
