@@ -3,7 +3,7 @@ import Loginpage from "./Pages/Loginpage";
 import { Route } from "react-router-dom";
 import Chatpage from "./Pages/Chatpage";
 import Landing from "./components/UI/Landing";
-import CropInputForm from "./Pages/cropAdvisor";
+import CropAdvisorPage from "./Pages/CropAdvisorPage";
 // import Signup from "./components/Authentication/Signup";
 // import Login from "./components/Authentication/Login";
 import UserProfile from "./Pages/UserProfile";
@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <Route path="/" component={Landing} exact />
-      <Route path="/cropadvisor" component={CropInputForm} exact />
+      <Route path="/cropadvisor" component={CropAdvisorPage} exact />
       {/* <Route path="/register" element={<Signup/>}/>
       <Route path="/login" element={<Login/>}/> */}
       <Route path="/login" component={Loginpage} exact />

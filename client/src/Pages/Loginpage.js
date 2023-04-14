@@ -43,7 +43,7 @@ function Homepage() {
           m="40px 0 15px 0"
           borderRadius="lg"
           borderWidth="1px"
-          borderColor="transparent"
+          // borderColor="transparent"
           color="white"
         >
           <Text fontSize="4xl" fontFamily="Work sans">
