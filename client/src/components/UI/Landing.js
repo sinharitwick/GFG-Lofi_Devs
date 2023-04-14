@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import { Link } from 'react-router-dom'
 import Typewriter from "typewriter-effect"
 import './Landing.css'
+import Contact from './Landing/Contact'
 
 function Landing() {
   return (
@@ -29,6 +30,7 @@ function Landing() {
                 <img src={process.env.PUBLIC_URL + '/heroimg.png'} alt="" id="heroimg" />
             </div>
         </div>
+        <Contact />
     </div>
   )
 }
