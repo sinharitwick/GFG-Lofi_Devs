@@ -7,7 +7,7 @@ import Contact from './Landing/Contact'
 
 function Landing() {
   return (
-    <div>
+    <div className='landing'>
         <Navbar />
         <div class="container-landing">
             <div class="left">
