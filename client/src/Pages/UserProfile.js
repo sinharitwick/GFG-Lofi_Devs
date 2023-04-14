@@ -3,7 +3,7 @@ import "./UserProfile.css";
 import Navbar from "../components/UI/Navbar";
 import Post from "../components/post/post";
 import { Link } from "react-router-dom";
-
+import Wcard from "../WeatherComp/Wcard";
 const UserProfile = () => {
   const user = JSON.parse(localStorage.getItem("userInfo"));
   const feedsInitial = [];
@@ -71,6 +71,7 @@ const UserProfile = () => {
             ))}
           </div>
         </div>
+        <Wcard />
       </div>
     </>
   );
