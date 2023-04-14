@@ -24,16 +24,26 @@ function Homepage() {
 
   return (
     <div className="LoginPage">
-      <Container maxW="xl" centerContent>
+      <Container
+        maxW="65vw"
+        centerContent
+        m="unset"
+        alignItems="baseline"
+        bg="rgba(71, 71, 71, 0.5)"
+        h="100vh"
+        pl="15vw"
+        pr="15vw"
+        className="mylogin"
+      >
         <Box
           d="flex"
           justifyContent="center"
           p={3}
-          bg="rgba(71, 71, 71, 0.5);"
           w="100%"
           m="40px 0 15px 0"
           borderRadius="lg"
           borderWidth="1px"
+          borderColor="transparent"
           color="white"
         >
           <Text fontSize="4xl" fontFamily="Work sans">
@@ -41,12 +51,12 @@ function Homepage() {
           </Text>
         </Box>
         <Box
-          bg="rgba(71, 71, 71, 0.5);"
           w="100%"
           p={4}
           borderRadius="lg"
           borderWidth="1px"
           color="white"
+          borderColor="transparent"
         >
           <Tabs isFitted variant="soft-rounded">
             <TabList mb="1em">
