@@ -13,9 +13,11 @@ function Feedpage() {
   const [blogs, setBlogs] = useState([]);
   const [userdata, setUserdata] = useState({});
   const [posts, setPosts] = useState([]);
-  let id=JSON.parse(localStorage.getItem("userInfo", 'token'))
+ 
   const fetchPosts = async () => {
-    const res =await  axios.get(`http://localhost:5000/api/blog/post/${id}`)
+    let id=JSON.parse(localStorage.getItem("userInfo"))
+    console.log(id)
+    const res =await  axios.get(`http://localhost:5000/api/blog/post/${id._id}`)
     // const res =await  axios.get(`/api/blog/post/${id}`)
    const data=res.data;
     console.log(data.blogs)
@@ -30,7 +32,8 @@ function Feedpage() {
     setBlogsall(data.blogs);
   }
   const fetchdata=async()=>{
-      const ress=await axios.get(`http://localhost:5000/api/user/getuser/${id}`);
+    let id=JSON.parse(localStorage.getItem("userInfo"))
+      const ress=await axios.get(`http://localhost:5000/api/user/getuser/${id._id}`);
       // const ress=await axios.get(`/api/user/getuser/${id}`);
       const d=ress.data;
       setUserdata(d.data);
@@ -61,7 +64,7 @@ navigate.push('/login');
           {!switchfeed? <FeedAll blogsall={blogsall}   fetchposts={fetchallblogs}/>: <Feed blogs={blogs} user={userdata}  fetchposts={fetchPosts} /> }
           <Rightbar />
         </Stack>
-        <Add user={userdata} fetchposts={fetchPosts}/>
+        <Add user={userdata} fetchposts={fetchPosts}  fetchallblogs={fetchallblogs}/>
       </Box>
     </ThemeProvider>
    </>
