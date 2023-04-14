@@ -41,6 +41,7 @@ const Navbar = () => {
       <div className="navbar-container">
         <div className="navbar-brand">
           <Link to="/">FarmStack</Link>
+          {/* <Link to="/"><img src={process.env.PUBLIC_URL + '/FS.png'} alt="" id="heroimg" /></Link> */}
         </div>
         <div className={`navbar-menu ${isOpen ? "is-active" : ""}`}>
           <Link to="/cropadvisor">Predict Crop</Link> 
