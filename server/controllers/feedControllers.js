@@ -258,7 +258,7 @@ const getPostByUser=async(req,res,next)=>{
         
     } catch (error) {
         console.log(error);
-        res.status(500).send("Internal sever Error")
+        res.status(500).send("Internal server Error")
     }
 }
 module.exports = {

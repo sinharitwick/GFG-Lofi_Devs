@@ -35,7 +35,7 @@ import {
     marginBottom: "20px",
   });
   
-  const Add = ({user,fetchposts}) => {
+  const Add = ({user,fetchposts,fetchallblogs}) => {
     const [post, setPost] = useState({title:"",description:"",imageurl:""})
     const handlechange=(e)=>{
         setPost({...post,[e.target.name]:e.target.value});
@@ -49,6 +49,7 @@ import {
         setPost({title:"",description:"",imageurl:""})
         setOpen(false)
         fetchposts();
+        fetchallblogs();
     }
     const [open, setOpen] = useState(false);
     return (

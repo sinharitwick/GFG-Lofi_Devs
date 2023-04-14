@@ -42,7 +42,7 @@ useEffect(() => {
     <Card sx={{ margin: 5 }}>
       <CardHeader
         avatar={
-          <Avatar sx={{ bgcolor: "red" }} aria-label="recipe">
+          <Avatar sx={{ bgcolor: "green" }} aria-label="recipe">
             {userinfo?.name?.charAt(0)}
           </Avatar>
         }
@@ -72,8 +72,8 @@ useEffect(() => {
         </IconButton>
        
       </CardActions>
-      {/* <AddComments/>
-      <Comment/> */}
+      <AddComments/>
+      <Comment/>
     </Card>
   );
 };

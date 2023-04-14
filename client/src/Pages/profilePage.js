@@ -1,148 +1,42 @@
-// import React from 'react'
-// import "./profile.css";
-// function profilePage() {
-//   return (
-//     <div className='profile'>
-//         <div className='profileCover'>
-
-//         </div>
-//         <div className='profileImg'>
-
-//         </div>
-//         <div className='profileDetails'>
-//             <p>Bikramjit Das</p>
-//             <p>guwahati,Assam</p>
-//             <div className='profileMessage'>
-//                 <button className='message'>Message</button>
-//                 <p>Jan 2023</p>
-//             </div>
-//         </div>
-//     </div>
-//   )
-// }
-
-// export default profilePage
-
-// import React, { useEffect, useState } from "react";
-// import "./UserProfile.css";
-// import Navbar from "../components/UI/Navbar";
-// import { Link,useParams } from "react-router-dom";
+import React from 'react'
+import Navbar from '../components/UI/Navbar';
+import "./profile.css";
 // import axios from "axios";
-// const Profile = () => {
-//   const user = JSON.parse(localStorage.getItem("userInfo"));
-//   const {userName}=useParams();
-//   //chat access page
-
-//   const config = {
-//     headers: {
-//       Authorization: `Bearer ${user.token}`,
-//     },
-//   };
-
-//   const  data  =  axios.get(`/api/user?search=${userName}`, config);
-//   const userdata=data.json();
-//   console.log(userdata);
-//   return (
-//     <>
-//       <Navbar />
-//       <div className="user-profile">
-//         <div className="user-info">
-//           <img src={data.pic} alt="User avatar" className="avatar" />
-//           <h3 className="username">{data.name}</h3>
-//           <p className="user-description">
-//             Agriculture enthusiast looking for an Agritech startup
-//           </p>
-//         </div>
-
-//         <div className="user-details">
-//           <div className="detail">
-//             <p className="detail-title">Location</p>
-//             <p className="detail-value">San Francisco, CA</p>
-//           </div>
-//           <div className="detail">
-//             <p className="detail-title">{data.email} </p>
-//           </div>
-//           <div className="detail">
-//             <p className="detail-title">Member since</p>
-//             <p className="detail-value">January 2020</p>
-//           </div>
-//           <div className="chatUser">
-//             <Link to="/chats">
-//               <button>Start Chat</button>
-//             </Link>
-//           </div>
-//         </div>
-//       </div>
-//     </>
-//   );
-// };
-
-// export default Profile;
-
-import React, { useEffect, useState } from "react";
-import "./UserProfile.css";
-import Navbar from "../components/UI/Navbar";
-import { Link, useParams } from "react-router-dom";
-
-const Profile = () => {
-  const user = JSON.parse(localStorage.getItem("userInfo"));
-  const { userName } = useParams();
-
-  const [userData, setUserData] = useState({});
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await fetch(`/api/user?search=${userName}`, {
-        headers: {
-          Authorization: `Bearer ${user.token}`,
-          // "Content-Type": "application/json",
-        },
-      });
-      const data = await response.json();
-      console.log(data);
-      setUserData(data);
-      console.log(userName);
-    };
-    fetchData();
-  }, [userName,user.token]);
-
-  if (!userData) {
-    return <p>Loading...</p>;
-  }
-
+function profilePage({data, user}) {
+  // const host = "http://localhost:5000"
+  // const id = JSON.parse(localStorage.getItem("userInfo", 'token'))
+  // const handlegetuser = async() => {
+  //   const ures = await axios.get(`${host}/api/user/getuser/${data._id}`);
+  //   console.log(ures.data);
+  // }
   return (
-    <>
+    <div className='user-page'>
       <Navbar />
-      <div className="user-profile">
-        <div className="user-info">
-          <img src={userData[0].pic} alt="User avatar" className="avatar" />
-          <h3 className="username">{userData[0].name}</h3>
-          <p className="user-description">
-            Agriculture enthusiast looking for an Agritech startup
-          </p>
-        </div>
-
-        <div className="user-details">
-          <div className="detail">
-            <p className="detail-title">Location</p>
-            <p className="detail-value">San Francisco, CA</p>
-          </div>
-          <div className="detail">
-            <p className="detail-title">{userData[0].email} </p>
-          </div>
-          <div className="detail">
-            <p className="detail-title">Member since</p>
-            <p className="detail-value">January 2020</p>
-          </div>
-          <div className="chatUser">
-            <Link to="/chats">
-              <button>Start Chat</button>
-            </Link>
+      <div className="user-container">
+        <div className="profile-card">
+          <img src="https://images.unsplash.com/photo-1599009876320-01a3d33c197d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8OHx8fGVufDB8fHx8&w=1000&q=80" className='cover-pic' alt="" />
+          <img src="https://i.pinimg.com/736x/d0/31/68/d031686a12387f1dd901313af7a57372.jpg" className='profile-pic' alt="" />
+          <p className='user-name'>Clint Barton</p>
+          <p>Avenger</p>
+          <a href="" className='follow-btn'>Follow</a>
+          <div className='row'>
+            <div>
+              <p>Followers</p>
+              <h2>1.25M</h2>
+            </div>
+            <div>
+              <p>Following</p>
+              <h2>25</h2>
+            </div>
+            <div>
+              <p>Posts</p>
+              <h2>1</h2>
+            </div>
           </div>
         </div>
       </div>
-    </>
-  );
-};
+    </div>
+  )
+}
 
-export default Profile;
+export default profilePage;

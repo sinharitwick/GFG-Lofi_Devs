@@ -1,23 +1,60 @@
-.profileCover{
-position: relative;
-width: 70vw;
-height: 341px;
-left:15vw;
-
-
-background: linear-gradient(90deg, rgba(153, 207, 64, 0.84) 0%, rgba(111, 181, 114, 0.73) 100%);
+.user-page {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.profileImg{
-    position: relative;
-    top: 2rem;
+
+.user-container {
+    width: 100%;
+    min-height: 90vh;
+    /* background: #212121; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-card {
+    width: 90%;
+    max-width: 450px;
+    text-align: center;
+    background: #fff;
+    color: #333;
+}
+
+.user-name {
+    font-weight: bolder;
+}
+
+.cover-pic {
+    display: block;
+    width: 100%;
+}
+
+.profile-pic {
+    width: 140px;
     border-radius: 50%;
-    background: url('../../public/user.png');
+    margin-top: -70px;
+    margin-left: 33%;
 }
-.profileDetails{
-    display: flex;
-    flex-direction: column;
+
+.profile-card h1{
+    font-weight: 600;
 }
-profileMessage{
+
+.follow-btn {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #ff004f;
+    padding: 6px 35px;
+    margin: 25px 0;
+}
+
+.row {
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
+}
+
+.row h2 {
+    font-weight: 500;
+    font-size: 30px;
 }

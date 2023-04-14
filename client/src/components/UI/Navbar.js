@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink} from "react-scroll";
 import "./Navbar.css";
 import { useHistory } from "react-router-dom";
 import { ChatState } from "../../Context/ChatProvider";
@@ -39,13 +40,20 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-brand">
-          <Link to="/">F a r m S t a c k</Link>
+          <Link to="/">FarmStack</Link>
         </div>
         <div className={`navbar-menu ${isOpen ? "is-active" : ""}`}>
-          <Link to="/feed">Post</Link>
-          <Link to="/about">About</Link>
-          {user && <Link to="/cropadvisor">Predict crop</Link>}
-          {user && <Link to="/user">Profile</Link>}
+          <Link to="/cropadvisor">Predict Crop</Link> 
+          {!user ? (
+            <>
+            <ScrollLink to="about" smooth={true} duration={500} className="hover:cursor-pointer">About</ScrollLink>
+            <ScrollLink to="contact" smooth={true} className="hover:cursor-pointer">Contact Us</ScrollLink>
+            </>
+          ) : (
+            <Link to="/feed">Feed</Link>
+          )}
+          {/* {user && <Link to="/cropadvisor">Predict crop</Link>} */}
+          {user && <Link to="/profile">Profile</Link>}
           {!user ? (
             <Link to="/login">Login</Link>
           ) : (

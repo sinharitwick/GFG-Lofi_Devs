@@ -4,9 +4,11 @@
     /* background: -webkit-linear-gradient(to right, #093637, #44A08D);  Chrome 10-25, Safari 5.1-6 */
     /* background: linear-gradient(to right, #093637, #44A08D); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     /* new */
-    background: rgb(54,207,115);
-background: linear-gradient(41deg, rgba(54,207,115,1) 24%, rgba(117,247,101,1) 61%, rgba(168,253,45,0.9697128851540616) 87%);
+    /* background: rgb(54,207,115); */
+    /* background: linear-gradient(41deg, rgba(54,207,115,1) 24%, rgba(117,247,101,1) 61%, rgba(168,253,45,0.9697128851540616) 87%); */
+    background: rgba(77, 75, 75, 0.21);
     color: #fff;
+    width: 100%;
   }
   
   .navbar-container {
@@ -32,6 +34,19 @@ background: linear-gradient(41deg, rgba(54,207,115,1) 24%, rgba(117,247,101,1) 6
     display: block;
   }
 
+  .navbar-menu p {
+    color: #352e2e;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar-menu p:hover{
+    color: rgb(72, 184, 72);
+    transition: 0.5s ease;
+  }
+
   .navbar-menu a:hover{
     color: rgb(72, 184, 72);
     transition: 0.5s ease;
@@ -48,13 +63,14 @@ background: linear-gradient(41deg, rgba(54,207,115,1) 24%, rgba(117,247,101,1) 6
   .navbar-burger {
     cursor: pointer;
     display: flex;
+    flex-direction: column;
   }
   
   .navbar-burger span {
-    background-color: #fff;
+    background-color: #000;
     width: 1.5rem;
     height: 0.25rem;
-    margin: 0.3rem;
+    margin: 0.1rem;
     border-radius: 4px;
     display: block;
   }

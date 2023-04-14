@@ -25,19 +25,19 @@ import {
         <Box position="fixed">
           <List>
             <ListItem disablePadding>
-              <ListItemButton onClick={()=>{setSwitchfeed(false)}}>
-                <ListItemIcon>
-                  <Home />
-                </ListItemIcon>
-                <ListItemText primary="Homepage" />
-              </ListItemButton>
-            </ListItem>
-            <ListItem disablePadding>
               <ListItemButton component="a" href="#simple-list">
                 <ListItemIcon>
                   <Article />
                 </ListItemIcon>
                 <ListItemText primary="Pages" />
+              </ListItemButton>
+            </ListItem>
+            <ListItem disablePadding>
+              <ListItemButton onClick={()=>{setSwitchfeed(false)}}>
+                <ListItemIcon>
+                  <Home />
+                </ListItemIcon>
+                <ListItemText primary="Homepage" />
               </ListItemButton>
             </ListItem>
             
