@@ -1,5 +1,5 @@
-const Blog = require('../models/Blog')
-const User = require('../models/User')
+const Blog = require('../models/Feed')
+const User = require('../models/userModel')
 const mongoose = require('mongoose')
 
 const getAllBlogs = async (req, res, next) => {
