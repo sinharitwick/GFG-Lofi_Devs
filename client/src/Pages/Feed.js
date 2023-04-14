@@ -8,40 +8,57 @@ function Feed() {
   // const host = "http://localhost:5000";
   const feedsInitial = [];
   const [feeds, setFeeds] = useState(feedsInitial);
+  const [users,setUsers]=useState([]);
+  const data = JSON.parse(localStorage.getItem("userInfo"));
+  const token = data.token;
+  console.log(token);
+  const headers = {
+    "Content-Type": "application/json",
+  };
+
+  if (token) {
+    headers.Authorization = `Bearer ${token}`;
+  }
   const getFeeds = async () => {
     //fetching token
-    const data = JSON.parse(localStorage.getItem("userInfo"));
-    const token = data.token;
-    console.log(token);
-    const headers = {
-      "Content-Type": "application/json",
-    };
+   
 
-    if (token) {
-      headers.Authorization = `Bearer ${token}`;
-    }
     //API call
     const response = await fetch("/api/feed/fetchallfeed", {
       method: "GET",
       headers,
-      // headers: {
-      //   "Content-Type": "application/json",
-      //   Accept: "application/json",
-      //   //   "auth-token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJkNjZlZjA2NTYyN2Y2NmFlOTM3MGIzIn0sImlhdCI6MTY1ODIyMDM2OX0.fyV7JLu980KmYlYwQi3YiveaAif1zQxhRxH0DEwJDuA"
-      //   // "auth-token": localStorage.getItem("token"),
-      //   Authorization: `Bearer ${localStorage.getItem("token")}`,
-      // },
     });
     const json = await response.json();
     console.log(json);
     setFeeds(json);
   };
 
+  const getUsers = async () => {
+    // const data = JSON.parse(localStorage.getItem("userInfo"));
+    // const token = data.token;
+    // console.log(token);
+    // const headers = {
+    //   "Content-Type": "application/json",
+    // };
+
+    // if (token) {
+    //   headers.Authorization = `Bearer ${token}`;
+    // }
+    const response = await fetch("/api/user", {
+      method: "GET",
+      headers,
+    });
+    const json = await response.json();
+    console.log(json);
+    setUsers(json);
+  };
+
   console.log("hello");
 
   useEffect(() => {
     getFeeds();
-  }, []);
+    getUsers();
+  }, [feeds]);
 
   return (
     <>
@@ -49,10 +66,17 @@ function Feed() {
       <div className="feed">
         <div className="feedWrapper">
           <Share />
-          {feeds.map((p) => {
+          {/* {feeds.map((p) => {
             // return the Post component here
             return <Post key={p.id} post={p} />;
+          })} */}
+
+          {/* new one */}
+            {feeds.map((post) => {
+            const userd = users.find((user) => user._id === post.user);
+            return <Post key={post.id} post={post} userName={userd?userd:data} />;
           })}
+
         </div>
       </div>
 

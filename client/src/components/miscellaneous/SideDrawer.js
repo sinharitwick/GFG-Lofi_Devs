@@ -20,7 +20,7 @@ import { Tooltip } from "@chakra-ui/tooltip";
 import { BellIcon, ChevronDownIcon } from "@chakra-ui/icons";
 import { Avatar } from "@chakra-ui/avatar";
 import { useHistory } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import { useToast } from "@chakra-ui/toast";
 import ChatLoading from "../ChatLoading";
@@ -122,6 +122,10 @@ function SideDrawer() {
     }
   };
 
+  useEffect(() => {
+    console.log(searchResult);
+  }, []);
+
   return (
     <>
       <Box
@@ -207,11 +211,11 @@ function SideDrawer() {
             {loading ? (
               <ChatLoading />
             ) : (
-              searchResult?.map((user) => (
+              searchResult?.map((userd) => (
                 <UserListItem
-                  key={user._id}
-                  user={user}
-                  handleFunction={() => accessChat(user._id)}
+                  key={userd._id}
+                  user={userd}
+                  handleFunction={() => accessChat(userd._id)}
                 />
               ))
             )}

@@ -19,6 +19,14 @@ const allUsers = asyncHandler(async (req, res) => {
   res.send(users);
 });
 
+//get users based on object id
+
+const particularUser = asyncHandler(async (req, res) => {
+  const userid = req.params.id.trim();
+  const user = await User.findById(userid);
+  res.send(user);
+});
+
 //@description     Register new user
 //@route           POST /api/user/
 //@access          Public
@@ -98,4 +106,10 @@ const logoutUser = asyncHandler(async (req, res) => {
 
 // router.post("/logout", protect, logoutUser);
 
-module.exports = { allUsers, registerUser, authUser, logoutUser };
+module.exports = {
+  allUsers,
+  registerUser,
+  authUser,
+  logoutUser,
+  particularUser,
+};

@@ -48,7 +48,11 @@ code {
    margin: unset !important;
    padding: unset !important;
 }
-
+.chatContainer{
+  display: flex !important;
+  flex-wrap: wrap;
+  flex-direction: row !important;
+}
 
 @media screen and (max-width:450px) {
   .myweather{
