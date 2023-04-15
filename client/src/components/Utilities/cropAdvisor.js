@@ -66,6 +66,8 @@ const CropInputForm = () => {
   //   curlocation="Enter Location";
   // }
 
+        
+  
   return (
     <div className="cropadvisor">
       <Box>
@@ -146,14 +148,14 @@ const CropInputForm = () => {
           </Center>
         </form>
 
-        {crops && (
-          <Box mt={6}>
-            <Heading as="h2" size="lg" style={{ color: "white" }}>
-              Predicted Crop: {crops}
-            </Heading>
-          </Box>
-        )}
-      </Box>
+    {crops && (
+        <Box mt={6} >
+        <Heading as="h2" size="lg" style={{color:'black'}}>
+            Predicted Crop: {crops}
+        </Heading>
+        </Box>
+    )}
+    </Box>
     </div>
   );
 };
