@@ -39,4 +39,4 @@ function profilePage({data, user}) {
   )
 }
 
-export default profilePage
+export default profilePage;
