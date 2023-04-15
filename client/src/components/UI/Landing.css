@@ -10,7 +10,8 @@
     /* background: #c5d79f !important; 
     background: -webkit-linear-gradient(to right, #093637, #44A08D); 
     background: linear-gradient(to right, #093637, #44A08D); */
-    background: url('../../jjj.png');
+    background-image: url('../../landing6.png');
+    
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -58,7 +59,8 @@ box-shadow: 0px 14px 80px rgba(252, 56, 56, 0.4);
     display: inline-flex;
     /* background-image: linear-gradient(91.46deg, #D16BA5 3.74%, #86A8E7 51.1%, #5FFBF1 99.46%); */
     /* background: linear-gradient(to left, #00b09b, #96c93d); */
-    background: rgba(101, 146, 66, 0.6);
+    /* background: rgba(101, 146, 66, 0.6); */
+    background: rgb(19 36 3 / 89%);
     padding: 15px 35px;
     border-radius: 15px;
     /* color: #fff; */
@@ -79,7 +81,8 @@ box-shadow: 0px 14px 80px rgba(252, 56, 56, 0.4);
     /* background: rgb(3,83,35);
     background: linear-gradient(41deg, rgba(3,83,35,1) 0%, rgba(168,253,45,0.9697128851540616) 77%);
     color: linear-gradient(41deg, rgba(34,195,52,1) 0%, rgba(227,253,45,1) 77%); */
-    background:rgb(45 102 1 / 60%)
+    /* background:rgb(45 102 1 / 60%) */
+    background: rgb(0 57 0 / 56%);
 }
 
 .left button a{
