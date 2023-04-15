@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Italiana&family=Raleway&display=swap');
+
 .cropform{
-    -webkit-box-shadow: 5px -7px 69px 7px rgba(17,158,29,0.54);
-    -moz-box-shadow: 5px -7px 69px 7px rgba(17,158,29,0.54);
-    box-shadow: 5px -7px 69px 7px rgba(17,158,29,0.54);
+    -webkit-box-shadow: 16px 21px 47px 14px rgba(0,0,0,0.75);
+-moz-box-shadow: 16px 21px 47px 14px rgba(0,0,0,0.75);
+box-shadow: 16px 21px 47px 14px rgba(0,0,0,0.75);
+}
+.croptext{
+    font-family: 'Raleway';
 }

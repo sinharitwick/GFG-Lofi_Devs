@@ -58,6 +58,22 @@ function ProfilePage() {
       mode: mode,
     },
   });
+
+// let data =userdata.createdAt;
+// let dateobj = new Date(data.createdAt); // create a Date object from the string
+// let month = dateobj.getMonth() + 1; // get the month index and add 1
+// let year = dateobj.getFullYear(); // get the year
+// console.log(month, year); // 12 2021
+// const mydate = userdata.map(user => user.createdAt.getMonth() + 1 + '-' + user.createdAt.getFullYear());
+const [mydate, setMydate] = useState('');
+useEffect(() => {
+  if (userdata && userdata.createdAt) {
+    const date = new Date(userdata.createdAt);
+    const options = { year: 'numeric', month: 'long' };
+    const formattedDate = date.toLocaleDateString(undefined, options);
+    setMydate(formattedDate);
+  }
+}, [userdata]);
   return (
     <div className="user-page">
       <Navbar />
@@ -76,7 +92,7 @@ function ProfilePage() {
                   <button className="messagebtn">Message</button>
                 </Link>
               </p>
-              <p className="user-join">2020 jan</p>
+              <p className="user-join">{mydate}</p>
             </div>
           </div>
           <p style={{ fontWeight: "bold", color: "black" }}>My Posts</p>
