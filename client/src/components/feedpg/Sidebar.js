@@ -37,19 +37,19 @@ import {
                 <ListItemIcon>
                   <Home />
                 </ListItemIcon>
-                <ListItemText primary="Homepage" />
+                <ListItemText primary="Feed" />
               </ListItemButton>
             </ListItem>
             
             
-            <ListItem disablePadding>
+            {/* <ListItem disablePadding>
               <ListItemButton component="a" href="#simple-list">
                 <ListItemIcon>
                   <Person />
                 </ListItemIcon>
                 <ListItemText primary="Friends" />
               </ListItemButton>
-            </ListItem>
+            </ListItem> */}
             
             <ListItem disablePadding onClick={()=>{setSwitchfeed(true)}}>
               <ListItemButton>
