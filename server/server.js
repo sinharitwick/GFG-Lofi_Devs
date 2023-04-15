@@ -28,7 +28,7 @@ app.use(function (req, res, next) {
 app.use("/api/user", userRoutes);
 app.use("/api/chat", chatRoutes);
 app.use("/api/message", messageRoutes);
-app.use("/api/feed", require("./routes/feeds"));
+// app.use("/api/feed", require("./routes/feeds"));
 app.use("/api/cropAdvisor", cropAdvisor);
 app.use("/api/schemes", schemes);
 app.use("/api/blog", require("./routes/feedRoutes"));
