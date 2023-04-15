@@ -39,7 +39,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <div className="navbar-brand">
+        <div div className="navbar-brand">
           <Link to="/">FarmStack</Link>
           {/* <Link to="/"><img src={process.env.PUBLIC_URL + '/FS.png'} alt="" id="heroimg" /></Link> */}
         </div>

@@ -22,7 +22,10 @@
     align-items: center;
     padding: 0.1rem;
   }
-  
+  /* .navbar-brand{
+    width: 2rem;
+    margin-left: 3rem;
+  } */
   .navbar-brand a {
     color: rgb(4, 22, 4);
     font-weight: bold;
