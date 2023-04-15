@@ -22,10 +22,7 @@
     align-items: center;
     padding: 0.1rem;
   }
-  /* .navbar-brand{
-    width: 2rem;
-    margin-left: 3rem;
-  } */
+  
   .navbar-brand a {
     color: rgb(4, 22, 4);
     font-weight: bold;
@@ -61,34 +58,63 @@
   }
   
   .navbar-menu {
-    display: none;
-  }
-  
-  .navbar-menu.is-active {
     display: flex;
   }
+
+  /* Navbar menu on mobile */
+  .navbar-menu.is-active {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 60px;
+    right: 0; /* Updated to place the menu on the right */
+    width: 100%;
+    background-color: #333;
+    padding: 20px;
+  }
   
-  .navbar-burger {
+  /* Navbar menu items on mobile */
+  .navbar-item {
+    margin-bottom: 10px;
+  }
+  
+  /* Navbar toggle button */
+  .navbar-toggler {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none; /* Updated to hide the hamburger icon by default */
+  }
+  
+  /* .navbar-burger {
     cursor: pointer;
     display: flex;
     flex-direction: column;
-  }
+  } */
   
-  .navbar-burger span {
+  /* .navbar-burger span {
     background-color: #000;
     width: 1.5rem;
     height: 0.25rem;
     margin: 0.1rem;
     border-radius: 4px;
     display: block;
-  }
+  } */
   
-  @media screen and (min-width: 769px) {
-    .navbar-menu {
-      display: flex;
-    }
-    .navbar-burger {
-      display: none;
-    }
+  @media screen and (max-width: 768px) {
+/* Show the hamburger icon on mobile screens */
+.navbar-toggler {
+  display: block;
+}
+
+/* Hide the regular navbar menu items on mobile screens */
+.navbar-menu {
+  display: none;
+}
   }
   

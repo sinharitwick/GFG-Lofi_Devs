@@ -24,14 +24,14 @@ import {
       <Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
         <Box position="fixed">
           <List>
-            <ListItem disablePadding>
+            {/* <ListItem disablePadding>
               <ListItemButton component="a" href="#simple-list">
                 <ListItemIcon>
                   <Article />
                 </ListItemIcon>
                 <ListItemText primary="Pages" />
               </ListItemButton>
-            </ListItem>
+            </ListItem> */}
             <ListItem disablePadding>
               <ListItemButton onClick={()=>{setSwitchfeed(false)}}>
                 <ListItemIcon>
@@ -59,14 +59,14 @@ import {
                 <ListItemText primary="My Posts" />
               </ListItemButton>
             </ListItem>
-            <ListItem disablePadding>
+            {/* <ListItem disablePadding>
               <ListItemButton component="a" href="#simple-list">
                 <ListItemIcon>
                   <ModeNight />
                 </ListItemIcon>
                 <Switch onChange={e=>setMode(mode === "light" ? "dark" : "light")}/>
               </ListItemButton>
-            </ListItem>
+            </ListItem> */}
           </List>
         </Box>
       </Box>
