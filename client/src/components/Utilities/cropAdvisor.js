@@ -64,15 +64,15 @@ const CropInputForm= () =>{
   return (
     <div className='cropadvisor'>
 
-        <Box>
+        <Box >
         <form onSubmit={handleSubmit}>
             <FormControl>
-            <FormLabel style={{color:'white'}}>Location:</FormLabel>
+            <FormLabel style={{color:'black'}}>Location:</FormLabel>
             <Input
                 type="text"
                 value={location}
                 onChange={handleLocationChange}
-                style={{color:'white'}}
+                style={{color:'black'}}
                 placeholder="Enter Location"
             />
             </FormControl>
@@ -143,8 +143,8 @@ const CropInputForm= () =>{
     </form>
 
     {crops && (
-        <Box mt={6}>
-        <Heading as="h2" size="lg" style={{color:'white'}}>
+        <Box mt={6} >
+        <Heading as="h2" size="lg" style={{color:'black'}}>
             Predicted Crop: {crops}
         </Heading>
         </Box>

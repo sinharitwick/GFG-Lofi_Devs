@@ -12,7 +12,7 @@ import {
   import Navbar from "../components/UI/Navbar"
 
   import CropInputForm from "../components/Utilities/cropAdvisor";
-  // import './CropAdvisor.css'
+  import './CropAdvisor.css'
 
 function CropAdvisorPage() {
 
@@ -20,6 +20,8 @@ function CropAdvisorPage() {
       <div className="cropAdvisor">
         <Navbar/>
           <Container
+              d="flex"
+              flex="50%"
               maxW="65vw"
               centerContent
               m="unset"
@@ -42,7 +44,7 @@ function CropAdvisorPage() {
             color="white"
             // box-sghadow
           >
-          <Text style={{color:'white'}} fontSize="4xl" fontFamily="Work sans">
+          <Text style={{color:'white'}} fontSize="4xl" className="croptext">
               Crop Advisor
             </Text>
           </Box>
