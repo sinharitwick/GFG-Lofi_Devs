@@ -37,7 +37,7 @@ import {
     gap: "10px",
     marginBottom: "20px",
   });
- 
+
   const Edit = ({user,fetchposts,data}) => {
 
     const [post, setPost] = useState({title:data?.title,description:data?.description,imageurl:data?.image})
