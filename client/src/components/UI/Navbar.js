@@ -8,34 +8,15 @@ const Navbar = () => {
   // let location = useLocation();
   let navigate = useHistory();
   const handleLogout = () => {
-    // localStorage.removeItem("token");
     localStorage.removeItem("userInfo");
     navigate.push("/login");
   };
 
-  // const handleLogout = async () => {
-  //   try {
-  //     // Send a request to the server to invalidate the token
-  //     const response = await fetch("/api/user/logout", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //         Authorization: `Bearer ${localStorage.getItem("token")}`,
-  //       },
-  //     });
-
-  //     // If the request is successful, remove the token from localStorage and redirect to the login page
-  //     if (response.ok) {
-  //       localStorage.removeItem("userInfo");
-  //       navigate.push("/login");
-  //     }
-  //   } catch (error) {
-  //     console.error(error);
-  //   }
-  // };
-
   const [isOpen, setOpen] = useState(false);
   const { user } = ChatState();
+  const toggleNavbar = () => {
+    setOpen(!isOpen);
+  };
   return (
     <nav className="navbar">
       <div className="navbar-container">
@@ -63,11 +44,11 @@ const Navbar = () => {
             </p>
           )}
         </div>
-        <div className="navbar-burger" onClick={() => setOpen(!isOpen)}>
-          <span />
-          <span />
-          <span />
-        </div>
+        {/* <div className="navbar-burger" onClick={() => setOpen(!isOpen)}> */}
+        <button className="navbar-toggler" onClick={toggleNavbar}>
+          <i className={isOpen ? "fas fa-times" : "fas fa-bars"} />
+        </button>
+        {/* </div> */}
       </div>
     </nav>
   );

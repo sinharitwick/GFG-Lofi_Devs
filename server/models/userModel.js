@@ -26,6 +26,10 @@ const userSchema = mongoose.Schema(
       type: Boolean,
       default: false,
     },
+    createdAt: {
+      type: Date,
+      default: Date.now,
+    },
     blogs: [{type: mongoose.Types.ObjectId, ref:"Blog", required:true}]
   },
   { timestaps: true }
