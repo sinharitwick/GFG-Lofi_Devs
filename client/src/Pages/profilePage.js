@@ -6,6 +6,7 @@ import "./profile.css";
 import axios from "axios";
 // import Feed from "../components/feedpg/Feed";
 import Feed from "../components/feedpg/Feed";
+import Add from "../components/feedpg/Add";
 // import Post from "../components/feedpg/Post";
 function ProfilePage() {
   const [blogs, setBlogs] = useState([]);
@@ -68,7 +69,7 @@ function ProfilePage() {
           </div>
           <div className="user-info">
             <p className="user-name">{user.name}</p>
-            <p className="user-city">Avenger</p>
+            <p className="user-city">{user.email}</p>
             <div className="chat-info">
               <p>
                 <Link to="/chats">
@@ -78,6 +79,14 @@ function ProfilePage() {
               <p className="user-join">2020 jan</p>
             </div>
           </div>
+          <p style={{ fontWeight: "bold", color: "black" }}>My post</p>
+          <ThemeProvider theme={darkTheme}>
+            <Add
+              user={userdata}
+              fetchposts={fetdata}
+              fetchallblogs={fetchallblogs}
+            />
+          </ThemeProvider>
           <div className="user-feed">
             <ThemeProvider theme={darkTheme}>
               <Feed blogs={blogs} user={userdata} fetchposts={fetdata} />
