@@ -9,10 +9,10 @@ function Landing() {
   return (
     <div className='landing'>
         <Navbar />
-        <div class="container-landing">
-            <div class="left">
+        <div className="container-landing">
+            <div className="left">
                 <h1 id="msg">
-                  <Typewriter 
+                  {/* <Typewriter 
                   options={{
                     autoStart: true,
                     loop: true,
@@ -21,14 +21,14 @@ function Landing() {
                       "Welcome",
                       "to FarmStack."
                     ]
-                  }} />
+                  }} /> */}
                 </h1>
-                <p id="quote">"The ultimate goal of farming is not the growing of crops, but the cultivation and perfection of human beings." - Masanobu Fukuoka</p>
+                <p id="quote" className='quote'>"The ultimate goal of farming is not the growing of crops, but the cultivation and perfection of human beings." <span className='pspan'>- Masanobu Fukuoka</span> </p>
                 <p className='Fbtn'><Link to="/feed"><button>Explore</button></Link></p>
             </div>
-            <div class="right">
+            {/* <div class="right">
                 <img src={process.env.PUBLIC_URL + '/heroimg.png'} alt="" id="heroimg" />
-            </div>
+            </div> */}
         </div>
         <Contact />
     </div>

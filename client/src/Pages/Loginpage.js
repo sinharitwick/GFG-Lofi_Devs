@@ -12,6 +12,7 @@ import { useEffect } from "react";
 import { useHistory } from "react-router";
 import Login from "../components/Authentication/Login";
 import Signup from "../components/Authentication/Signup";
+import { Link } from "react-router-dom";
 
 function Homepage() {
   const history = useHistory();
@@ -47,7 +48,8 @@ function Homepage() {
           color="white"
         >
           <Text fontSize="4xl" fontFamily="Work sans">
-            FarmStack
+            <Link to="/">FarmStack</Link>
+            
           </Text>
         </Box>
         <Box
