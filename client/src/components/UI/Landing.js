@@ -1,5 +1,5 @@
 import {React, useState, useEffect } from 'react'
-import Navbar from './Navbar'
+import Navbar from '../UI/Navbar'
 import { Link } from 'react-router-dom'
 import Typewriter from "typewriter-effect"
 import './Landing.css'
