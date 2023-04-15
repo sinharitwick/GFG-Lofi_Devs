@@ -6,7 +6,8 @@ import React, { useState } from "react";
 export default function Post(props) {
   // const context=useContext(feedContext);
 
-  const { post } = props;
+  const { post,userName } = props;
+
 
   const [like, setLike] = useState(post.like);
   const [isLiked, setIsLiked] = useState(false);
@@ -22,13 +23,14 @@ export default function Post(props) {
           <div className="postTopLeft">
             <img
               className="postProfileImg"
-              src={process.env.PUBLIC_URL + "/user.png"}
+              // src={process.env.PUBLIC_URL + "/user.png"}
+              src={userName.pic}
               alt=""
             />
             {/* <span className="postUsername">
               {Users.filter((u) => u.id === post?.userId)[0].username}
             </span> */}
-            <span className="postDate">{post.user}</span>
+            <span className="postDate">{userName.name}</span>
           </div>
           <div className="postTopRight">
             <MoreVert />

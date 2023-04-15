@@ -13,6 +13,7 @@ import Profile from "./Pages/profilePage";
 import Schemes from "./Pages/Schemes"
 
 function App() {
+
   return (
     <div className="App">
       <Route path="/" component={Landing} exact />
@@ -24,6 +25,7 @@ function App() {
       <Route path="/user" component={UserProfile} exact />
       <Route path="/feed" component={Feedpg} exact />
       <Route path="/weather" component={WeatherPage} exact />
+      {/* <Route path="/profile/:userName" component={Profile} exact /> */}
       <Route path="/profile" component={Profile} exact/>
       <Route path="/schemes" component={Schemes} exact />
 

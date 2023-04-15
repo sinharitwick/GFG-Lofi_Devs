@@ -19,6 +19,14 @@ const allUsers = asyncHandler(async (req, res) => {
   res.send(users);
 });
 
+//get users based on object id
+
+const particularUser = asyncHandler(async (req, res) => {
+  const userid = req.params.id.trim();
+  const user = await User.findById(userid);
+  res.send(user);
+});
+
 //@description     Register new user
 //@route           POST /api/user/
 //@access          Public
@@ -82,16 +90,16 @@ const authUser = asyncHandler(async (req, res) => {
   }
 });
 
-const getUserById=async(req,res,next)=>{
-  const userId=req.params.id;
- try {
-  const userdata=await User.findById(userId);
-  res.status(200).json({data:userdata});
- } catch (error) {
-  console.log(error);
-  res.status(500).send("Internal Server Error");
- }
-}
+const getUserById = async (req, res, next) => {
+  const userId = req.params.id;
+  try {
+    const userdata = await User.findById(userId);
+    res.status(200).json({ data: userdata });
+  } catch (error) {
+    console.log(error);
+    res.status(500).send("Internal Server Error");
+  }
+};
 
 //@description Logout the user
 //@route POST /api/users/logout
@@ -109,4 +117,11 @@ const logoutUser = asyncHandler(async (req, res) => {
 
 // router.post("/logout", protect, logoutUser);
 
-module.exports = { allUsers, registerUser, authUser, getUserById, logoutUser };
+module.exports = {
+  allUsers,
+  registerUser,
+  authUser,
+  particularUser,
+  getUserById,
+  logoutUser,
+};
