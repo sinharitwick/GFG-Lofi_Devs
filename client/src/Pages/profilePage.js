@@ -79,7 +79,7 @@ function ProfilePage() {
               <p className="user-join">2020 jan</p>
             </div>
           </div>
-          <p style={{ fontWeight: "bold", color: "black" }}>My post</p>
+          <p style={{ fontWeight: "bold", color: "black" }}>My Posts</p>
           <ThemeProvider theme={darkTheme}>
             <Add
               user={userdata}
