@@ -114,6 +114,30 @@ box-shadow: 0px 14px 80px rgba(252, 56, 56, 0.4);
   }
 } */
 
+.footer {
+    width: 100%;
+    background: #000;
+    padding: 20px 0;
+  }
+  .footer p {
+    font: 200 15.52px/28px "Poppins", sans-serif;
+    color: #fff;
+  }
+  .footer span {
+    font-weight: 500;
+  }
+  .footer-container {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+  }
+  .fc-left {
+    margin-left: 1rem;
+  }
+  .fc-right {
+    margin-right: 1rem
+  }
+
 @media screen and (max-width:768px) {
     .container-landing{
         flex-direction: column;
@@ -126,6 +150,10 @@ box-shadow: 0px 14px 80px rgba(252, 56, 56, 0.4);
         margin: 2rem;
         width: 18rem;
     }
+    .footer-container {
+        flex-direction: column;
+        /* justify-content: space-between; */
+      }
 }
 @media screen and (max-width:320px)
 {
@@ -137,4 +165,8 @@ box-shadow: 0px 14px 80px rgba(252, 56, 56, 0.4);
     .left button{
         font-size: 0.6rem;
     }
+    .footer-container {
+        flex-direction: column;
+        /* justify-content: space-between; */
+      }
 }
