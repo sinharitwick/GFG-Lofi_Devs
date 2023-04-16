@@ -5,7 +5,6 @@
     /* background-color: #333; */
     
     /* color: #1e4403; */
-
   }
   .landing{
     /* background: #c5d79f !important; 
@@ -20,8 +19,6 @@
     scroll-behavior: smooth;
     scrollbar-width: unset;
     filter: drop-shadow(2px 10px 10px #3f5216);
-    
-
   }
 .container-landing{
     display: flex;

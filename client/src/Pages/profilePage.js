@@ -95,7 +95,7 @@ useEffect(() => {
               <p className="user-join">{mydate}</p>
             </div>
           </div>
-          <p style={{ fontWeight: "bold", color: "black" }}>My post</p>
+          <p style={{ fontWeight: "bold", color: "black" }}>My Posts</p>
           <ThemeProvider theme={darkTheme}>
             <Add
               user={userdata}
