@@ -28,7 +28,7 @@ const Navbar = () => {
   const stickNavbar = () => {
     if (window !== undefined) {
       let windowHeight = window.scrollY;
-      windowHeight > 0 ? setStickyClass('fixed top-0 left-0 z-50') : setStickyClass('relative');
+      windowHeight > 100 ? setStickyClass('fixed top-0 left-0 z-50') : setStickyClass('relative');
     }
   };
     
