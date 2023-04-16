@@ -8,7 +8,7 @@ function App() {
 
   useEffect(() => {
     const fetchSchemes = async () => {
-      const res = await axios.get('http://localhost:5000/api/schemes');
+      const res = await axios.get('http://34.131.124.34:5000/api/schemes');
       setSchemes(res.data);
     };
     fetchSchemes();

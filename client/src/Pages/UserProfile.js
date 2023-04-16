@@ -10,7 +10,7 @@ const UserProfile = () => {
   const [feeds, setFeeds] = useState(feedsInitial);
   const getFeeds = async () => {
     //API call
-    const response = await fetch("/api/feed/fetchallfeeds", {
+    const response = await fetch("http://34.131.124.34:5000/api/feed/fetchallfeeds", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
