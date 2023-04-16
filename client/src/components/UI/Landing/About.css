@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Italiana&family=Poppins:wght@300&family=Raleway&display=swap');
 .landing-post{
     display: flex;
     flex-direction: row;
@@ -26,6 +27,14 @@
 .Aboutpg{
     display: flex;
     flex-direction: column;
+}
+.abouthead{
+    font-family: 'Raleway';
+    font-weight: 300;
+    font-size: xxx-large;
+}
+.aboutpara{
+    font-family: 'Poppins', sans-serif;
 }
 @media screen and (max-width:480px) {
     .uti-text{

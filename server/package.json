@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "nodemon start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm i"
   },
   "author": "bikdev",
   "license": "ISC",
@@ -20,7 +21,6 @@
     "express-async-handler": "^1.2.0",
     "express-validator": "^6.15.0",
     "jsonwebtoken": "^9.0.0",
-    "mongodb": "3.7",
     "mongoose": "^7.0.3",
     "nodemon": "^2.0.21",
     "socket.io": "^4.6.1"
