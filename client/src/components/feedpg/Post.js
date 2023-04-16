@@ -29,7 +29,7 @@ const Post = ({data,user,fetchposts}) => {
     <Card sx={{ margin: 5 }}>
       <CardHeader
         avatar={
-          <Avatar sx={{ bgcolor: "red" }} aria-label="recipe">
+          <Avatar sx={{ bgcolor: "green" }} aria-label="recipe">
             {user?.name[0]}
           </Avatar>
         }
