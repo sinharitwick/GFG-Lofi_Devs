@@ -26,7 +26,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="Schemes">
       {schemes.length > 0 && (
         <div>
           {!showAllSchemes && (
