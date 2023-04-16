@@ -11,28 +11,30 @@ import {
   Spinner,
 } from "@chakra-ui/react";
 import "./cropadvisor.css";
-import { color } from "@mui/system";
-const getLocation = require("./currentLoc");
-
+// import { color } from "@mui/system";
+import { UilLocationPoint } from "@iconscout/react-unicons";
+// import { toast } from "react-toastify";
+// const getLocation = require("./currentLoc");
+import { useCityName } from "./fetchCity";
 const CropInputForm = () => {
   const [climate, setClimate] = useState("");
   const [soil, setSoil] = useState("");
   const [crops, setCrops] = useState("");
   const [month, setMonth] = useState("");
   const [isLoading, setLoading] = useState(false);
-  const [location, setLocation] = useState("");
-
-  useEffect(() => {
-    const getUserLocation = async () => {
-      try {
-        const userLocation = await getLocation();
-        setLocation(userLocation.city);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-    getUserLocation();
-  }, []);
+  let [location, setLocation] = useState("");
+  // let location="";
+  // useEffect(() => {
+  //   const getUserLocation = async () => {
+  //     try {
+  //       const userLocation = await getLocation();
+  //       setLocation(userLocation.city);
+  //     } catch (error) {
+  //       console.error(error);
+  //     }
+  //   };
+  //   getUserLocation();
+  // }, []);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -66,8 +68,27 @@ const CropInputForm = () => {
   //   curlocation="Enter Location";
   // }
 
-        
-  
+  //----------new fetch current location function----------
+  const [latitude, setLatitude] = useState(null);
+  const [longitude, setLongitude] = useState(null);
+  const handleLocationClick = () => {
+
+    if (navigator.geolocation) {
+      // toast.info("Fetching users location.");
+      navigator.geolocation.getCurrentPosition((position) => {
+        // toast.success("Location fetched!");
+        setLatitude(position.coords.latitude);
+        setLongitude(position.coords.longitude);
+        // console.log(lat,lon);
+      });
+    }
+  };
+
+  useEffect(()=>{
+    handleLocationClick();
+
+  },[latitude,longitude]);
+  location=useCityName(latitude,longitude);
   return (
     <div className="cropadvisor">
       <Box>
@@ -79,8 +100,13 @@ const CropInputForm = () => {
               value={location}
               onChange={handleLocationChange}
               style={{ color: "black" }}
-              placeholder={location ?location:"Enter Location"}
+              placeholder={location ? location : "Enter Location"}
             />
+            {/* <UilLocationPoint
+              size={25}
+              className="text-white cursor-pointer transition ease-out hover:scale-125"
+              onClick={handleLocationClick()}
+            /> */}
           </FormControl>
 
           <FormControl mt={4} isRequired>
@@ -148,14 +174,14 @@ const CropInputForm = () => {
           </Center>
         </form>
 
-    {crops && (
-        <Box mt={6} >
-        <Heading as="h2" size="lg" style={{color:'black'}}>
-            Predicted Crop: {crops}
-        </Heading>
-        </Box>
-    )}
-    </Box>
+        {crops && (
+          <Box mt={6}>
+            <Heading as="h2" size="lg" style={{ color: "black" }}>
+              Predicted Crop: {crops}
+            </Heading>
+          </Box>
+        )}
+      </Box>
     </div>
   );
 };

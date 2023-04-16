@@ -5,7 +5,7 @@ import {
   UilWind,
 } from "@iconscout/react-unicons";
 import { iconUrlFromCode } from "./weatherService";
-
+import {Link} from "react-router-dom";
 function TempCard({
   weather: {
     details,
@@ -45,6 +45,7 @@ function TempCard({
           </div>
         </div>
       </div>
+      <div className="seeMore"><Link to="/weather">See full forecast</Link></div>
     </div>
   );
 }
