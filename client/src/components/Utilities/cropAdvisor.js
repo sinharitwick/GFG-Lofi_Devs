@@ -12,29 +12,29 @@ import {
 } from "@chakra-ui/react";
 import "./cropadvisor.css";
 // import { color } from "@mui/system";
-// import { UilLocationPoint } from "@iconscout/react-unicons";
+import { UilLocationPoint } from "@iconscout/react-unicons";
 // import { toast } from "react-toastify";
-const getLocation = require("./currentLoc");
-// import { useCityName } from "./fetchCity";
+// const getLocation = require("./currentLoc");
+import { useCityName } from "./fetchCity";
 const CropInputForm = () => {
   const [climate, setClimate] = useState("");
   const [soil, setSoil] = useState("");
   const [crops, setCrops] = useState("");
   const [month, setMonth] = useState("");
   const [isLoading, setLoading] = useState(false);
-  const [location, setLocation] = useState("");
+  let [location, setLocation] = useState("");
   // let location="";
-  useEffect(() => {
-    const getUserLocation = async () => {
-      try {
-        const userLocation = await getLocation();
-        setLocation(userLocation.city);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-    getUserLocation();
-  }, []);
+  // useEffect(() => {
+  //   const getUserLocation = async () => {
+  //     try {
+  //       const userLocation = await getLocation();
+  //       setLocation(userLocation.city);
+  //     } catch (error) {
+  //       console.error(error);
+  //     }
+  //   };
+  //   getUserLocation();
+  // }, []);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -61,7 +61,7 @@ const CropInputForm = () => {
   };
 
   const handleLocationChange = (event) => {
-    location(event.target.value);
+    setLocation(event.target.value);
   };
   // let curlocation;
   // if(!location){
@@ -69,26 +69,26 @@ const CropInputForm = () => {
   // }
 
   //----------new fetch current location function----------
-  // const [latitude, setLatitude] = useState(null);
-  // const [longitude, setLongitude] = useState(null);
-  // const handleLocationClick = () => {
+  const [latitude, setLatitude] = useState(null);
+  const [longitude, setLongitude] = useState(null);
+  const handleLocationClick = () => {
 
-  //   if (navigator.geolocation) {
-  //     toast.info("Fetching users location.");
-  //     navigator.geolocation.getCurrentPosition((position) => {
-  //       // toast.success("Location fetched!");
-  //       setLatitude(position.coords.latitude);
-  //       setLongitude(position.coords.longitude);
-  //       // console.log(lat,lon);
-  //     });
-  //   }
-  // };
+    if (navigator.geolocation) {
+      // toast.info("Fetching users location.");
+      navigator.geolocation.getCurrentPosition((position) => {
+        // toast.success("Location fetched!");
+        setLatitude(position.coords.latitude);
+        setLongitude(position.coords.longitude);
+        // console.log(lat,lon);
+      });
+    }
+  };
 
-  // useEffect(()=>{
-  //   handleLocationClick();
+  useEffect(()=>{
+    handleLocationClick();
 
-  // },[latitude,longitude]);
-  // location=useCityName(latitude,longitude);
+  },[latitude,longitude]);
+  location=useCityName(latitude,longitude);
   return (
     <div className="cropadvisor">
       <Box>
