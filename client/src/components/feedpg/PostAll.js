@@ -1,4 +1,11 @@
-import {  CommentOutlined, Delete, Favorite, FavoriteBorder, MoreVert, Share } from "@mui/icons-material";
+import {
+  CommentOutlined,
+  Delete,
+  Favorite,
+  FavoriteBorder,
+  MoreVert,
+  Share,
+} from "@mui/icons-material";
 import {
   Avatar,
   Card,
@@ -8,41 +15,38 @@ import {
   CardMedia,
   Checkbox,
   IconButton,
-  Typography
-  
+  Typography,
 } from "@mui/material";
 import axios from "axios";
-import {useEffect,useState} from 'react'
+import { useEffect, useState } from "react";
 import Comment from "./Comment";
 import AddComments from "./AddComments";
-const Post = ({data,user,fetchposts}) => {
-  const host="http://localhost:5000"
-  const id=JSON.parse(localStorage.getItem("userInfo", 'token'));
-//   const handledelete=async()=>{
-//     const ress= await axios.delete(`${host}/api/blog/post/delete/${data._id}`);
-//     console.log(ress.data);
-//     fetchposts();
-//   }
-const [userinfo, setUserinfo] = useState({})
-const handlegetall=async()=>{
-  const ress=await axios.get(`${host}/api/user/getuser/${data?.user}`);
-  // const ress=await axios.get(`/api/user/getuser/${data?.user}`);
-  const d=ress.data;
-  setUserinfo(d.data);
-}
+const Post = ({ data, user, fetchposts }) => {
+  const host="http://34.131.124.34:5000"
+  const id = JSON.parse(localStorage.getItem("userInfo", "token"));
+  //   const handledelete=async()=>{
+  //     const ress= await axios.delete(`${host}/api/blog/post/delete/${data._id}`);
+  //     console.log(ress.data);
+  //     fetchposts();
+  //   }
+  const [userinfo, setUserinfo] = useState({});
+  const handlegetall = async () => {
+    const ress = await axios.get(`${host}/api/user/getuser/${data?.user}`);
+    // const ress=await axios.get(`/api/user/getuser/${data?.user}`);
+    const d = ress.data;
+    setUserinfo(d.data);
+  };
 
-useEffect(() => {
-  
-  handlegetall()
- 
-}, [])
+  useEffect(() => {
+    handlegetall();
+  }, []);
 
-  let date=new Date(data?.createdAt).toDateString();
+  let date = new Date(data?.createdAt).toDateString();
   return (
     <Card sx={{ margin: 5 }}>
       <CardHeader
         avatar={
-          <Avatar sx={{ bgcolor: "green"}} aria-label="recipe">
+          <Avatar sx={{ bgcolor: "green" }} aria-label="recipe">
             {userinfo?.name?.charAt(0)}
           </Avatar>
         }
@@ -70,7 +74,6 @@ useEffect(() => {
         <IconButton aria-label="share">
           <CommentOutlined />
         </IconButton>
-       
       </CardActions>
       {/* <AddComments/>
       <Comment/> */}
