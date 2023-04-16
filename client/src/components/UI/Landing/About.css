@@ -10,11 +10,33 @@
     height: 400px;
 }
 .uti-text{
-    width: 40vw;
+    color: rgb(116, 104, 89);
+    font-weight: 500;
+    width: 50vw;
     align-items: center;
     align-self: center;
+    padding: 4rem;
+}
+.imgR{
+    margin-right: 2rem;
+}
+.imgL{
+    margin-left: 2rem;
 }
 .Aboutpg{
     display: flex;
     flex-direction: column;
+}
+@media screen and (max-width:480px) {
+    .uti-text{
+        width: 90vw;
+        padding: 3px;
+        margin-bottom: 1rem;
+    }
+    .imgL{
+        margin-left: unset;
+    }
+    .imgR{
+        margin-right: unset;
+    }    
 }
