@@ -22,6 +22,7 @@ import {
   const Sidebar = ({mode,setMode,setSwitchfeed,switchfeed}) => {
     return (
       <Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
+        <Box p={3}> </Box>
         <Box position="fixed">
           <List>
             {/* <ListItem disablePadding>

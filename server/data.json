@@ -1,0 +1,48 @@
+{
+    "training_data": [
+      { "location": "Mumbai", "climate": "Tropical", "soil": "Sandy", "month": "Jan", "crop": "Tomatoes" },
+    { "location": "Delhi", "climate": "Semi-Arid", "soil": "Clay", "month": "Feb", "crop": "Corn" },
+    { "location": "Guwahati", "climate": "Moderate", "soil": "Silty", "month": "Mar", "crop": "Rice" },
+    { "location": "Bengaluru", "climate": "Tropical", "soil": "Red", "month": "Apr", "crop": "Rice" },
+    { "location": "Jaipur", "climate": "Arid", "soil": "Sandy", "month": "May", "crop": "Barley" },
+    { "location": "Silchar", "climate": "Moderate", "soil": "Silty", "month": "Jun", "crop": "Wheat" },
+    { "location": "Ahmedabad", "climate": "Arid", "soil": "Silty", "month": "Jul", "crop": "Groundnuts" },
+    { "location": "Chennai", "climate": "Tropical", "soil": "Sandy", "month": "Aug", "crop": "Sugarcane" },
+    { "location": "Kolkata", "climate": "Subtropical", "soil": "Alluvial", "month": "Sep", "crop": "Wheat" },
+    { "location": "Mangalore", "climate": "Tropical", "soil": "Laterite", "month": "Oct", "crop": "Rice" },
+    { "location": "Shillong", "climate": "Moderate", "soil": "Silty", "month": "Nov", "crop": "Maize" },
+    { "location": "Agartala", "climate": "Tropical", "soil": "Sandy", "month": "Dec", "crop": "Potatoes" },
+    { "location": "Jorhat", "climate": "Subtropical", "soil": "Silty", "month": "Jan", "crop": "Tea" },
+    { "location": "Dibrugarh", "climate": "Subtropical", "soil": "Sandy", "month": "Feb", "crop": "Ginger" },
+    { "location": "Nashik", "climate": "Tropical", "soil": "Alluvial", "month": "Mar", "crop": "Onions" },
+    { "location": "Indore", "climate": "Semi-Arid", "soil": "Black", "month": "Apr", "crop": "Soybeans" },
+    { "location": "Jaisalmer", "climate": "Arid", "soil": "Sandy", "month": "May", "crop": "Bajra" },
+    { "location": "Patna", "climate": "Subtropical", "soil": "Silty", "month": "Jun", "crop": "Sugarcane" },
+    { "location": "Patna", "climate": "Subtropical", "soil": "Silty", "month": "Jun", "crop": "Sugarcane" },
+    { "location": "Bhopal", "climate": "Semi-Arid", "soil": "Clay", "month": "Jul", "crop": "Soybeans" },
+    { "location": "Thiruvananthapuram", "climate": "Tropical", "soil": "Laterite", "month": "Aug", "crop": "Rubber" },
+    { "location": "Indore", "climate": "Semi-Arid", "soil": "Black", "month": "Sep", "crop": "Soybeans" },
+    { "location": "Kochi", "climate": "Tropical", "soil": "Alluvial", "month": "Oct", "crop": "Pepper" },
+    { "location": "Ranchi", "climate": "Subtropical", "soil": "Laterite", "month": "Nov", "crop": "Pulses" },
+    { "location": "Chandigarh", "climate": "Humid Subtropical", "soil": "Sandy Loam", "month": "Dec", "crop": "Wheat" },
+    { "location": "Raipur", "climate": "Tropical", "soil": "Laterite", "month": "Jan", "crop": "Rice" },
+    { "location": "Shimla", "climate": "Humid Subtropical", "soil": "Red", "month": "Feb", "crop": "Apples" },
+    { "location": "Dehradun", "climate": "Humid Subtropical", "soil": "Loam", "month": "Mar", "crop": "Mangoes" },
+    { "location": "Chennai", "climate": "Tropical", "soil": "Sandy", "month": "Apr", "crop": "Sugarcane" },
+    { "location": "Guwahati", "climate": "Moderate", "soil": "Silty", "month": "May", "crop": "Rice" },
+    { "location": "Bengaluru", "climate": "Tropical", "soil": "Red", "month": "Jun", "crop": "Rice" },
+    { "location": "Jaipur", "climate": "Arid", "soil": "Sandy", "month": "Jul", "crop": "Barley" },
+    { "location": "Silchar", "climate": "Moderate", "soil": "Silty", "month": "Aug", "crop": "Wheat" },
+    { "location": "Ahmedabad", "climate": "Arid", "soil": "Silty", "month": "Sep", "crop": "Groundnuts" },
+    { "location": "Kolkata", "climate": "Subtropical", "soil": "Alluvial", "month": "Oct", "crop": "Rice" },
+    { "location": "Kolkata", "climate": "Subtropical", "soil": "Silty", "month": "Oct", "crop": "Legumes" },
+    { "location": "Lucknow", "climate": "Subtropical", "soil": "Silty", "month": "Dec", "crop": "Potatoes" }
+
+    ],
+    "test_data": [
+      { "location": "Mumbai", "climate": "Tropical", "soil": "Sandy", "month": "Jan", "crop": "Tomatoes" },
+      { "location": "Delhi", "climate": "Semi-Arid", "soil": "Clay", "month": "Feb", "crop": "Corn" },
+      { "location": "Kolkata", "climate": "Subtropical", "soil": "Alluvial", "month": "Sep", "crop": "Wheat" },
+      { "location": "Lucknow", "climate": "Subtropical", "soil": "Silty", "month": "Dec", "crop": "Potatoes"}
+    ]
+}

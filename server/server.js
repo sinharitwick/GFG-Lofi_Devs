@@ -7,7 +7,7 @@ const messageRoutes = require("./routes/messageRoutes");
 const { notFound, errorHandler } = require("./middleware/errorMiddleware");
 const path = require("path");
 const cors = require("cors");
-const cropAdvisor = require("./api/cropAdvisor");
+const cropAdvisor = require("./api/cropAdvisor2");
 const schemes = require("./api/schemes")
 
 dotenv.config();
