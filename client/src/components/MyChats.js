@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { getSender } from "../config/ChatLogics";
 import ChatLoading from "./ChatLoading";
 import GroupChatModal from "./miscellaneous/GroupChatModal";
-import { Button } from "@chakra-ui/react";
+import { Button ,extendTheme} from "@chakra-ui/react";
 import { ChatState } from "../Context/ChatProvider";
 
 const MyChats = ({ fetchAgain }) => {
@@ -15,6 +15,13 @@ const MyChats = ({ fetchAgain }) => {
   const { selectedChat, setSelectedChat, user, chats, setChats } = ChatState();
 
   const toast = useToast();
+
+  const theme = extendTheme({
+    fonts: {
+      heading: "Poppins",
+      body: "Poppins",
+    },
+  })
 
   const fetchChats = async () => {
     // console.log(user._id);
@@ -55,12 +62,13 @@ const MyChats = ({ fetchAgain }) => {
       w={{ base: "100%", md: "31%" }}
       borderRadius="lg"
       borderWidth="1px"
+      filter="drop-shadow(4px 4px 8px #6c6a6a)"
     >
       <Box
         pb={3}
         px={3}
         fontSize={{ base: "28px", md: "30px" }}
-        fontFamily="Work sans"
+        fontFamily="heading"
         d="flex"
         w="100%"
         justifyContent="space-between"
@@ -72,6 +80,7 @@ const MyChats = ({ fetchAgain }) => {
             d="flex"
             fontSize={{ base: "17px", md: "10px", lg: "17px" }}
             rightIcon={<AddIcon />}
+            fontFamily="heading"
           >
             New Group Chat
           </Button>
