@@ -58,7 +58,7 @@ const GroupChatModal = ({ children }) => {
           Authorization: `Bearer ${user.token}`,
         },
       };
-      const { data } = await axios.get(`/api/user?search=${search}`, config);
+      const { data } = await axios.get(`http://34.131.124.34:5000/api/user?search=${search}`, config);
       console.log(data);
       setLoading(false);
       setSearchResult(data);

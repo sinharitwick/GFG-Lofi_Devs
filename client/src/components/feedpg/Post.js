@@ -16,7 +16,7 @@ import Edit from './Edit'
 import Comment from "./Comment";
 import AddComments from "./AddComments";
 const Post = ({data,user,fetchposts}) => {
-  const host="http://localhost:5000"
+  const host="http://34.131.124.34:5000"
   const id=JSON.parse(localStorage.getItem("userInfo", 'token'));
   const handledelete=async()=>{
     const ress= await axios.delete(`${host}/api/blog/post/delete/${data._id}`);
@@ -29,7 +29,7 @@ const Post = ({data,user,fetchposts}) => {
     <Card sx={{ margin: 5 }}>
       <CardHeader
         avatar={
-          <Avatar sx={{ bgcolor: "red" }} aria-label="recipe">
+          <Avatar sx={{ bgcolor: "green" }} aria-label="recipe">
             {user?.name[0]}
           </Avatar>
         }
