@@ -90,7 +90,12 @@ const Login = () => {
             placeholder="Enter password"
           />
           <InputRightElement width="4.5rem">
-            <Button h="1.75rem" size="sm" bg='transparent' onClick={handleClick}>
+            <Button
+              h="1.75rem"
+              size="sm"
+              bg="transparent"
+              onClick={handleClick}
+            >
               {show ? "Hide" : "Show"}
             </Button>
           </InputRightElement>
