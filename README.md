@@ -5,11 +5,11 @@ At FarmStack, our objective is to revolutionize the way farmers interact, collab
 
 ## Methodology
 
-The FarmStack project follows a comprehensive and iterative development methodology to ensure the creation of a robust and user-friendly agritech website.\
+The FarmStack project follows a comprehensive and iterative development methodology to ensure the creation of a robust and user-friendly agritech website.
 
-Based on the requirements gathered, we created a detailed design and planning document. This includes defining the website's architecture, creating wireframes, mockups, and user interface (UI) design elements. We also planned the development process, including the selection of appropriate technologies, frameworks, and tools.\
+Based on the requirements gathered, we created a detailed design and planning document. This includes defining the website's architecture, creating wireframes, mockups, and user interface (UI) design elements. We also planned the development process, including the selection of appropriate technologies, frameworks, and tools.
 
-We used the planned approach to start building the website. This includes front-end and back-end development, database design and implementation, integration of third-party APIs such as weather forecast, and implementation of user authentication and authorization for secure access.\
+We used the planned approach to start building the website. This includes front-end and back-end development, database design and implementation, integration of third-party APIs such as weather forecast, and implementation of user authentication and authorization for secure access.
 
 This approach ensures the creation of a high-quality, reliable, and user-friendly agrotech website that meets the needs of farmers and supports their interactions, knowledge sharing, and access to valuable resources.
 
