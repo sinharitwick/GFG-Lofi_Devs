@@ -37,7 +37,7 @@ function CropAdvisorPage() {
             justifyContent="center"
             p={3}
             w="100%"
-            m="40px 0 15px 0"
+            // m="40px 0 15px 0"
             borderRadius="lg"
             borderWidth="1px"
             borderColor="transparent"

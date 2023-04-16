@@ -2,6 +2,7 @@ import { Button } from "@chakra-ui/button";
 import { useDisclosure } from "@chakra-ui/hooks";
 import { Input } from "@chakra-ui/input";
 import { Box, Text } from "@chakra-ui/layout";
+import { extendTheme } from "@chakra-ui/react";
 import {
   Menu,
   MenuButton,
@@ -37,6 +38,13 @@ function SideDrawer() {
   const [searchResult, setSearchResult] = useState([]);
   const [loading, setLoading] = useState(false);
   const [loadingChat, setLoadingChat] = useState(false);
+
+  const theme = extendTheme({
+    fonts: {
+      heading: "Poppins",
+      body: "Poppins",
+    },
+  });
 
   const {
     setSelectedChat,
@@ -138,15 +146,19 @@ function SideDrawer() {
         borderWidth="5px"
       >
         <Tooltip label="Search Users to chat" hasArrow placement="bottom-end">
-          <Button variant="ghost" onClick={onOpen}>
+          <Button
+            variant="ghost"
+            onClick={onOpen}
+            filter="drop-shadow(4px 4px 8px #6c6a6a)"
+          >
             <i className="fas fa-search"></i>
-            <Text d={{ base: "none", md: "flex" }} px={4}>
+            <Text d={{ base: "none", md: "flex" }} px={4} fontFamily="heading">
               Search User
             </Text>
           </Button>
         </Tooltip>
-        <Text fontSize="2xl" fontFamily="Work sans">
-          Farm_Conversation
+        <Text fontSize="2xl" fontFamily="heading">
+          FarmStack_Conversation
         </Text>
         <div>
           <Menu>
