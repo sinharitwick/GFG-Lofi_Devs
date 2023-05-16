@@ -4,7 +4,7 @@ import { Input, InputGroup, InputRightElement } from "@chakra-ui/input";
 import { VStack } from "@chakra-ui/layout";
 import { useToast } from "@chakra-ui/toast";
 import axios from "axios";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 
 const Signup = () => {
@@ -19,6 +19,15 @@ const Signup = () => {
   const [password, setPassword] = useState();
   const [pic, setPic] = useState();
   const [picLoading, setPicLoading] = useState(false);
+
+  //login refresh
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    if (isLoggedIn) {
+      window.location.reload();
+    }
+  }, [isLoggedIn]);
 
   const submitHandler = async () => {
     setPicLoading(true);
@@ -51,7 +60,7 @@ const Signup = () => {
         },
       };
       const { data } = await axios.post(
-        "http://34.131.124.34:5000/api/user",
+        "http://34.131.168.190:5000/api/user",
         {
           name,
           email,
@@ -71,6 +80,8 @@ const Signup = () => {
       localStorage.setItem("userInfo", JSON.stringify(data));
       setPicLoading(false);
       history.push("/feed");
+      //login refresh
+      setIsLoggedIn(true);
     } catch (error) {
       toast({
         title: "Error Occured!",

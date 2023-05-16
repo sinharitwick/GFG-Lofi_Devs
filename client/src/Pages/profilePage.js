@@ -15,14 +15,14 @@ function ProfilePage() {
   let user = JSON.parse(localStorage.getItem("userInfo"));
   const fetdata = async () => {
     let user = JSON.parse(localStorage.getItem("userInfo"));
-    const res = await axios.get(`http://34.131.124.34:5000/api/blog/post/${user._id}`);
+    const res = await axios.get(`http://34.131.168.190:5000/api/blog/post/${user._id}`);
     const data = res.data;
     // console.log(data.blogs);
     setBlogs(data.blogs);
   };
   const [blogsall, setBlogsall] = useState([]);
   const fetchallblogs = async () => {
-    const res = await axios.get(`http://34.131.124.34:5000/api/blog/`);
+    const res = await axios.get(`http://34.131.168.190:5000/api/blog/`);
     // const res =await  axios.get(`/api/blog/`)
     const data = res.data;
     console.log(data.blogs);
@@ -40,7 +40,7 @@ function ProfilePage() {
   //fetch current user all details
   const fetuser = async () => {
     let user = JSON.parse(localStorage.getItem("userInfo"));
-    const res = await axios.get(`http://34.131.124.34:5000/api/user/getuser/${user._id}`);
+    const res = await axios.get(`http://34.131.168.190:5000/api/user/getuser/${user._id}`);
     const data = res.data;
     // console.log(data.data);
     setUserdata(data.data);

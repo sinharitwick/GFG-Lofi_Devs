@@ -86,7 +86,7 @@ function SideDrawer() {
       };
 
       const { data } = await axios.get(
-        `http://34.131.124.34:5000/api/user?search=${search}`,
+        `http://34.131.168.190:5000/api/user?search=${search}`,
         config
       );
 
@@ -116,7 +116,7 @@ function SideDrawer() {
         },
       };
       const { data } = await axios.post(
-        `http://34.131.124.34:5000/api/chat`,
+        `http://34.131.168.190:5000/api/chat`,
         { userId },
         config
       );

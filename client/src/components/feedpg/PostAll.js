@@ -22,7 +22,7 @@ import { useEffect, useState } from "react";
 import Comment from "./Comment";
 import AddComments from "./AddComments";
 const Post = ({ data, user, fetchposts }) => {
-  const host="http://34.131.124.34:5000"
+  const host="http://34.131.168.190:5000"
   const id = JSON.parse(localStorage.getItem("userInfo", "token"));
   //   const handledelete=async()=>{
   //     const ress= await axios.delete(`${host}/api/blog/post/delete/${data._id}`);

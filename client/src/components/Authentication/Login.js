@@ -2,7 +2,7 @@ import { Button } from "@chakra-ui/button";
 import { FormControl, FormLabel } from "@chakra-ui/form-control";
 import { Input, InputGroup, InputRightElement } from "@chakra-ui/input";
 import { VStack } from "@chakra-ui/layout";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import { useToast } from "@chakra-ui/react";
 import { useHistory } from "react-router-dom";
@@ -15,10 +15,21 @@ const Login = () => {
   const [password, setPassword] = useState();
   const [loading, setLoading] = useState(false);
 
+  //login refresh
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    if (isLoggedIn) {
+      window.location.reload();
+    }
+  }, [isLoggedIn]);
+
+
   const history = useHistory();
 
   const submitHandler = async () => {
     setLoading(true);
+
     if (!email || !password) {
       toast({
         title: "Please Fill all the Fields",
@@ -40,7 +51,7 @@ const Login = () => {
       };
 
       const { data } = await axios.post(
-        "http://34.131.124.34:5000/api/user/login",
+        "http://34.131.168.190:5000/api/user/login",
         { email, password },
         config
       );
@@ -56,6 +67,9 @@ const Login = () => {
       localStorage.setItem("userInfo", JSON.stringify(data));
       setLoading(false);
       history.push("/feed");
+      //login refresh
+      setIsLoggedIn(true);
+
     } catch (error) {
       toast({
         title: "Error Occured!",
