@@ -16,7 +16,7 @@ import io from "socket.io-client";
 import UpdateGroupChatModal from "./miscellaneous/UpdateGroupChatModal";
 import { ChatState } from "../Context/ChatProvider";
 // const ENDPOINT = "http://localhost:5000"; // "https://talk-a-tive.herokuapp.com"; -> After deployment
-const ENDPOINT="http://34.131.124.34:5000";
+const ENDPOINT="http://34.131.168.190:5000";
 var socket, selectedChatCompare;
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
   const [messages, setMessages] = useState([]);
