@@ -1,76 +1,77 @@
 import {
-  Box,
-  Container,
-  Tab,
-  TabList,
-  TabPanel,
-  TabPanels,
-  Tabs,
-  Text,
+    Box,
+    Container,
+    Text,
+    useMediaQuery
 } from "@chakra-ui/react";
-import react, { useEffect } from "react";
-import Navbar from "../components/UI/Navbar";
+import React, { useState } from 'react'
+import './CropAdvisor.css'
+import Navbar from '../components/UI/Navbar'
+import CropAdvisorForm from '../components/Utilities/cropAdvisor';
+import CropResult from '../components/Utilities/cropResult';
 
-import CropInputForm from "../components/Utilities/cropAdvisor";
-import "./CropAdvisor.css";
+const CropAdvisorPage = () => {
+    const [cropResult, setCropResult] = useState(null);
+    const [isLargerThanMd] = useMediaQuery("(min-width: 768px)");
 
-function CropAdvisorPage() {
-  return (
-    <div className="cropAdvisor">
-      <Navbar />
-      <Container
-        d="flex"
-        flex="50%"
-        maxW="65vw"
-        centerContent
-        m="unset"
-        alignItems="baseline"
-        // bg="rgba(71, 71, 71, 0.5)"
-        h="100vh"
-        pl="15vw"
-        pr="15vw"
-        className="cropadvisor"
-      >
-        <Box
-          d="flex"
-          justifyContent="center"
-          p={3}
-          w="100%"
-          // m="40px 0 15px 0"
-          borderRadius="lg"
-          borderWidth="1px"
-          borderColor="transparent"
-          color="white"
-          // box-sghadow
-        >
-          <Text style={{ color: "white" }} fontSize="4xl" className="croptext">
-            Crop Advisor
-          </Text>
-        </Box>
-        <Box
-          w="100%"
-          p={4}
-          borderRadius="lg"
-          borderWidth="1px"
-          color="black"
-          borderColor="transparent"
-          className="cropform"
-        >
-          <CropInputForm />
-          {/* <Tabs isFitted variant="soft-rounded">
-              <TabList mb="1em">
-                <Tab color="white">Login</Tab>
-                <Tab color="white">Sign Up</Tab>
-              </TabList>
-              <TabPanels>
-                <TabPanel>
-                </TabPanel>
-              </TabPanels>
-            </Tabs> */}
-        </Box>
-      </Container>
-    </div>
-  );
+    const handleCropPrediction = (result) => {
+        setCropResult(result);
+    };
+    return (
+        <div className='cropAdvisor'>
+            <Navbar />
+            <div className="cropAdvResp" style={{ display: 'flex', height: '100vh' }}>
+                <Container
+                    d="flex"
+                    flex="50%"
+                    maxW="65vw"
+                    centerContent
+                    m="unset"
+                    alignItems="baseline"
+                    // bg="rgba(71, 71, 71, 0.5)"
+                    h="100vh"
+                    pl="15vw"
+                    pr="15vw"
+                    className="cropadvisor"
+                >
+                    <Box
+                        d="flex"
+                        justifyContent="center"
+                        p={3}
+                        w="100%"
+                        // m="40px 0 15px 0"
+                        borderRadius="lg"
+                        borderWidth="1px"
+                        borderColor="transparent"
+                        color="white"
+                    // box-sghadow
+                    >
+                        <Text style={{ color: "white" }} fontSize="4xl" className="croptext">
+                            Crop Advisor
+                        </Text>
+                    </Box>
+
+                    
+                        <Box
+                            w="100%"
+                            p={4}
+                            borderRadius="lg"
+                            borderWidth="1px"
+                            color="black"
+                            borderColor="transparent"
+                            className="cropform"
+                            style={{ flex: '0 0 60%'}}
+                        >
+                            <CropAdvisorForm onCropPrediction={handleCropPrediction} />
+                        </Box>
+                    
+                </Container>
+                <Box style={{ flex: "0 0 40%"}}>
+                    <CropResult result={cropResult} />
+                </Box>
+            </div>
+        </div>
+    )
 }
 
-export default CropAdvisorPage;
+export default CropAdvisorPage
