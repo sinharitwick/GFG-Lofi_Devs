@@ -12,7 +12,8 @@ import {
 } from "@chakra-ui/react";
 import "./cropadvisor.css";
 const getLocation = require("./currentLoc");
-const CropInputForm = () => {
+
+const CropAdvisorForm = ({ onCropPrediction }) => {
   const [climate, setClimate] = useState("");
   const [soil, setSoil] = useState("");
   const [crops, setCrops] = useState("");
@@ -50,6 +51,7 @@ const CropInputForm = () => {
       });
       const result = await response.json();
       setCrops(result.crops);
+      onCropPrediction(result.crops); // Pass the crop prediction result to the parent component
     } catch (error) {
       console.error(error);
     }
@@ -64,7 +66,7 @@ const CropInputForm = () => {
   return (
     <div className="cropadvisor">
       <Box>
-        <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
           <FormControl isRequired>
             <FormLabel style={{ color: "black" }}>Location:</FormLabel>
             <Input
@@ -140,17 +142,17 @@ const CropInputForm = () => {
             </Button>
           </Center>
         </form>
-
-        {crops && (
+        {/* Crop result */}
+        {/* {crops && (
           <Box bg="white" p="0.5rem" borderRadius="10px" mt={6}>
             <Heading as="h4" size="lg" fontWeight="base" style={{ color: "black" }}>
               Predicted Crop: {crops}
             </Heading>
           </Box>
-        )}
+        )} */}
       </Box>
     </div>
   );
 };
 
-export default CropInputForm;
+export default CropAdvisorForm;
