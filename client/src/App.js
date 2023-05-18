@@ -11,6 +11,7 @@ import Feedpg from "./Pages/Feedpg";
 import WeatherPage from "./Pages/WeatherPage";
 import Profile from "./Pages/profilePage";
 import Schemes from "./Pages/Schemes"
+import Landlist from "./Pages/Landlist";
 
 function App() {
 
@@ -28,7 +29,7 @@ function App() {
       {/* <Route path="/profile/:userName" component={Profile} exact /> */}
       <Route path="/profile" component={Profile} exact/>
       <Route path="/schemes" component={Schemes} exact />
-
+      <Route path="/listing" component={Landlist} exact />
       {/* <Route path="*" component={Error404} exact/> */}
     </div>
   );

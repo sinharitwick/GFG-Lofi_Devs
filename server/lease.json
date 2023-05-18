@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "title": "Crop land in Masimpur",
+        "category": "For Rent",
+        "location": "Masimpur, Silchar",
+        "price": "₹ 3,700",
+        "image": ""
+    },
+    {
+        "id": 2,
+        "title": "Commercial land in Karimganj",
+        "category": "For Rent",
+        "location": "Karimganj, Assam",
+        "price": "₹ 4,700",
+        "image": ""
+    },
+    {
+        "id": 3,
+        "title": "Crop land in Patiala",
+        "category": "For Sale",
+        "location": "Patiala, Punjab",
+        "price": "₹ 10,700",
+        "image": ""
+    },
+    {
+        "id": 4,
+        "title": "Barren land in ",
+        "category": "For Rent",
+        "location": "Masimpur, Silchar",
+        "price": "₹ 3,700",
+        "image": ""
+    },
+    {
+        "id": 5,
+        "title": "Crop land in Masimpur",
+        "category": "For Rent",
+        "location": "Masimpur, Silchar",
+        "price": "₹ 3,700",
+        "image": ""
+    },
+    {
+        "id": 6,
+        "title": "Crop land in Masimpur",
+        "category": "For Rent",
+        "location": "Masimpur, Silchar",
+        "price": "₹ 3,700",
+        "image": ""
+    },
+    {
+        "id": 7,
+        "title": "Crop land in Masimpur",
+        "category": "For Rent",
+        "location": "Masimpur, Silchar",
+        "price": "₹ 3,700",
+        "image": ""
+    },
+    {
+        "id": 8,
+        "title": "Crop land in Masimpur",
+        "category": "For Rent",
+        "location": "Masimpur, Silchar",
+        "price": "₹ 3,700",
+        "image": ""
+    },
+    {
+        "id": 9,
+        "title": "Crop land in Masimpur",
+        "category": "For Rent",
+        "location": "Masimpur, Silchar",
+        "price": "₹ 3,700",
+        "image": ""
+    }
+]

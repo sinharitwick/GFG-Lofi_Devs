@@ -33,7 +33,7 @@ const Navbar = () => {
   };
     
   return (
-    <nav className={`h-16 w-full navbar bg-gray-200 ${stickyClass}`}>
+    <nav className={`h-16 w-full navbar bg-white ${stickyClass}`}>
       <div className="navbar-container">
         <div div className="navbar-brand">
           <Link to="/">FarmStack</Link>

@@ -11,7 +11,7 @@ const Profile = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch(`http://34.131.124.34:5000/api/user?search=${userName}`, {
+      const response = await fetch(`http://34.131.168.190:5000/api/user?search=${userName}`, {
         headers: {
           Authorization: `Bearer ${user.token}`,
           // "Content-Type": "application/json",

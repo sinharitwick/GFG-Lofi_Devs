@@ -3,7 +3,7 @@ import Fade from "react-reveal/Fade";
 import "./About.css";
 const About = () => {
   return (
-    <div name="about" className=" bg-[#c5d79f] text-300 Aboutpg">
+    <div name="about" className=" bg-[#e3e3e3] text-300 Aboutpg">
       <Fade bottom>
         <div className="pb-8 pt-4">
           <p className="text-4xl mb-3 mt-4 font-bold inline border-b-4 border-[#155705]">

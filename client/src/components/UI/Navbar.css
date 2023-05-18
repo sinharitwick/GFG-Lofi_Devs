@@ -8,8 +8,8 @@
     /* new */
     /* background: rgb(54,207,115); */
     /* background: linear-gradient(41deg, rgba(54,207,115,1) 24%, rgba(117,247,101,1) 61%, rgba(168,253,45,0.9697128851540616) 87%); */
-    background: rgba(77, 75, 75, 0.5);
-    color: #fff;
+    /* background: rgba(77, 75, 75, 0.5); */
+    color: #000;
     width: 100%;
     font-family: 'Italiana', serif;
     font-weight: 400;
@@ -71,7 +71,7 @@
     top: 60px;
     right: 0; /* Updated to place the menu on the right */
     width: 100%;
-    background-color: #333;
+    background-color: #fff;
     padding: 20px;
   }
   
@@ -85,7 +85,7 @@
     cursor: pointer;
     background: transparent;
     border: none;
-    color: #fff;
+    color: #000;
     cursor: pointer;
     font-size: 1.5rem;
     display: none; /* Updated to hide the hamburger icon by default */
