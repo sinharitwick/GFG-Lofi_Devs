@@ -43,7 +43,7 @@ function Schemebox() {
           <Skeleton variant="rectangular" height={230} width={280} />
         </Stack>
     ) : (
-     <Box className='w-20 h-56 m-4 overflow-hidden ... border rounded-lg border-gray-300 bg-gradient-to-br shadow-xl shadow-gray-400' sx={{ minWidth: 275 }}>
+     <Box className='w-20 h-56 m-4 overflow-hidden ... border rounded-lg border-gray-300 bg-gradient-to-br shadow-xl shadow-gray-400' sx={{ minWidth: 291 }}>
         {schemes.length > 0 && (
             <Card variant="outlined">
                 <React.Fragment>

@@ -14,4 +14,5 @@ const getLocation = async () => {
   }
 };
 
-module.exports = getLocation;
+// module.exports = getLocation;
+export default  getLocation;
