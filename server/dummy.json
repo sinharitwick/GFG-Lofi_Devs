@@ -1,0 +1,25 @@
+{
+    "training_data": [
+        {
+            "location": "Guwahati",
+            "climate": "Moderate",
+            "soil": "Silty",
+            "month": "Mar",
+            "crop": ["Rice","Maize",
+                "Wheat",
+                "Mustard",
+                "Potato",
+                "Cabbage",
+                "Cauliflower",
+                "Radish",
+                "Carrot",
+                "Lettuce",
+                "Spinach",
+                "Coriander",
+                "Tomato",
+                "Green beans",
+                "Peas"]
+          }
+          
+    ]
+}
