@@ -12,15 +12,8 @@
         "Mustard",
         "Potato",
         "Cabbage",
-        "Cauliflower",
-        "Radish",
-        "Carrot",
-        "Lettuce",
-        "Spinach",
-        "Coriander",
-        "Tomato",
-        "Green beans",
-        "Peas"
+        "Cauliflower"
+
       ]
     },
     {
@@ -725,4 +718,108 @@
         "Lettuce"
       ]
     }
-]}
+],
+"test_data":[
+  {
+    "location": "Dehradun",
+    "climate": "Humid subtropical",
+    "soil": "Sandy loam",
+    "month": "Sep",
+    "crop": [
+      "Rice",
+      "Wheat",
+      "Barley",
+      "Maize",
+      "Potato",
+      "Cabbage",
+      "Cauliflower",
+      "Carrot",
+      "Radish",
+      "Pea",
+      "Beans",
+      "Spinach",
+      "Coriander",
+      "Tomato",
+      "Onion",
+      "Garlic",
+      "Lettuce"
+    ]
+  },
+  {
+    "location": "Jaipur",
+    "climate": "Semi-Arid",
+    "soil": "Sandy",
+    "month": "Oct",
+    "crop": [
+      "Wheat",
+      "Barley",
+      "Gram",
+      "Peanut",
+      "Mustard",
+      "Fenugreek",
+      "Cumin",
+      "Coriander",
+      "Mint",
+      "Spinach",
+      "Onion",
+      "Garlic",
+      "Tomato",
+      "Chili",
+      "Cauliflower",
+      "Cabbage",
+      "Carrot",
+      "Radish"
+    ]
+  },
+  {
+    "location": "Thiruvananthapuram",
+    "climate": "Tropical",
+    "soil": "Laterite",
+    "month": "Dec",
+    "crop": [
+      "Rice",
+      "Tapioca",
+      "Banana",
+      "Coconut",
+      "Black pepper",
+      "Turmeric",
+      "Ginger",
+      "Cardamom",
+      "Cinnamon",
+      "Cloves",
+      "Nutmeg",
+      "Vanilla",
+      "Curry leaves",
+      "Coriander",
+      "Tomato",
+      "Brinjal",
+      "Bitter gourd",
+      "Snake gourd"
+    ]
+  },{
+    "location": "Pune",
+    "climate": "Semi-Arid",
+    "soil": "Black soil",
+    "month": "Dec",
+    "crop": [
+      "Rice",
+      "Jowar",
+      "Wheat",
+      "Gram",
+      "Peanut",
+      "Sorghum",
+      "Cotton",
+      "Sugarcane",
+      "Tomato",
+      "Onion",
+      "Garlic",
+      "Potato",
+      "Cauliflower",
+      "Cabbage",
+      "Carrot",
+      "Radish",
+      "Coriander"
+    ]
+  }
+]
+}

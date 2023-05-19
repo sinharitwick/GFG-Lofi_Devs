@@ -1,4 +1,21 @@
 {
-    "Rice": "/rice.jpg"
+    "Rice": "/cropImg/rice.jpg",
+    "Sugarcane":"/cropImg/sugarcane.jpg",
+    "Peas":"/cropImg/peas.jpg",
+    "Barley":"/cropImg/barley.jpg",
+    "Beans":"/cropImg/beans.jpg",
+    "Cabbage":"/cropImg/cabbage.jpg",
+    "Carrot":"/cropImg/carrot.jpg",
+    "Cauliflower":"/cropImg/cauliflower.jpg",
+    "Coriander":"/cropImg/coriander.jpg",
+    "Garlic":"/cropImg/garlic.jpg",
+    "Lettuce":"/cropImg/lettuce.jpg",
+    "Maize":"/cropImg/maize.jpg",
+    "Onion":"/cropImg/onion.jpeg",
+    "Potato":"/cropImg/potato.jpg",
+    "Radish":"/cropImg/radish.jpg",
+    "Spinach":"/cropImg/spinach.jpg",
+    "Tomato":"/cropImg/tomato.jpeg",
+    "Wheat":"/cropImg/wheat.jpeg"
 }
   

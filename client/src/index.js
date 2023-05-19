@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
+import { I18nextProvider } from 'react-i18next';
+import i18n from './i18n';
 import reportWebVitals from "./reportWebVitals";
 import { ChakraProvider } from "@chakra-ui/react";
 import ChatProvider from "./Context/ChatProvider";
@@ -11,7 +13,9 @@ ReactDOM.render(
   <ChakraProvider>
     <BrowserRouter>
       <ChatProvider>
-        <App />
+        <I18nextProvider i18n={i18n}>
+          <App />
+        </I18nextProvider>
       </ChatProvider>
     </BrowserRouter>
   </ChakraProvider>,

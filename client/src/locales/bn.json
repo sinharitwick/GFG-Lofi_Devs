@@ -1,0 +1,15 @@
+{
+    "cropAdvisor": {
+      "locationLabel": "অবস্থান:",
+      "climateLabel": "জলবায়ু:",
+      "soilLabel": "মাটি:",
+      "monthLabel": "মাস:",
+      "selectClimate": "জলবায়ু নির্বাচন করুন",
+      "selectSoil": "মাটি নির্বাচন করুন",
+      "selectMonth": "মাস নির্বাচন করুন",
+      "enterLocation": "অবস্থান লিখুন",
+      "predictCropButton": "ফসলের পূর্বাভাস করুন",
+      "predictedCrop": "পূর্বাভাসিত ফসল:"
+    }
+  }
+  

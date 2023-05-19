@@ -66,7 +66,7 @@ const CropAdvisorPage = () => {
                         </Box>
                     
                 </Container>
-                <Container>
+                <Container className="mediaPrediction">
                     <Box
                         d="flex"
                         justifyContent="center"
