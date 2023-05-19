@@ -1,0 +1,94 @@
+.abtImg {
+  position: relative;
+  background-image: url(../AboutImg.png);
+  height: 70vh;
+  z-index: 5;
+}
+.des {
+  text-align: left;
+  font-family: "Italiana";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 71px;
+  margin-left: 3rem;
+  margin-top: 3rem;
+  z-index: 2;
+  color: white;
+}
+
+.abtDes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Desimg {
+  padding: 5rem;
+  margin-left: 2rem;
+  width: 40%;
+}
+.whatwedo {
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.abtfeatures {
+  height: 60vh !important;
+  background-color: rgba(208, 183, 119, 0.11);
+}
+.abtslider {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+.abtfeaturesdes {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  font-family: "Italiana";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 71px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.promotion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70vh !important;
+}
+.prImg{
+    padding: 3rem !important;
+}
+.prImg img{
+    height: 35vw;
+    width: 35vw;
+}
+.prDes{
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.prDes1{
+    font-family: 'Italiana';
+font-style: normal;
+font-weight: 400;
+font-size:2.7rem;
+line-height: 71px;
+
+color: #000000;
+}
+.prDes2{
+    font-family: 'Italiana';
+font-style: normal;
+font-weight: 400;
+font-size: 1.8rem;
+line-height: 47px;
+
+color: #000000;
+}
