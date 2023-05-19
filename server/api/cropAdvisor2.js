@@ -11,12 +11,12 @@ app.use(bodyParser.json());
 const fs = require('fs');
 
 // Read the training data from the file
-const training_data = JSON.parse(fs.readFileSync('data.json', 'utf8')).training_data;
+const training_data = JSON.parse(fs.readFileSync('data2.json', 'utf8')).training_data;
 
 // Read the test data from the file
-const test_data = JSON.parse(fs.readFileSync('data.json', 'utf8')).test_data;
+const test_data = JSON.parse(fs.readFileSync('data2.json', 'utf8')).test_data;
 
-const data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
+const data = JSON.parse(fs.readFileSync('data2.json', 'utf8'));
 
 const class_name = "crop";
 const features = ["location", "climate", "soil", "month"];

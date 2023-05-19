@@ -18,5 +18,11 @@ box-shadow: 16px 21px 47px 14px rgba(0,0,0,0.75);
      margin: unset !important;
      padding: unset !important;
      color: white;
-     overflow-y: hidden;
+     /* overflow-y: hidden; */
   }
+
+  @media (max-width: 768px) {
+    .mediaPrediction{
+        margin-top: 12rem;
+    }
+}
