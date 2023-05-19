@@ -1,0 +1,17 @@
+.slidecard{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    /* height: 6rem;
+    width: 4rem; */
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+}
+.cardimg{
+    margin-bottom: 0.8rem;
+}
+.cardTitle{
+    font-family: 'Raleway';
+    font-weight: 600;
+}

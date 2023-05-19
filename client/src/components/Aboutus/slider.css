@@ -1,0 +1,9 @@
+.card{
+    height: 10rem;
+    width: 10rem;
+    background-color: aqua;
+}
+.card-slider-content{
+    display: flex;
+    flex-direction: row;
+}

@@ -12,6 +12,7 @@ import WeatherPage from "./Pages/WeatherPage";
 import Profile from "./Pages/profilePage";
 import Schemes from "./Pages/Schemes"
 import Landlist from "./Pages/Landlist";
+import Aboutus from "./Pages/Aboutus";
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
       <Route path="/profile" component={Profile} exact/>
       <Route path="/schemes" component={Schemes} exact />
       <Route path="/listing" component={Landlist} exact />
+      <Route path="/aboutus" component={Aboutus} exact />
       {/* <Route path="*" component={Error404} exact/> */}
     </div>
   );
