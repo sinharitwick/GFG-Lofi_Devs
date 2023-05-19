@@ -70,15 +70,15 @@ const CropAdvisorForm = ({ onCropPrediction }) => {
   return (
     <div className="cropadvisor">
       <Box>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} style={{color:"white"}}>
           <FormControl isRequired>
-            <FormLabel style={{ color: "black" }}>Location:</FormLabel>
+            <FormLabel style={{ color: "white" }}>Location:</FormLabel>
             <Input
               type="text"
               value={location}
               onChange={handleLocationChange}
-              style={{ color: "black" }}
               placeholder={location ? location : "Enter Location"}
+              style={{ color: "black" }}
             />
           </FormControl>
 
@@ -88,13 +88,14 @@ const CropAdvisorForm = ({ onCropPrediction }) => {
               value={climate}
               onChange={(event) => setClimate(event.target.value)}
               placeholder="Select Climate"
+              
             >
-              <option value="Tropical">Tropical</option>
-              <option value="Semi-Arid">Semi-Arid</option>
-              <option value="Arid">Arid</option>
-              <option value="Subtropical">Subtropical</option>
-              <option value="Moderate">Moderate</option>
-              <option value="Dry">Dry</option>
+              <option className = "dropdown" value="Tropical">Tropical</option>
+              <option className = "dropdown" value="Semi-Arid">Semi-Arid</option>
+              <option className = "dropdown" value="Arid">Arid</option>
+              <option className = "dropdown" value="Subtropical">Subtropical</option>
+              <option className = "dropdown" value="Moderate">Moderate</option>
+              <option className = "dropdown" value="Dry">Dry</option>
             </Select>
           </FormControl>
 
@@ -105,13 +106,13 @@ const CropAdvisorForm = ({ onCropPrediction }) => {
               onChange={(event) => setSoil(event.target.value)}
               placeholder="Select Soil"
             >
-              <option value="Sandy">Sandy</option>
-              <option value="Clay">Clay</option>
-              <option value="Red">Red</option>
-              <option value="Black">Black</option>
-              <option value="Silty">Silty</option>
-              <option value="Alluvial">Alluvial</option>
-              <option value="Laterite">Laterite</option>
+              <option className = "dropdown" value="Sandy">Sandy</option>
+              <option className = "dropdown" value="Clay">Clay</option>
+              <option className = "dropdown" value="Red">Red</option>
+              <option className = "dropdown" value="Black">Black</option>
+              <option className = "dropdown" value="Silty">Silty</option>
+              <option className = "dropdown" value="Alluvial">Alluvial</option>
+              <option className = "dropdown" value="Laterite">Laterite</option>
             </Select>
           </FormControl>
 
@@ -122,18 +123,18 @@ const CropAdvisorForm = ({ onCropPrediction }) => {
               onChange={(event) => setMonth(event.target.value)}
               placeholder="Select Month"
             >
-              <option value="Jan">January</option>
-              <option value="Feb">February</option>
-              <option value="Mar">March</option>
-              <option value="Apr">April</option>
-              <option value="May">May</option>
-              <option value="Jun">June</option>
-              <option value="Jul">July</option>
-              <option value="Aug">August</option>
-              <option value="Sep">September</option>
-              <option value="Oct">October</option>
-              <option value="Nov">November</option>
-              <option value="Dec">December</option>
+              <option className = "dropdown" value="Jan">January</option>
+              <option className = "dropdown" value="Feb">February</option>
+              <option className = "dropdown" value="Mar">March</option>
+              <option className = "dropdown" value="Apr">April</option>
+              <option className = "dropdown" value="May">May</option>
+              <option className = "dropdown" value="Jun">June</option>
+              <option className = "dropdown" value="Jul">July</option>
+              <option className = "dropdown" value="Aug">August</option>
+              <option className = "dropdown" value="Sep">September</option>
+              <option className = "dropdown" value="Oct">October</option>
+              <option className = "dropdown" value="Nov">November</option>
+              <option className = "dropdown" value="Dec">December</option>
             </Select>
           </FormControl>
 

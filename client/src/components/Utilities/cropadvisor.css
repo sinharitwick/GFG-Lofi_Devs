@@ -5,8 +5,17 @@
     /* color:black */
     min-height: 30.5rem;
 }
+.dropdown{
+    color:black
+}
+.instructiontext{
+    color: white;
+}
 @media (max-width: 768px) {
     .cropAdvResp{
         flex-direction: column;
+    }
+    .instructiontext{
+        color: black;
     }
 }

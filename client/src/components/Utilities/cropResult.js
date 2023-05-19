@@ -18,6 +18,7 @@ import React from "react";
 import { Box, Heading, SimpleGrid, Flex, Text, Link } from "@chakra-ui/react";
 import cropImagesData from "../../cropImages.json";
 import { Link as RouterLink } from "react-router-dom";
+import './cropadvisor.css'
 
 const CropResult = ({ result }) => {
   let cropArray = [];
@@ -55,7 +56,7 @@ const CropResult = ({ result }) => {
                   transition="transform 0.3s"
                   _hover={{ transform: "scale(1.1)" }}
                 >
-                  <Text fontSize="md" fontWeight="semibold" color="white">
+                  <Text fontSize="md" fontWeight="semibold" style={{color:"cornsilk",fontSize:"x-large"}}>
                     {crop}
                   </Text>
                 </Flex>
@@ -63,7 +64,16 @@ const CropResult = ({ result }) => {
             ))}
           </SimpleGrid>
         ) : (
-          "No prediction yet"
+          <p className="instructiontext" style={{marginTop:"4rem"}}>
+            <span style={{fontFamily:"monospace"}}>Cropadvisor Instructions</span>
+            <ol style={{marginTop: "2rem",
+    fontSize: "22px"}}>
+              <li>1. Enter location</li>
+              <li>2. Select the climate of that location</li>
+              <li>3. Select the Soil Type of your area</li>
+              <li>4. Select the time of the year</li>
+            </ol>
+          </p>
         )}
       </Heading>
     </Box>
