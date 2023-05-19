@@ -1,0 +1,15 @@
+{
+    "cropAdvisor": {
+      "locationLabel": "स्थान:",
+      "climateLabel": "जलवायु:",
+      "soilLabel": "मृदा:",
+      "monthLabel": "माह:",
+      "selectClimate": "जलवायु का चयन करें",
+      "selectSoil": "मृदा का चयन करें",
+      "selectMonth": "माह का चयन करें",
+      "enterLocation": "स्थान दर्ज करें",
+      "Predict Crop": "फसल की पूर्वानुमान करें",
+      "predictedCrop": "पूर्वानुमानित फसल:"
+    }
+  }
+  
