@@ -23,6 +23,6 @@ box-shadow: 16px 21px 47px 14px rgba(0,0,0,0.75);
 
   @media (max-width: 768px) {
     .mediaPrediction{
-        margin-top: 9rem;
+        margin-top: 12rem;
     }
 }

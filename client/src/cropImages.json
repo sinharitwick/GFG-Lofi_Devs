@@ -3,7 +3,7 @@
     "Sugarcane":"/cropImg/sugarcane.jpg",
     "Peas":"/cropImg/peas.jpg",
     "Barley":"/cropImg/barley.jpg",
-    "Beans":"/cropImg/beans.jpg",
+    "Beans":"/cropImg/beans.jpeg",
     "Cabbage":"/cropImg/cabbage.jpg",
     "Carrot":"/cropImg/carrot.jpg",
     "Cauliflower":"/cropImg/cauliflower.jpg",
@@ -16,6 +16,27 @@
     "Radish":"/cropImg/radish.jpg",
     "Spinach":"/cropImg/spinach.jpg",
     "Tomato":"/cropImg/tomato.jpeg",
-    "Wheat":"/cropImg/wheat.jpeg"
+    "Wheat":"/cropImg/wheat.jpeg",
+    "Mustard":"/cropImg/mustard.jpg",
+    "Cucumber":"/cropImg/cucumber.jpg",
+    "Gram":"/cropImg/gram.jpg",
+    "Jute":"/cropImg/jute.jpg",
+    "Pumpkin":"/cropImg/pumpkin.jpg",
+    "Corn":"/cropImg/maize.jpg",
+    "Cotton":"/cropImg/cotton.jpg",
+    "Curry leaves":"/cropImg/curryleaves.jpg",
+    "Millets":"/cropImg/millets.jpg",
+    "Banana":"/cropImg/banana.jpg",
+    "Groundnut":"/cropImg/groundnuts.jpg",
+    "Capsicum":"/cropImg/capsicum.jpg",
+    "Chickpea":"/cropImg/chickpea.jpg",
+    "Ragi":"/cropImg/ragi.jpg",
+    "Chili":"/cropImg/chilli.jpg",
+    "Jowar":"/cropImg/jowar.jpg",
+    "Turmeric":"/cropImg/turmeric.jpg",
+    "Bajra":"/cropImg/millets.jpg",
+    "Peanut":"/cropImg/peanuts.jpg",
+    "Castor Oil":"/cropImg/castoroil.jpg"
+
 }
   
