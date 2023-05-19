@@ -18,5 +18,5 @@ box-shadow: 16px 21px 47px 14px rgba(0,0,0,0.75);
      margin: unset !important;
      padding: unset !important;
      color: white;
-     overflow-y: hidden;
+     /* overflow-y: hidden; */
   }
