@@ -94,6 +94,7 @@ const CropAdvisorForm = ({ onCropPrediction }) => {
               <option value="Arid">Arid</option>
               <option value="Subtropical">Subtropical</option>
               <option value="Moderate">Moderate</option>
+              <option value="Dry">Dry</option>
             </Select>
           </FormControl>
 
@@ -110,6 +111,7 @@ const CropAdvisorForm = ({ onCropPrediction }) => {
               <option value="Black">Black</option>
               <option value="Silty">Silty</option>
               <option value="Alluvial">Alluvial</option>
+              <option value="Laterite">Laterite</option>
             </Select>
           </FormControl>
 

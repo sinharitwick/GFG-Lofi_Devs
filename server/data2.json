@@ -28,16 +28,7 @@
         "Tomato",
         "Onion",
         "Potato",
-        "Cucumber",
-        "Brinjal",
-        "Okra",
-        "Watermelon",
-        "Muskmelon",
-        "Pumpkin",
-        "Spinach",
-        "Coriander",
-        "Capsicum",
-        "Peas"
+        "Cucumber"
       ]
     },
     {
@@ -50,18 +41,9 @@
         "Wheat",
         "Mustard",
         "Gram",
-        "Pea",
-        "Potato",
-        "Tomato",
-        "Spinach",
         "Coriander",
-        "Cabbage",
-        "Cauliflower",
-        "Radish",
-        "Carrot",
-        "Onion",
         "Garlic",
-        "Peas"
+        "Spinach"
       ]
     },
     {
@@ -77,15 +59,8 @@
         "Potato",
         "Cauliflower",
         "Radish",
-        "Carrot",
-        "Cucumber",
-        "Pumpkin",
-        "Spinach",
-        "Coriander",
-        "Tomato",
-        "Brinjal",
-        "Green beans",
-        "Peas"
+        "Pumpkin"
+        
       ]
     },
     {
@@ -101,15 +76,7 @@
         "Cotton",
         "Sugarcane",
         "Banana",
-        "Mango",
-        "Tomato",
-        "Brinjal",
-        "Ladyfinger",
-        "Bitter gourd",
-        "Snake gourd",
-        "Drumstick",
-        "Curry leaves",
-        "Coriander"
+        "Curry leaves"
       ]
     },
     {
@@ -125,15 +92,7 @@
         "Potato",
         "Carrot",
         "Beans",
-        "Cauliflower",
-        "Cabbage",
-        "Onion",
-        "Garlic",
-        "Tomato",
-        "Capsicum",
-        "Lettuce",
-        "Spinach",
-        "Coriander"
+        "Capsicum"
       ]
     },
     {
@@ -147,18 +106,9 @@
         "Bajra",
         "Wheat",
         "Cotton",
-        "Turmeric",
-        "Chili",
-        "Sesame",
-        "Sunflower",
-        "Groundnut",
         "Maize",
-        "Onion",
-        "Garlic",
-        "Tomato",
-        "Brinjal",
-        "Okra",
-        "Spinach"
+        "Turmeric",
+        "Chili"
       ]
     },
     {
@@ -172,18 +122,9 @@
         "Wheat",
         "Gram",
         "Peanut",
-        "Sorghum",
-        "Cotton",
-        "Sugarcane",
-        "Tomato",
-        "Onion",
         "Garlic",
-        "Potato",
-        "Cauliflower",
-        "Cabbage",
-        "Carrot",
-        "Radish",
         "Coriander"
+       
       ]
     },
     {
@@ -198,17 +139,8 @@
         "Sugarcane",
         "Mustard",
         "Potato",
-        "Pea",
-        "Spinach",
-        "Coriander",
-        "Cucumber",
-        "Watermelon",
-        "Muskmelon",
-        "Pumpkin",
-        "Tomato",
-        "Brinjal",
-        "Cauliflower",
-        "Cabbage"
+        "Peas",
+        "Spinach"
       ]
     },
     {
@@ -222,18 +154,9 @@
         "Maize",
         "Barley",
         "Mustard",
-        "Gram",
-        "Pea",
         "Potato",
-        "Tomato",
         "Onion",
-        "Garlic",
-        "Cauliflower",
-        "Cabbage",
-        "Carrot",
-        "Radish",
-        "Spinach",
-        "Coriander"
+        "Gram"
       ]
     },
     {
@@ -247,19 +170,8 @@
         "Bajra",
         "Wheat",
         "Gram",
-        "Groundnut",
-        "Cotton",
-        "Sugarcane",
-        "Turmeric",
-        "Chili",
-        "Tomato",
-        "Brinjal",
-        "Okra",
-        "Spinach",
-        "Coriander",
-        "Mustard",
-        "Onion",
-        "Garlic"
+        "Peas",
+        "Groundnut"
       ]
     },
     {
@@ -602,19 +514,9 @@
         "Maize",
         "Gram",
         "Peanut",
-        "Sorghum",
+        "Mustard",
         "Cotton",
-        "Sugarcane",
-        "Tomato",
-        "Onion",
-        "Garlic",
-        "Potato",
-        "Cauliflower",
-        "Cabbage",
-        "Carrot",
-        "Radish",
-        "Spinach",
-        "Coriander"
+        "Castor Oil"
       ]
     },
     {
