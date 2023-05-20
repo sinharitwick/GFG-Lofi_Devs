@@ -79,7 +79,7 @@ const CropAdvisorPage = () => {
                         color="white"
                     // box-sghadow
                     >
-                        <Text style={{ color: "white" }} fontSize="4xl" className="croptext">
+                        <Text fontSize="4xl" className="predictiontext">
                             Our Prediction
                         </Text>
                     </Box>
