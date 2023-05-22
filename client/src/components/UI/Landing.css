@@ -39,10 +39,11 @@
 } */
 .container-landing .left p, h1{
     text-align: center;
-    margin: 2.5rem;
+    margin: 3.5rem;
     /* margin-left: 8vw; */
     /* width: 38rem; */
     width: 54rem;
+    color: white;
 }
 /* .container-landing .right{
     flex: 50%;
