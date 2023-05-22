@@ -165,7 +165,7 @@ function SideDrawer() {
           </Button>
         </Tooltip>
         <Text fontSize="2xl" fontFamily="heading">
-          FarmStack_Conversation
+          FarmStack Conversation
         </Text>
         <div>
           <Menu>
