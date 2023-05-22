@@ -5,12 +5,17 @@
 -moz-box-shadow: 16px 21px 47px 14px rgba(0,0,0,0.75);
 box-shadow: 16px 21px 47px 14px rgba(0,0,0,0.75);
 }
+.predictionBox{
+    box-shadow: 16px 21px 47px 14px rgba(0,0,0,0.75);
+    padding-bottom: 6rem;
+}
 .croptext{
     font-family: 'Raleway'
 }
 .predictiontext{
     color: white;
 }
+
 .cropAdvisor{
     /* background-image: url("https://images.unsplash.com/photo-1603624837375-aa36c0a31d42?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"); */
     background-image: url("https://cdn.pixabay.com/photo/2017/06/11/02/05/wheat-2391348_960_720.jpg");
@@ -23,6 +28,9 @@ box-shadow: 16px 21px 47px 14px rgba(0,0,0,0.75);
      color: white;
      overflow-y: hidden;
   }
+  .modalcontent{
+    min-width: 40rem;
+  }
 
   @media (max-width: 768px) {
     .mediaPrediction{
@@ -33,5 +41,8 @@ box-shadow: 16px 21px 47px 14px rgba(0,0,0,0.75);
     }
     .predictiontext{
         color: black;
+    }
+    .modalcontent{
+        min-width: revert;
     }
 }
