@@ -78,7 +78,7 @@ const CropAdvisorForm = ({ onCropPrediction }) => {
               value={location}
               onChange={handleLocationChange}
               placeholder={location ? location : "Enter Location"}
-              style={{ color: "black" }}
+              style={{ color: "black" , background:"#d6d0d085"}}
             />
           </FormControl>
 
@@ -88,7 +88,7 @@ const CropAdvisorForm = ({ onCropPrediction }) => {
               value={climate}
               onChange={(event) => setClimate(event.target.value)}
               placeholder="Select Climate"
-              
+              style={{ color: "black" , background:"#d6d0d085"}}
             >
               <option className = "dropdown" value="Tropical">Tropical</option>
               <option className = "dropdown" value="Semi-Arid">Semi-Arid</option>
@@ -105,6 +105,7 @@ const CropAdvisorForm = ({ onCropPrediction }) => {
               value={soil}
               onChange={(event) => setSoil(event.target.value)}
               placeholder="Select Soil"
+              style={{ color: "black" , background:"#d6d0d085"}}
             >
               <option className = "dropdown" value="Sandy">Sandy</option>
               <option className = "dropdown" value="Clay">Clay</option>
@@ -122,6 +123,7 @@ const CropAdvisorForm = ({ onCropPrediction }) => {
               value={month}
               onChange={(event) => setMonth(event.target.value)}
               placeholder="Select Month"
+              style={{ color: "black" , background:"#d6d0d085"}}
             >
               <option className = "dropdown" value="Jan">January</option>
               <option className = "dropdown" value="Feb">February</option>
