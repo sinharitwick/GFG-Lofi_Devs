@@ -27,7 +27,7 @@ function Aboutus() {
           <img src={Desimg} />
         </div>
         <div className="whatwedo">
-          <p style={{ fontSize: "3rem", fontfamily: "Italiana",textAlign:'left' }}>what we do</p>
+          <p style={{ fontSize: "3rem", fontfamily: "Italiana",textAlign:'left' }}>What we do</p>
           <p>
             At FarmStack, our objective is to revolutionize the way farmers
             interact, collaborate, and access vital farming resources. We aim to

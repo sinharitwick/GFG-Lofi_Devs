@@ -31,7 +31,6 @@ function App() {
       <Route path="/schemes" component={Schemes} exact />
       <Route path="/listing" component={Landlist} exact />
       <Route path="/aboutus" component={Aboutus} exact />
-      <Route path="/modalus" component={Cardmodal} exact />
       {/* <Route path="*" component={Error404} exact/> */}
     </div>
   );
