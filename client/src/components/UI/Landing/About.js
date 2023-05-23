@@ -55,7 +55,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="landing-post">
+      <Link to="/weather"><div className="landing-post">
           <div className="uti-img imgL">
             <img
               className="abt-photo"
@@ -72,7 +72,7 @@ const About = () => {
               ultimately improving their yields and profits.
             </p>
           </div>
-        </div>
+        </div></Link>
         <div className="landing-post landpost">
           <div className="uti-text textL">
             <h2 className="abouthead">Land Lease System</h2>
