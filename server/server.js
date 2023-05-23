@@ -32,6 +32,7 @@ app.use("/api/message", messageRoutes);
 app.use("/api/cropAdvisor", cropAdvisor);
 app.use("/api/schemes", schemes);
 app.use("/api/blog", require("./routes/feedRoutes"));
+app.use("/api/land", require("./routes/landRoutes"));
 
 // Error Handling middlewares
 app.use(notFound);

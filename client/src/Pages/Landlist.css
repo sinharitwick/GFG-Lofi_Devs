@@ -93,6 +93,59 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
+    overflow: scroll;
+}
+
+.landform{
+    height: 100vh;
+    place-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.f-div{
+    width: 20rem;
+    padding: 2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    text-align: left;
+    margin: auto;
+    margin-top: 8rem;
+}
+
+.l-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.l-form label{
+    font-size: small;
+}
+
+.l-form input{
+    height: 3rem;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+    border: #000 1px solid;
+    border-radius: 10px;
+    padding-left: 10px;
+    transition: 0.8s;
+    outline: none;
+}
+
+.l-form button{
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+    font-size: 14px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: 0.5s;
+    color: #fff;
+}
+
+.l-form button:hover{
+    background-color: green;
 }
 
 @media screen and (max-width:768px) {

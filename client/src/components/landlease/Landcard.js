@@ -2,7 +2,7 @@ import React from 'react'
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import './Landcard.css'
 
-function Landcard() {
+function Landcard({ location, price }) {
   return (
     <div className='product'>
         <div className="image">
@@ -10,14 +10,14 @@ function Landcard() {
         </div>
         <div className="namePrice">
             <h3>Farmland</h3>
-            <span>₹ 1500</span>
+            <span>₹ {price}</span>
         </div>
         <div className='tags'>
             For Rent
         </div>
         <p>
             <LocationOnIcon />
-            Masimpur, Silchar
+            {location}
         </p>
         <div className="bay">
             <button>Book Now</button>
