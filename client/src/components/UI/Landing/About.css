@@ -43,7 +43,7 @@
     margin-top: 0.5rem;
     
 }
-.FbtnL{
+/* .FbtnL{
     border: 2px solid  rgba(119, 237, 198, 0.805);
     border-radius: 10px;
     width: max-content;
@@ -52,7 +52,7 @@
 }
 .FbtnL:hover{
     background-color:rgba(130, 247, 208, 0.516) ;
-}
+} */
 
 @media screen and (max-width:480px) {
     .uti-text{

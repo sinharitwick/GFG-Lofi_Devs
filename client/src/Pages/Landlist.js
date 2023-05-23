@@ -16,7 +16,7 @@ function Landlist() {
 
     const fetchCards = async () => {
         try {
-          const response = await axios.get('http://localhost:5000/api/land');
+          const response = await axios.get('http://34.131.168.190:5000/api/land');
           setCards(response.data);
         } catch (error) {
           console.error('Error fetching cards:', error);
@@ -35,7 +35,7 @@ function Landlist() {
         const newCard = {location, price};
 
         try {
-            await axios.post('http://localhost:5000/api/land', newCard);
+            await axios.post('http://34.131.168.190:5000/api/land', newCard);
             fetchCards();
             setLocation('');
             setPrice('');

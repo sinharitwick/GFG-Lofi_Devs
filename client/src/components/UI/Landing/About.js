@@ -87,7 +87,7 @@ const About = () => {
               cultivate the land.
             </p>
             <div className="land">
-            <p className='FbtnL'><Link to="/listing"><button>View Land &#8594; </button></Link></p>
+            <p className='FbtnL'><Link to="/listing"><button className="border-2 flex px-4 py-2 my-4 mx-auto border-[#000000] items-center hover:border-[#155705] duration-300">View Land &#8594; </button></Link></p>
             </div>
           </div>
           <div className="uti-img imgR">
