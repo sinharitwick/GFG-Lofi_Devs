@@ -10,12 +10,11 @@ import UserProfile from "./Pages/UserProfile";
 import Feedpg from "./Pages/Feedpg";
 import WeatherPage from "./Pages/WeatherPage";
 import Profile from "./Pages/profilePage";
-import Schemes from "./Pages/Schemes"
+import Schemes from "./Pages/Schemes";
 import Landlist from "./Pages/Landlist";
 import Aboutus from "./Pages/Aboutus";
-
+import Cardmodal from "../src/components/Aboutus/cardmodal";
 function App() {
-
   return (
     <div className="App">
       <Route path="/" component={Landing} exact />
@@ -28,7 +27,7 @@ function App() {
       <Route path="/feed" component={Feedpg} exact />
       <Route path="/weather" component={WeatherPage} exact />
       {/* <Route path="/profile/:userName" component={Profile} exact /> */}
-      <Route path="/profile" component={Profile} exact/>
+      <Route path="/profile" component={Profile} exact />
       <Route path="/schemes" component={Schemes} exact />
       <Route path="/listing" component={Landlist} exact />
       <Route path="/aboutus" component={Aboutus} exact />
