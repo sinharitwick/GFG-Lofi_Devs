@@ -1,0 +1,13 @@
+.cardmedia{
+    width:92%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+@media (max-width: 768px) {
+    .cardmedia{
+        width: 100%;
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+}
