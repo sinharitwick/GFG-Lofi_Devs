@@ -36,6 +36,24 @@
 .aboutpara{
     font-family: 'Poppins', sans-serif;
 }
+.land{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0.5rem;
+    
+}
+.FbtnL{
+    border: 2px solid  rgba(119, 237, 198, 0.805);
+    border-radius: 10px;
+    width: max-content;
+    padding: 0.6rem;
+    color: black;
+}
+.FbtnL:hover{
+    background-color:rgba(130, 247, 208, 0.516) ;
+}
+
 @media screen and (max-width:480px) {
     .uti-text{
         width: 90vw;
@@ -44,8 +62,16 @@
     }
     .imgL{
         margin-left: unset;
+        padding: 1rem;
+        border-radius: 10px;
     }
     .imgR{
         margin-right: unset;
+        padding: 1rem;
+        border-radius: 10px;
     }    
+    .landpost{
+        display: flex;
+        flex-direction: column-reverse !important;
+    }
 }

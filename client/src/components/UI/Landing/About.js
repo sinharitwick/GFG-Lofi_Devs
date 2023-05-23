@@ -1,5 +1,6 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
+import { Link } from 'react-router-dom'
 import "./About.css";
 const About = () => {
   return (
@@ -20,17 +21,30 @@ const About = () => {
           <div className="uti-text textR">
             <h2 className="abouthead">Chat System</h2>
             <p className="aboutpara">
-              
-              Chat feature can improve communication and collaboration among farmers. By sharing information, discussing agricultural practices, and exchanging ideas, farmers can learn from each other, improve farming techniques, and stay up-to-date with latest trends and technologies. This feature can also foster a sense of community and support, promoting knowledge sharing, networking, and growth in the agricultural sector.
+              Chat feature can improve communication and collaboration among
+              farmers. By sharing information, discussing agricultural
+              practices, and exchanging ideas, farmers can learn from each
+              other, improve farming techniques, and stay up-to-date with latest
+              trends and technologies. This feature can also foster a sense of
+              community and support, promoting knowledge sharing, networking,
+              and growth in the agricultural sector.
             </p>
           </div>
         </div>
 
-        <div className="landing-post">
+        <div className="landing-post landpost">
           <div className="uti-text textL">
             <h2 className="abouthead">Crop Advisor</h2>
             <p className="aboutpara">
-            The Crop Advisor utility feature can assist farmers in making informed decisions about the best crop to grow. The feature suggests the most suitable crop for a particular region based on various factors such as climate, soil type, and environmental factors, which can help optimize yields and minimize losses. The software also provides information on best practices for planting, harvesting, pest management, and other essential agricultural practices, enabling farmers to make better decisions and increase their productivity and profitability.
+              The Crop Advisor utility feature can assist farmers in making
+              informed decisions about the best crop to grow. The feature
+              suggests the most suitable crop for a particular region based on
+              various factors such as climate, soil type, and environmental
+              factors, which can help optimize yields and minimize losses. The
+              software also provides information on best practices for planting,
+              harvesting, pest management, and other essential agricultural
+              practices, enabling farmers to make better decisions and increase
+              their productivity and profitability.
             </p>
           </div>
           <div className="uti-img imgR">
@@ -45,11 +59,11 @@ const About = () => {
           <div className="uti-img imgL">
             <img
               className="abt-photo"
-              src={process.env.PUBLIC_URL + "/weather.jpg" }
+              src={process.env.PUBLIC_URL + "/weather.jpg"}
             />{" "}
           </div>
           <div className="uti-text textR">
-            <h3  className="abouthead">Weather System </h3>
+            <h3 className="abouthead">Weather System </h3>
             <p className="aboutpara">
               Our farmer utilities software includes weather forecasting to
               provide farmers with accurate information on weather conditions
@@ -57,6 +71,30 @@ const About = () => {
               informed decisions about planting, harvesting, and managing crops,
               ultimately improving their yields and profits.
             </p>
+          </div>
+        </div>
+        <div className="landing-post landpost">
+          <div className="uti-text textL">
+            <h2 className="abouthead">Land Lease System</h2>
+            <p className="aboutpara">
+              A land lease system for farming is a contractual agreement between
+              a FarmStack and a farmer, where the FarmStack grants the farmer
+              the right to use a specific piece of land for agricultural
+              purposes in exchange for rent or other agreed-upon terms. This
+              arrangement allows individuals or organizations who own land but
+              do not wish to farm it themselves to lease it to FarmStack and We
+              lease it Farmer who have the knowledge, resources, and desire to
+              cultivate the land.
+            </p>
+            <div className="land">
+            <p className='FbtnL'><Link to="/listing"><button>View Land &#8594; </button></Link></p>
+            </div>
+          </div>
+          <div className="uti-img imgR">
+            <img
+              className="abt-photo"
+              src={process.env.PUBLIC_URL + "/landLease.jpg"}
+            />{" "}
           </div>
         </div>
       </Fade>
