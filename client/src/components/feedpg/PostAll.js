@@ -59,7 +59,7 @@ const Post = ({ data, user, fetchposts }) => {
         height="20%"
         image={data?.image}
         alt="image here"
-        className="cardmedia"
+        id="cardmedia"
       />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
