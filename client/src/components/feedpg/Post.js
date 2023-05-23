@@ -47,6 +47,8 @@ const Post = ({data,user,fetchposts}) => {
         height="20%"
         image={data?.image}
         alt="image here"
+        style={{width:'92%',marginRight: '2rem',
+          marginLeft: '2rem'}}
       />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
