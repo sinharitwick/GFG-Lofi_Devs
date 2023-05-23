@@ -21,6 +21,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import Comment from "./Comment";
 import AddComments from "./AddComments";
+import './PostAll.css'
 const Post = ({ data, user, fetchposts }) => {
   const host="http://34.131.168.190:5000"
   const id = JSON.parse(localStorage.getItem("userInfo", "token"));
@@ -43,7 +44,7 @@ const Post = ({ data, user, fetchposts }) => {
 
   let date = new Date(data?.createdAt).toDateString();
   return (
-    <Card sx={{ margin: 5 }}>
+    <Card sx={{ margin: 5 }} style={{boxShadow: '10px 14px 68px -28px rgba(0,0,0,0.75)'}}>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: "green" }} aria-label="recipe">
@@ -58,6 +59,7 @@ const Post = ({ data, user, fetchposts }) => {
         height="20%"
         image={data?.image}
         alt="image here"
+        className="cardmedia"
       />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
