@@ -1,0 +1,41 @@
+.modalbox {
+    position: absolute;
+    background-image: url('../../manureBg.png');
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    /* z-index: 1; */
+    width: 50%;
+    height: 70%;
+    border:2px solid #000000b0;
+    border-radius: 5px;
+}
+.modal-transparent {
+    background: rgba(51, 50, 50, 0.51);
+  border-radius: 19px;
+  height: 90%;
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  font-family: 'Italiana';
+  /* z-index: 100; */
+}
+
+.vertical-line {
+    width: 2px;
+    background-color: #ffffff;
+    margin: 1rem;
+  }
+
+  .mdes{
+    width: 45%;
+    margin: 2rem;
+  }
+  .mtext{
+    width: 45%;
+    margin: 2rem;
+    margin-right: auto;
+  }

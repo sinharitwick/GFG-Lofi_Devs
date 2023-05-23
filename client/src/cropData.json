@@ -1,0 +1,309 @@
+{
+    "Rice": {
+      "image": "/cropImg/rice.jpg",
+      "description": "Rice is a staple food crop and a primary source of nutrition for a large part of the world's population. It requires warm climate, abundant water, and fertile soil. It is usually grown in flooded paddy fields. Common rice varieties include Basmati, Jasmine, and Arborio.",
+      "growingConditions": "Rice requires a tropical or subtropical climate with temperatures between 20°C and 40°C. It needs plenty of water for cultivation, with standing water in the paddy fields during the growing season.",
+      "cultivationPractices": "Rice is usually grown from seeds that are first germinated in a nursery and then transplanted to the flooded fields. It requires periodic flooding and careful management of water levels. Fertilizers and pesticides may be used to control pests and enhance growth.",
+      "yieldAndHarvesting": "Rice is typically harvested when the grains have fully matured and turned golden or brown. Harvesting involves cutting the stalks and threshing to separate the grains from the chaff. The yield of rice can vary depending on the variety and growing conditions.",
+      "commonVarieties": ["Basmati", "Jasmine", "Arborio"]
+    },
+    "Sugarcane": {
+      "image": "/cropImg/sugarcane.jpg",
+      "description": "Sugarcane is a tall perennial grass known for its high sugar content. It is widely cultivated for sugar production and ethanol production. Sugarcane requires a tropical or subtropical climate with abundant sunlight and regular rainfall.",
+      "growingConditions": "Sugarcane thrives in warm and humid climates with temperatures between 20°C and 35°C. It requires a well-drained soil that retains moisture. Sugarcane is usually grown from cuttings or setts planted in rows.",
+      "cultivationPractices": "Sugarcane requires regular irrigation and weed control. It is a heavy feeder and requires adequate fertilization. Sugarcane fields need to be periodically ridged or hilled to support the growing plants.",
+      "yieldAndHarvesting": "Sugarcane is harvested by cutting the stalks near the ground. The harvested stalks are then processed to extract the juice, which is used for sugar production or ethanol production. The yield of sugarcane can vary depending on the variety and growing conditions.",
+      "commonVarieties": ["Mauritius", "CO 86032", "CO 99004"]
+    },
+    "Peas": {
+      "image": "/cropImg/peas.jpg",
+      "description": "Peas are cool-season legumes known for their edible pods and seeds. They are rich in nutrients and often used in culinary preparations. Peas can be grown in a wide range of climates and are relatively easy to cultivate.",
+      "growingConditions": "Peas prefer cool weather and can be grown in both spring and fall seasons. They require well-drained soil and moderate sunlight. Peas can tolerate light frosts but may suffer in extremely hot temperatures.",
+      "cultivationPractices": "Peas are usually grown from seeds planted directly in the soil. They require regular watering to keep the soil moist. Pea plants benefit from trellises or supports to help them climb and prevent lodging.",
+      "yieldAndHarvesting": "Peas are harvested when the pods are well-filled and the seeds inside have reached their desired size. Harvesting involves picking the pods from the plants. The yield of peas can vary depending on the variety and growing conditions.",
+      "commonVarieties": ["Green Arrow", "Sugar Snap", "Snowbird"]
+    },
+      "Barley": {
+        "image": "/cropImg/barley.jpg",
+        "description": "Barley is a versatile cereal grain used for various purposes such as animal feed, human consumption, and brewing. It is adaptable to different climates and is grown in both temperate and tropical regions.",
+        "growingConditions": "Barley thrives in cool temperatures ranging from 15°C to 20°C. It can tolerate a wide range of soil conditions but prefers well-drained loamy soils.",
+        "cultivationPractices": "Barley is typically sown directly into the soil. It requires adequate moisture during the growing season and benefits from nitrogen fertilization. Weed control and disease prevention are important for successful cultivation.",
+        "yieldAndHarvesting": "Barley is harvested when the grains have reached the desired moisture content and turned golden or amber. Harvesting involves cutting the plants near the ground and threshing to separate the grains from the straw.",
+        "commonVarieties": ["Golden Promise", "Maris Otter", "Scarlett"]
+      },
+      "Beans": {
+        "image": "/cropImg/beans.jpeg",
+        "description": "Beans are leguminous vegetables that are cultivated for their edible pods or seeds. They are rich in protein and dietary fiber. Beans can be grown in a wide range of climates and soil types.",
+        "growingConditions": "Beans prefer a moderate climate with temperatures between 15°C and 25°C. They require well-drained soil with good fertility. Adequate sunlight and regular watering are important for bean cultivation.",
+        "cultivationPractices": "Beans are usually grown from seeds directly sown into the soil. They require regular watering and benefit from mulching to conserve moisture. Trellises or supports may be used to help the plants climb.",
+        "yieldAndHarvesting": "Beans are harvested when the pods are well-filled and the seeds inside have reached maturity. Harvesting involves picking the pods from the plants. The yield of beans can vary depending on the variety and growing conditions.",
+        "commonVarieties": ["Green Beans", "Kidney Beans", "Lima Beans"]
+      },
+    
+        "Cabbage": {
+          "image": "/cropImg/cabbage.jpg",
+          "description": "Cabbage is a leafy vegetable that belongs to the Brassica family. It is known for its dense, compact heads and is widely used in salads, coleslaw, and cooked dishes. Cabbage can be grown in a variety of climates and is relatively easy to cultivate.",
+          "growingConditions": "Cabbage prefers cool weather and requires temperatures between 15°C and 20°C for optimal growth. It thrives in well-drained soil rich in organic matter.",
+          "cultivationPractices": "Cabbage is usually grown from seeds or transplants. It requires regular watering and benefits from mulching to conserve moisture. Adequate spacing and weed control are important for successful cabbage cultivation.",
+          "yieldAndHarvesting": "Cabbage heads are typically ready for harvest when they are firm and solid. Harvesting involves cutting the heads at the base. After harvesting, the outer leaves are removed, and the heads can be stored or used fresh.",
+          "commonVarieties": ["Green Cabbage", "Red Cabbage", "Savoy Cabbage"]
+        },
+        "Carrot": {
+          "image": "/cropImg/carrot.jpg",
+          "description": "Carrot is a root vegetable known for its bright orange color and sweet flavor. It is rich in vitamins, minerals, and dietary fiber. Carrots can be grown in a wide range of climates and soil types.",
+          "growingConditions": "Carrots prefer cool to moderate temperatures between 15°C and 25°C. They require well-drained soil with loose texture and adequate moisture. Full sunlight is beneficial for carrot cultivation.",
+          "cultivationPractices": "Carrots are usually grown from seeds sown directly into the soil. They require consistent moisture for germination and growth. Thinning and proper spacing are important to allow room for root development.",
+          "yieldAndHarvesting": "Carrots can be harvested when the roots have reached the desired size and color. Harvesting involves carefully loosening the soil around the roots and pulling them out. The tops are typically removed before storage or use.",
+          "commonVarieties": ["Nantes", "Danvers", "Imperator"]
+        },
+
+      
+        "Cauliflower": {
+          "image": "/cropImg/cauliflower.jpg",
+          "description": "Cauliflower is a cruciferous vegetable known for its white, compact curd surrounded by green leaves. It is commonly used in culinary preparations and is rich in vitamins and minerals. Cauliflower requires specific growing conditions and care for successful cultivation.",
+          "growingConditions": "Cauliflower prefers cool temperatures between 15°C and 21°C. It requires well-drained soil rich in organic matter and consistent moisture. Full sunlight or partial shade is suitable for cauliflower growth.",
+          "cultivationPractices": "Cauliflower is usually grown from transplants or seeds planted directly into the soil. It requires regular watering and may benefit from mulching to retain moisture. Adequate spacing and weed control are important for healthy cauliflower plants.",
+          "yieldAndHarvesting": "Cauliflower heads are ready for harvest when they reach a suitable size and have a dense, firm texture. Harvesting involves cutting the heads at the base, taking care to avoid damaging the surrounding leaves. After harvesting, the heads can be stored or used fresh.",
+          "commonVarieties": ["Snowball", "Purple Cape", "Cheddar"]
+        },
+        "Coriander": {
+          "image": "/cropImg/coriander.jpg",
+          "description": "Coriander, also known as cilantro or Chinese parsley, is an aromatic herb used in various cuisines. It has delicate, lacy leaves and seeds with a distinctive flavor. Coriander can be grown in different climates and is popular in home gardens and commercial cultivation.",
+          "growingConditions": "Coriander thrives in mild to warm temperatures between 15°C and 25°C. It requires well-drained soil with moderate fertility. Full sunlight or partial shade is suitable for coriander growth.",
+          "cultivationPractices": "Coriander can be grown from seeds sown directly into the soil. It requires regular watering to keep the soil moist during germination and early growth. Adequate spacing and proper thinning promote healthy plant development.",
+          "yieldAndHarvesting": "Coriander leaves can be harvested when they reach a suitable size, typically before the plant flowers. Harvesting involves cutting the leaves close to the base. The seeds can be harvested when they turn brown and dry on the plant.",
+          "commonVarieties": ["Long Standing", "Slow Bolt", "Delfino"]
+        },
+        "Garlic": {
+          "image": "/cropImg/garlic.jpg",
+          "description": "Garlic is a popular herb known for its strong flavor and medicinal properties. It consists of multiple cloves enclosed in a papery skin. Garlic is used in various cuisines and is known for its potential health benefits.",
+          "growingConditions": "Garlic thrives in cool climates with mild winters and warm summers. It requires well-drained soil with good fertility. Full sunlight is preferable for garlic growth.",
+          "cultivationPractices": "Garlic is usually grown from cloves planted in the soil. It requires regular watering during the growing season and may benefit from mulching to conserve moisture. Garlic plants need proper spacing and weed control.",
+          "yieldAndHarvesting": "Garlic bulbs are ready for harvest when the leaves start to turn yellow or brown and fall over. Harvesting involves carefully digging out the bulbs without damaging them. After harvest, garlic bulbs are cured and stored for future use.",
+          "commonVarieties": ["Softneck Garlic", "Hardneck Garlic", "Elephant Garlic"]
+        },
+        "Lettuce": {
+          "image": "/cropImg/lettuce.jpg",
+          "description": "Lettuce is a leafy green vegetable widely used in salads and sandwiches. It comes in various shapes, sizes, and colors, offering a range of flavors and textures. Lettuce is known for its crispness and nutritional value.",
+          "growingConditions": "Lettuce prefers cool weather and moderate sunlight. It grows best in temperatures between 15°C and 25°C. Well-drained soil with adequate moisture retention is suitable for lettuce cultivation.",
+          "cultivationPractices": "Lettuce can be grown from seeds or transplants. It requires regular watering to keep the soil consistently moist. Adequate spacing and thinning promote proper air circulation and prevent overcrowding.",
+          "yieldAndHarvesting": "Lettuce leaves can be harvested when they reach a suitable size, typically before they become tough or bitter. Harvesting involves cutting the outer leaves or the whole head, depending on the lettuce type. Continuous harvesting promotes regrowth.",
+          "commonVarieties": ["Iceberg Lettuce", "Romaine Lettuce", "Butterhead Lettuce"]
+        },
+  "Maize": {
+    "image": "/cropImg/maize.jpg",
+    "description": "Maize, also known as corn, is a staple cereal crop widely cultivated for its edible kernels. It is a versatile crop used for human consumption, animal feed, and industrial purposes. Maize is known for its high productivity and adaptability to diverse growing conditions.",
+    "growingConditions": "Maize requires a warm climate with temperatures between 20°C and 30°C. It needs well-drained soil with good fertility and regular rainfall. Maize can be grown in various types of soils but performs best in loamy or sandy soils.",
+    "cultivationPractices": "Maize is typically grown from seeds directly sown in the soil. It requires adequate moisture during the growing season, especially during flowering and grain filling stages. Fertilizers and weed control measures are commonly employed in maize cultivation.",
+    "yieldAndHarvesting": "Maize is harvested when the kernels are fully mature and have reached the desired moisture content. Harvesting involves cutting the stalks and removing the ears. The yield of maize can vary depending on the variety, growing conditions, and management practices.",
+    "commonVarieties": ["Dent Corn", "Flint Corn", "Sweet Corn"]
+  },
+  "Onion": {
+    "image": "/cropImg/onion.jpeg",
+    "description": "Onion is a widely cultivated bulb vegetable known for its pungent flavor and culinary uses. It comes in different colors, including white, yellow, and red. Onions are used in various dishes and can be consumed raw or cooked.",
+    "growingConditions": "Onions prefer cool to moderate climates with temperatures between 15°C and 25°C. They require well-drained soil with good organic matter content. Onions can tolerate different soil types but perform best in loamy or sandy soils.",
+    "cultivationPractices": "Onions can be grown from seeds, sets, or transplants. They require regular watering, especially during bulb formation. Proper spacing and weed control are important to promote bulb development. Onions are often grown in rotation with other crops to minimize disease and pest issues.",
+    "yieldAndHarvesting": "Onions are ready for harvest when the tops have dried and fallen over. Harvesting involves gently lifting the bulbs from the soil. After harvest, onions need to be cured and stored in a cool, dry place for long-term storage.",
+    "commonVarieties": ["Yellow Onion", "Red Onion", "White Onion"]
+  },
+  "Potato": {
+    "image": "/cropImg/potato.jpg",
+    "description": "Potato is an important root vegetable widely cultivated for its starchy tubers. It is a versatile crop used in various culinary preparations and is rich in carbohydrates. Potatoes are grown in different sizes, shapes, and colors, and they can be cooked in numerous ways.",
+    "growingConditions": "Potatoes prefer cool climates with temperatures between 15°C and 20°C. They require well-drained soil with good organic matter content. Potatoes can tolerate different soil types but perform best in loamy or sandy soils.",
+    "cultivationPractices": "Potatoes are usually grown from seed potatoes or tubers. The tubers are planted in trenches or mounds, and the plants are hilled up as they grow to promote tuber development. Adequate irrigation, weed control, and disease management are important in potato cultivation.",
+    "yieldAndHarvesting": "Potatoes are typically harvested when the tops have died back, indicating maturity. Harvesting involves digging up the tubers from the soil. The yield of potatoes can vary depending on the variety, growing conditions, and management practices.",
+    "commonVarieties": ["Russet Burbank", "Yukon Gold", "Red Pontiac"]
+  },
+  "Tomato": {
+    "image": "/cropImg/tomato.jpeg",
+    "description": "Tomato is a popular fruit that is commonly used as a vegetable in culinary preparations. It comes in various sizes, shapes, and colors, and is known for its juicy and flavorful characteristics. Tomatoes are versatile and used in salads, sauces, and many other dishes.",
+    "growingConditions": "Tomatoes thrive in warm climates with temperatures between 20°C and 30°C. They require well-drained soil with good fertility. Tomatoes prefer full sunlight for optimal growth and fruit development.",
+    "cultivationPractices": "Tomatoes can be grown from seeds or transplants. They need regular watering to keep the soil consistently moist. Tomatoes benefit from staking or trellising to support the plants and improve airflow. Fertilizers and pest control measures are commonly employed in tomato cultivation.",
+    "yieldAndHarvesting": "Tomatoes are harvested when they reach their desired size and color. Harvesting involves picking the ripe fruits from the vines. The yield of tomatoes can vary depending on the variety, growing conditions, and management practices.",
+    "commonVarieties": ["Beefsteak", "Roma", "Cherry"]
+  },
+  "Radish": {
+    "image": "/cropImg/radish.jpg",
+    "description": "Radish is a root vegetable known for its crisp texture and spicy flavor. It is consumed both raw and cooked and is a popular ingredient in salads and stir-fries. Radishes come in different shapes, sizes, and colors, including red, white, and black.",
+    "growingConditions": "Radishes prefer cool weather and can be grown in both spring and fall seasons. They require well-drained soil with good fertility. Radishes grow best in full sunlight or partial shade.",
+    "cultivationPractices": "Radishes are usually grown from seeds directly sown in the soil. They require regular watering to keep the soil moist. Radish plants grow quickly and can be harvested within a few weeks. Adequate spacing and thinning are important to promote root development.",
+    "yieldAndHarvesting": "Radishes are harvested when the roots have reached their desired size and are firm. Harvesting involves pulling the radishes from the soil. The yield of radishes can vary depending on the variety, growing conditions, and cultivation practices.",
+    "commonVarieties": ["Cherry Belle", "French Breakfast", "Daikon"]
+  },
+  "Spinach": {
+    "image": "/cropImg/spinach.jpg",
+    "description": "Spinach is a leafy green vegetable known for its nutritional value and versatility. It has dark green leaves that can be consumed raw or cooked. Spinach is rich in vitamins, minerals, and antioxidants.",
+    "growingConditions": "Spinach grows best in cool weather with temperatures between 15°C and 20°C. It requires well-drained soil with good organic matter content. Spinach can tolerate some shade but prefers partial to full sunlight.",
+    "cultivationPractices": "Spinach can be grown from seeds directly sown in the soil or from transplants. It requires regular watering to keep the soil consistently moist. Adequate spacing and thinning are important to promote leaf growth. Spinach is a fast-growing crop and can be harvested multiple times.",
+    "yieldAndHarvesting": "Spinach leaves can be harvested when they reach a usable size, typically within a few weeks after sowing. Harvesting involves cutting the outer leaves or the entire plant. The yield of spinach can vary depending on the variety, growing conditions, and cultivation practices.",
+    "commonVarieties": ["Bloomsdale", "Baby Leaf", "Savoy"]
+  },
+  "Mustard": {
+    "image": "/cropImg/mustard.jpg",
+    "description": "Mustard is a cool-season crop known for its pungent leaves and seeds. It is commonly used as a condiment and spice. Mustard plants have yellow flowers and can reach varying heights. The seeds are used to make mustard oil and as a culinary ingredient.",
+    "growingConditions": "Mustard grows well in cool climates with temperatures between 10°C and 25°C. It prefers well-drained soil with adequate moisture. Mustard can tolerate light frosts but may bolt in hot weather.",
+    "cultivationPractices": "Mustard is usually grown from seeds sown directly in the soil. It requires regular watering to keep the soil moist. Mustard plants benefit from adequate spacing and weed control. Fertilizers may be applied to promote healthy growth.",
+    "yieldAndHarvesting": "Mustard plants can be harvested when the leaves are young and tender for use in salads and cooking. The seeds are harvested when they have matured and turned brown. Harvesting involves cutting the plants and drying them for seed collection. The yield of mustard can vary depending on the variety and growing conditions.",
+    "commonVarieties": ["Yellow Mustard", "Brown Mustard", "Black Mustard"]
+  },
+  "Cucumber": {
+    "image": "/cropImg/cucumber.jpg",
+    "description": "Cucumber is a popular vegetable known for its crisp texture and mild flavor. It is widely used in salads, pickles, and various culinary dishes. Cucumbers come in different sizes, shapes, and colors, including green and yellow.",
+    "growingConditions": "Cucumbers thrive in warm climates with temperatures between 20°C and 30°C. They require full sunlight and well-drained soil with good fertility. Cucumbers are sensitive to frost and cold temperatures.",
+    "cultivationPractices": "Cucumbers can be grown from seeds or transplants. They require regular watering to keep the soil consistently moist. Trellises or supports are often used to help cucumbers climb and save space. Fertilization, pest control, and proper pruning are important for healthy growth.",
+    "yieldAndHarvesting": "Cucumbers can be harvested when they reach the desired size and are firm and crisp. Harvesting involves cutting the cucumbers from the vines. The yield of cucumbers can vary depending on the variety, growing conditions, and cultivation practices.",
+    "commonVarieties": ["American Slicing", "English", "Pickling"]
+  },
+  "Gram": {
+    "image": "/cropImg/gram.jpg",
+    "description": "Gram, also known as chickpea or garbanzo bean, is a cool-season legume crop. It is widely consumed as a protein-rich food and is used in various culinary dishes. Gram plants have small, round seeds and can grow in a variety of climates and soil types.",
+    "growingConditions": "Gram thrives in temperate to subtropical climates. It requires well-drained soil and can tolerate drought conditions. Gram plants prefer full sunlight for optimum growth.",
+    "cultivationPractices": "Gram is usually grown from seeds sown directly in the soil. It requires regular watering during the early stages and less water as the plants mature. Weeding and pest control measures are necessary to ensure healthy growth. Fertilizers can be applied to improve yield.",
+    "yieldAndHarvesting": "Gram plants are ready for harvest when the pods have turned brown and dry. Harvesting involves cutting the plants close to the ground and allowing them to dry further. The seeds are then threshed and processed to separate them from the pods. The yield of gram can vary depending on the variety and growing conditions.",
+    "commonVarieties": ["Kabuli", "Desi", "Bengal Gram"]
+  },
+  "Jute": {
+    "image": "/cropImg/jute.jpg",
+    "description": "Jute is a long, soft, and shiny vegetable fiber used for making various products, including sacks, bags, and ropes. It is one of the most affordable natural fibers and is primarily cultivated for its strong fiber content.",
+    "growingConditions": "Jute requires a hot and humid climate with temperatures between 25°C and 35°C. It thrives in well-drained, fertile soil and requires regular rainfall. Jute plants prefer full sunlight for optimum growth.",
+    "cultivationPractices": "Jute is usually grown from seeds sown directly in the soil or through transplantation of seedlings. It requires regular watering and weed control. Fertilizers can be applied to promote healthy growth. Jute plants need to be properly spaced to allow air circulation.",
+    "yieldAndHarvesting": "Jute plants are ready for harvest when the flowers start shedding and the base of the stem turns yellow. Harvesting involves cutting the plants close to the ground. The harvested jute plants are then soaked in water to loosen the fibers, which are then extracted for processing. The yield of jute can vary depending on the variety and growing conditions.",
+    "commonVarieties": ["Tossa", "Deshi", "Mesta"]
+  },
+  "Pumpkin": {
+    "image": "/cropImg/pumpkin.jpg",
+    "description": "Pumpkin is a warm-season squash crop known for its large size and vibrant color. It is widely cultivated for its edible flesh and seeds. Pumpkins require a sunny location, well-drained soil, and regular watering.",
+    "growingConditions": "Pumpkins thrive in warm climates with temperatures between 20°C and 30°C. They require full sunlight for optimum growth. Pumpkins prefer fertile soil rich in organic matter and good drainage.",
+    "cultivationPractices": "Pumpkin seeds are usually sown directly in the soil after the last frost. They require consistent watering to keep the soil moist. Adequate spacing between plants is necessary for proper vine growth. Mulching can help retain moisture and suppress weed growth.",
+    "yieldAndHarvesting": "Pumpkins are typically ready for harvest when the fruit has fully matured and the skin has hardened. Harvesting involves cutting the stem with a sharp knife, leaving a short stub. The yield of pumpkins can vary depending on the variety and growing conditions.",
+    "commonVarieties": ["Jack-o'-lantern", "Sugar Pie", "Butternut"]
+  },
+  "Corn": {
+    "image": "/cropImg/maize.jpg",
+    "description": "Corn, also known as maize, is a warm-season cereal crop. It is a staple food in many parts of the world and is also used for animal feed and various industrial purposes. Corn requires warm temperatures, well-drained soil, and regular moisture.",
+    "growingConditions": "Corn thrives in warm climates with temperatures between 21°C and 32°C. It requires full sunlight for optimum growth. Corn prefers fertile soil with good drainage and regular moisture throughout the growing season.",
+    "cultivationPractices": "Corn is usually grown from seeds sown directly in the soil. It requires proper spacing between plants to allow for pollination. Adequate watering, fertilization, and weed control are necessary for optimal growth. Corn plants benefit from the addition of organic matter to the soil.",
+    "yieldAndHarvesting": "Corn is ready for harvest when the ears have filled out and the husks have turned dry and brown. Harvesting involves manually picking the ears from the plants. The yield of corn can vary depending on the variety and growing conditions.",
+    "commonVarieties": ["Sweet Corn", "Field Corn", "Popcorn"]
+  },
+  "Cotton": {
+    "image": "/cropImg/cotton.jpg",
+    "description": "Cotton is a soft, fluffy fiber that grows in protective cases around the seeds of the cotton plant. It is one of the most widely cultivated and commercially important fiber crops. Cotton requires a warm climate, fertile soil, and sufficient water.",
+    "growingConditions": "Cotton thrives in warm to hot climates with temperatures between 24°C and 32°C. It requires a long frost-free growing season. Cotton plants prefer well-drained soil with good moisture-holding capacity.",
+    "cultivationPractices": "Cotton is usually grown from seeds planted directly in the soil or through transplantation of seedlings. It requires regular watering and weed control. Fertilizers can be applied to promote healthy growth and improve yield. Cotton plants may require pest management for controlling insect pests.",
+    "yieldAndHarvesting": "Cotton is harvested when the bolls have matured and burst open, revealing the cotton fibers. Harvesting involves mechanically picking the bolls from the plants. The yield of cotton can vary depending on the variety and growing conditions.",
+    "commonVarieties": ["Upland Cotton", "Pima Cotton", "Sea Island Cotton"]
+  },
+  "Curry leaves": {
+    "image": "/cropImg/curryleaves.jpg",
+    "description": "Curry leaves are aromatic leaves commonly used as a flavoring agent in Indian cuisine. They are native to the Indian subcontinent and are known for their distinct taste and aroma. Curry leaves require a tropical or subtropical climate and well-drained soil.",
+    "growingConditions": "Curry leaves thrive in warm and humid climates with temperatures between 20°C and 35°C. They prefer full sunlight but can tolerate partial shade. Curry leaves require regular watering and moist soil.",
+    "cultivationPractices": "Curry leaves are usually propagated from stem cuttings or seeds. They can be grown in pots or directly in the ground. Curry leaf plants require regular pruning to maintain their shape and promote bushier growth.",
+    "yieldAndHarvesting": "Curry leaves can be harvested once the plants have reached a suitable size, usually after 6-8 months of growth. Harvesting involves picking the individual leaves from the branches. The leaves can be used fresh or dried for culinary purposes.",
+    "commonVarieties": ["Regular Curry Leaf", "Murraya Koenigii", "Gamthi Curry Leaf"]
+  },
+  "Millets": {
+    "image": "/cropImg/millets.jpg",
+    "description": "Millets are a group of small-seeded grasses widely grown as cereal crops or forage. They are highly nutritious and drought-tolerant, making them suitable for cultivation in arid and semi-arid regions. Millets require warm temperatures and well-drained soil.",
+    "growingConditions": "Millets thrive in warm climates with temperatures between 25°C and 35°C. They are adapted to various soil types, including sandy and loamy soils. Millets are known for their tolerance to drought and low water requirements.",
+    "cultivationPractices": "Millets are usually grown from seeds sown directly in the soil. They require proper seedbed preparation and adequate spacing between plants. Millets can be grown as rainfed crops or with supplemental irrigation in dry regions.",
+    "yieldAndHarvesting": "Millets are ready for harvest when the grains have fully matured and dried on the plants. Harvesting involves cutting the stalks and threshing to separate the grains. The yield of millets can vary depending on the specific type and growing conditions.",
+    "commonVarieties": ["Foxtail Millet", "Pearl Millet", "Finger Millet"]
+  },
+  "Banana": {
+    "image": "/cropImg/banana.jpg",
+    "description": "Banana is a tropical fruit crop known for its sweet and nutritious flesh. It is widely cultivated in tropical and subtropical regions around the world. Banana plants require a warm climate, ample sunlight, and well-drained soil.",
+    "growingConditions": "Bananas thrive in warm climates with temperatures between 25°C and 30°C. They require full sunlight for optimum growth. Banana plants prefer loamy soil with good drainage and organic matter content.",
+    "cultivationPractices": "Bananas are usually propagated from suckers or corms. They require regular watering to keep the soil moist. Banana plants benefit from regular fertilization and mulching to conserve moisture and suppress weed growth.",
+    "yieldAndHarvesting": "Bananas can be harvested when the fruits have reached their desired size and color. Harvesting involves cutting the bunches from the plants. The yield of bananas can vary depending on the variety and growing conditions.",
+    "commonVarieties": ["Cavendish", "Lady Finger", "Robusta"]
+  },
+  "Groundnut": {
+    "image": "/cropImg/groundnuts.jpg",
+    "description": "Groundnut, also known as peanut, is a legume crop grown for its edible seeds. It is rich in protein, oil, and nutrients. Groundnuts require a warm climate and well-drained soil for successful cultivation.",
+    "growingConditions": "Groundnuts thrive in warm climates with temperatures between 25°C and 35°C. They require full sunlight for optimal growth. Groundnuts prefer well-drained sandy or loamy soil with good moisture-holding capacity.",
+    "cultivationPractices": "Groundnuts are usually grown from seeds planted directly in the soil. They require regular watering, especially during the flowering and pod development stages. Groundnut plants may benefit from mulching to conserve moisture and suppress weed growth.",
+    "yieldAndHarvesting": "Groundnuts are ready for harvest when the pods have reached maturity and the seeds inside have developed fully. Harvesting involves uprooting the entire plant and shaking off the soil. The yield of groundnuts can vary depending on the variety and growing conditions.",
+    "commonVarieties": ["Virginia", "Spanish", "Valencia"]
+  },
+  "Capsicum": {
+    "image": "/cropImg/capsicum.jpg",
+    "description": "Capsicum, also known as bell pepper or sweet pepper, is a popular vegetable known for its mild flavor and vibrant colors. It is cultivated worldwide and comes in various shapes and sizes. Capsicum requires a warm climate and well-drained soil.",
+    "growingConditions": "Capsicum thrives in warm temperatures between 20°C and 30°C. It requires full sunlight for optimal growth. Capsicum plants prefer loamy soil with good drainage and organic matter content.",
+    "cultivationPractices": "Capsicum can be grown from seeds or transplants. Seeds are usually started indoors and transplanted outdoors after the last frost. Capsicum plants require regular watering, and mulching can help conserve moisture and suppress weed growth.",
+    "yieldAndHarvesting": "Capsicum fruits can be harvested when they reach their mature size and have fully developed their color. Harvesting involves cutting the fruits from the plants. The yield of capsicum can vary depending on the variety and growing conditions.",
+    "commonVarieties": ["Green Bell Pepper", "Red Bell Pepper", "Yellow Bell Pepper"]
+  },
+  "Chickpea": {
+    "image": "/cropImg/chickpea.jpg",
+    "description": "Chickpea, also known as garbanzo bean, is a nutritious legume widely grown for its edible seeds. It is a staple ingredient in many cuisines and is known for its high protein and fiber content. Chickpea requires a warm climate and well-drained soil.",
+    "growingConditions": "Chickpea thrives in warm temperatures between 20°C and 30°C. It requires moderate rainfall during the growing season. Chickpea plants prefer well-drained sandy or loamy soil.",
+    "cultivationPractices": "Chickpea is usually grown from seeds sown directly in the soil. It requires regular watering, especially during flowering and pod development. Chickpea plants are relatively drought-tolerant and can fix nitrogen from the atmosphere, reducing the need for nitrogen fertilizers.",
+    "yieldAndHarvesting": "Chickpea pods can be harvested when they have turned yellow or tan and have dried on the plants. Harvesting involves cutting the plants near the base and threshing to separate the seeds from the pods. The yield of chickpea can vary depending on the variety and growing conditions.",
+    "commonVarieties": ["Kabuli Chickpea", "Desi Chickpea", "Kala Chana"]
+  },
+  "Ragi": {
+    "image": "/cropImg/ragi.jpg",
+    "description": "Ragi, also known as finger millet, is a cereal crop widely grown for its nutritious seeds. It is a staple food in many regions, especially in Africa and Asia. Ragi is known for its high calcium and iron content. It requires a temperate to subtropical climate and well-drained soil.",
+    "growingConditions": "Ragi can tolerate a wide range of temperatures, from 15°C to 35°C. It can be grown in a variety of soil types but prefers well-drained loamy soil. Ragi is relatively drought-tolerant and can be grown in areas with low rainfall.",
+    "cultivationPractices": "Ragi is usually grown from seeds sown directly in the soil. It requires regular watering during the early growth stage. Ragi plants are relatively low-maintenance and do not require heavy fertilization.",
+    "yieldAndHarvesting": "Ragi grains are ready for harvest when the plants have turned golden brown and the seed heads have dried. Harvesting involves cutting the plants near the base and threshing to separate the grains. The yield of ragi can vary depending on the variety and growing conditions.",
+    "commonVarieties": ["Indaf-5", "PR 202", "CO 14"]
+  },
+  "Chili": {
+    "image": "/cropImg/chilli.jpg",
+    "description": "Chili pepper, commonly referred to as chili or hot pepper, is a spice crop known for its pungent flavor and heat. It is widely used in various cuisines and can be grown in different shapes, sizes, and levels of spiciness. Chili peppers require a warm climate and well-drained soil.",
+    "growingConditions": "Chili peppers thrive in warm temperatures between 20°C and 30°C. They require plenty of sunlight for optimal growth. Chili plants prefer well-drained soil with good organic matter content.",
+    "cultivationPractices": "Chili peppers can be grown from seeds or transplants. Seeds are usually started indoors and transplanted outdoors after the last frost. Chili plants require regular watering, especially during flowering and fruiting. They may benefit from staking or support for proper growth.",
+    "yieldAndHarvesting": "Chili peppers can be harvested when they have reached their desired size and color. Harvesting involves cutting the peppers from the plants. The yield of chili peppers can vary depending on the variety and growing conditions.",
+    "commonVarieties": ["Jalapeno", "Habanero", "Cayenne"]
+  },
+  "Jowar": {
+    "image": "/cropImg/jowar.jpg",
+    "description": "Jowar, also known as sorghum, is a cereal crop widely grown for its grain and fodder. It is a drought-tolerant crop and can be cultivated in various climatic conditions. Jowar is a staple food in many parts of the world and is rich in nutrients.",
+    "growingConditions": "Jowar can be grown in both tropical and subtropical regions. It thrives in warm temperatures between 25°C and 32°C. Jowar can tolerate a wide range of soil types but prefers well-drained soils.",
+    "cultivationPractices": "Jowar is usually grown from seeds sown directly in the soil. It requires moderate water during the initial growth stage and becomes more drought-tolerant as it matures. Jowar plants may benefit from fertilizers to enhance growth.",
+    "yieldAndHarvesting": "Jowar grains are ready for harvest when the seed heads have turned brown and the grains have hardened. Harvesting involves cutting the stalks near the base and threshing to separate the grains. The yield of jowar can vary depending on the variety and growing conditions.",
+    "commonVarieties": ["CSH 16", "SPV 1631", "MP Chari"]
+  },
+  "Turmeric": {
+    "image": "/cropImg/turmeric.jpg",
+    "description": "Turmeric is a perennial herbaceous plant known for its rhizomes, which are widely used as a spice and natural dye. It is native to South Asia and is cultivated for its medicinal and culinary purposes. Turmeric requires a tropical climate and well-drained soil.",
+    "growingConditions": "Turmeric thrives in warm and humid conditions with temperatures between 20°C and 35°C. It requires well-drained soil rich in organic matter. Turmeric plants prefer partial shade but can tolerate full sun.",
+    "cultivationPractices": "Turmeric is usually propagated from rhizome pieces planted in the soil. It requires regular watering, especially during the growing season. Mulching can help conserve moisture and suppress weed growth. Turmeric plants may benefit from organic fertilizers.",
+    "yieldAndHarvesting": "Turmeric rhizomes are ready for harvest after 8 to 10 months of growth. Harvesting involves digging up the rhizomes from the soil. The yield of turmeric can vary depending on the variety and growing conditions.",
+    "commonVarieties": ["Alleppey Finger", "Madras", "Salem"]
+  },
+  "Bajra": {
+    "image": "/cropImg/millets.jpg",
+    "description": "Bajra, also known as pearl millet, is a drought-tolerant cereal crop widely grown in arid and semi-arid regions. It is a staple food in many parts of Africa and Asia. Bajra is known for its nutritional value and resilience in harsh growing conditions.",
+    "growingConditions": "Bajra can be grown in a wide range of temperatures, from 25°C to 40°C. It is well-suited for dry regions with low rainfall. Bajra can tolerate various soil types but prefers well-drained soils.",
+    "cultivationPractices": "Bajra is usually grown from seeds sown directly in the soil. It is a hardy crop that requires minimal water and fertilizer inputs. Bajra plants can be intercropped with legumes to enhance nitrogen fixation.",
+    "yieldAndHarvesting": "Bajra grains are ready for harvest when the seed heads have turned brown and the grains have hardened. Harvesting involves cutting the stalks near the base and threshing to separate the grains. The yield of bajra can vary depending on the variety and growing conditions.",
+    "commonVarieties": ["Pusa Hybrid 1", "Rajasthan Bajra 1", "Maldandi"]
+  },
+  "Peanut": {
+    "image": "/cropImg/peanuts.jpg",
+    "description": "Peanut, also known as groundnut, is an oilseed crop grown for its edible seeds. It is a legume crop that fixes nitrogen in the soil and is rich in protein and healthy fats. Peanuts are consumed in various forms, including roasted, boiled, and as peanut butter.",
+    "growingConditions": "Peanuts thrive in warm temperatures between 25°C and 35°C. They require well-drained soil with good moisture-holding capacity. Peanuts are typically grown in regions with a frost-free growing season.",
+    "cultivationPractices": "Peanuts are usually grown from seeds planted directly in the soil. They require regular watering, especially during flowering and pod development. Peanuts may benefit from proper weed control and pest management.",
+    "yieldAndHarvesting": "Peanuts are ready for harvest when the pods have matured and the plants have yellowed or dried. Harvesting involves uprooting the plants and shaking off the soil. The peanuts are then separated from the plant and dried further. The yield of peanuts can vary depending on the variety and growing conditions.",
+    "commonVarieties": ["Virginia", "Valencia", "Spanish"]
+  },
+  "Castor Oil": {
+    "image": "/cropImg/castoroil.jpg",
+    "description": "Castor oil is derived from the seeds of the castor oil plant, scientifically known as Ricinus communis. It is a versatile crop with various industrial and medicinal applications. Castor oil plants require a warm climate and well-drained soil.",
+    "growingConditions": "Castor oil plants thrive in tropical and subtropical regions with temperatures between 20°C and 30°C. They require well-drained soils and can tolerate drought conditions. Castor oil plants prefer full sun exposure.",
+    "cultivationPractices": "Castor oil plants are usually grown from seeds sown directly in the soil. The seeds should be planted at a depth of 2 to 3 centimeters. They require regular watering, especially during the initial growth stage. Castor oil plants may benefit from organic fertilizers.",
+    "yieldAndHarvesting": "Castor oil plants are ready for harvest when the seed capsules have turned brown and start to split. Harvesting involves cutting the seed clusters from the plants and drying them to release the seeds. The yield of castor oil plants can vary depending on the variety and growing conditions.",
+    "commonVarieties": ["Gina 6", "Wilmington", "Hale"]
+  },
+  "Wheat": {
+    "image": "/cropImg/wheat.jpeg",
+    "description": "Wheat is a cereal grain widely cultivated for its edible seeds. It is a staple food in many parts of the world and is used to make various food products, including bread, pasta, and flour. Wheat varieties can be categorized as hard or soft, and red or white.",
+    "growingConditions": "Wheat prefers cool to mild temperatures and can be grown in both winter and spring seasons. It requires well-drained soil with good fertility. Wheat grows best in areas with moderate rainfall and full sunlight.",
+    "cultivationPractices": "Wheat is usually grown from seeds planted in prepared seedbeds or directly sown in the field. It requires periodic watering, especially during the critical growth stages. Fertilization, weed control, and disease management are important for maximizing yield.",
+    "yieldAndHarvesting": "Wheat is typically harvested when the plants have matured and the grains have hardened. Harvesting involves cutting the wheat stalks and threshing to separate the grains from the straw. The yield of wheat can vary depending on the variety, growing conditions, and cultivation practices.",
+    "commonVarieties": ["Hard Red Winter", "Soft White", "Durum"]
+  }
+}

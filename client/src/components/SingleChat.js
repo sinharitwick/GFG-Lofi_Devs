@@ -11,7 +11,7 @@ import ProfileModal from "./miscellaneous/ProfileModal";
 import ScrollableChat from "./ScrollableChat";
 // import Lottie from "react-lottie";
 import animationData from "../animations/typing.json";
-
+import Imh from "../farmerchat.jpg";
 import io from "socket.io-client";
 import UpdateGroupChatModal from "./miscellaneous/UpdateGroupChatModal";
 import { ChatState } from "../Context/ChatProvider";
@@ -258,8 +258,13 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
         </>
       ) : (
         // to get socket.io on same page
-        <Box d="flex" alignItems="center" justifyContent="center" h="100%">
-          <Text fontSize="3xl" pb={3} fontFamily="heading">
+        <Box d="flex" alignItems="center" justifyContent="center" h="100%"  
+        backgroundImage="url(https://res.cloudinary.com/bikramjit/image/upload/v1684790160/fqipa7kh1eaqdck0quq4.jpg)"
+        backgroundSize="cover"
+        backgroundPosition="center"
+        backgroundRepeat="no-repeat"
+        opacity={1}>
+          <Text fontSize="3xl" pb={3} fontFamily="heading" opacity={1}>
             Click on a user to start chatting
           </Text>
         </Box>
