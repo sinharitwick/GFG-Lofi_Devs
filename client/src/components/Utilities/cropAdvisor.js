@@ -37,8 +37,8 @@ const CropAdvisorForm = ({ onCropPrediction }) => {
     event.preventDefault();
     setLoading(true);
     try {
-      const response = await fetch("http://34.131.168.190:5000/api/cropAdvisor", {
-      // const response = await fetch("http://localhost:5000/api/cropAdvisor", {
+      // const response = await fetch("http://34.131.168.190:5000/api/cropAdvisor", {
+      const response = await fetch("http://localhost:5000/api/cropAdvisor", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -24,7 +24,8 @@ function Feed() {
    
 
     //API call
-    const response = await fetch("http://34.131.168.190:5000/api/feed/fetchallfeed", {
+    // const response = await fetch("http://34.131.168.190:5000/api/feed/fetchallfeed", {
+    const response = await fetch("http://localhost:5000/api/feed/fetchallfeed", {
       method: "GET",
       headers,
     });
@@ -44,7 +45,8 @@ function Feed() {
     // if (token) {
     //   headers.Authorization = `Bearer ${token}`;
     // }
-    const response = await fetch("http://34.131.168.190:5000/api/user", {
+    // const response = await fetch("http://34.131.168.190:5000/api/user", {
+    const response = await fetch("http://localhost:5000/api/user", {
       method: "GET",
       headers,
     });
